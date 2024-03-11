@@ -1,0 +1,55 @@
+package Actuators
+public
+	with Base_Types;
+	with RTS;
+
+	-- ===========================================================================================================
+	--
+	--   E v e n t C o n t r o l M o c k T h r e a d     Thread
+	--
+	--   Notes:
+	--     - Test harness for Actuation subsystem corresponding to outputs of Event Control subsystem
+	--     - This thread must be enclosed in a process to form a valid AADL system instance (this concept is not present in SysMLv2)
+	--     - Only mock up mananualActutorInputs (manual trip) to Actuation.  
+	--       Other outputs (e.g., set points and trip mode) needed by Instrumentation are not included.
+	-- ===========================================================================================================
+	thread ActuatorsMockThread extends RTS::Periodic_Thread
+		features
+			tempPressureActuate: in data port Base_Types::Boolean;
+			saturationActuate: in data port Base_Types::Boolean;
+	-- ==== FLOWS ====
+	end ActuatorsMockThread;
+
+	thread implementation ActuatorsMockThread.i
+	end ActuatorsMockThread.i;
+
+	-- ===========================================================================================================
+	--
+	--   I n s t r u m e n t a t i o n  M o c k  P r o c e s s    P r o c e s s 
+	--
+	--   Notes:
+	--     - Test harness for Actuation subsystem corresponding to outputs of Instrumentation subsystem
+	--     - This process encloses a thread with an identical interface.  (Unfortunately), in AADL
+	--       "outer" ports declarations in the enclosed component must be repeated in the enclosing component.
+	-- ===========================================================================================================
+	process ActuatorsMockProcess
+		features
+			-- ==== INPUTS ==== 
+			tempPressureActuate: in data port Base_Types::Boolean;
+			saturationActuate: in data port Base_Types::Boolean;
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end ActuatorsMockProcess;
+
+	process implementation ActuatorsMockProcess.i
+		-- ==== S u b - c o m p o n e n t s ==== 
+		subcomponents
+			actuatorsMockThread: thread ActuatorsMockThread.i;
+		-- ==== C o n n e c t i o n s  ==== 
+		connections
+			tPA: port tempPressureActuate -> actuatorsMockThread.tempPressureActuate;
+			sA: port saturationActuate -> actuatorsMockThread.saturationActuate;
+	end ActuatorsMockProcess.i;
+
+end Actuators;

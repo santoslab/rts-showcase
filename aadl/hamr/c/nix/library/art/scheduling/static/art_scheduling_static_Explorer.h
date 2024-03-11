@@ -1,0 +1,61 @@
+#ifndef SIREUM_H_art_scheduling_static_Explorer
+#define SIREUM_H_art_scheduling_static_Explorer
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+void art_scheduling_static_Explorer_init(STACK_FRAME_ONLY);
+
+art_scheduling_static_Explorer_ScheduleState art_scheduling_static_Explorer_scheduleState(STACK_FRAME_ONLY);
+void art_scheduling_static_Explorer_scheduleState_a(STACK_FRAME art_scheduling_static_Explorer_ScheduleState p_scheduleState);
+
+Unit art_scheduling_static_Explorer_initializeScheduleStateIMP(STACK_FRAME_ONLY);
+
+void art_scheduling_static_Explorer_initialScheduleState(STACK_FRAME art_scheduling_static_Explorer_ScheduleState result);
+
+Unit art_scheduling_static_Explorer_stepSystemNSlotsIMP(STACK_FRAME Z numSlots);
+
+Unit art_scheduling_static_Explorer_stepSystemOneHPIMP(STACK_FRAME_ONLY);
+
+B art_scheduling_static_Explorer_isHyperPeriodBoundaryH(STACK_FRAME_ONLY);
+
+Unit art_scheduling_static_Explorer_stepSystemNHPIMP(STACK_FRAME Z numHyperPeriods);
+
+Unit art_scheduling_static_Explorer_runToHP(STACK_FRAME Z hpNum);
+
+Unit art_scheduling_static_Explorer_runToSlot(STACK_FRAME Z slotNum);
+
+Unit art_scheduling_static_Explorer_runToThread(STACK_FRAME String threadNickName);
+
+Unit art_scheduling_static_Explorer_runToState(STACK_FRAME Z hpNum, Z slotNum);
+
+Unit art_scheduling_static_Explorer_runToDomain(STACK_FRAME Z domainId);
+
+B art_scheduling_static_Explorer_validState(STACK_FRAME art_scheduling_static_Explorer_ScheduleState state, art_scheduling_static_Schedule_DScheduleSpec dScheduleSpec);
+
+Unit art_scheduling_static_Explorer_stepSystemOneSlotIMP(STACK_FRAME B info);
+
+B art_scheduling_static_Explorer_isHyperPeriodBoundary(STACK_FRAME art_scheduling_static_Explorer_ScheduleState state);
+
+void art_scheduling_static_Explorer_previousState(STACK_FRAME Option_069397 result, art_scheduling_static_Explorer_ScheduleState state, art_scheduling_static_Schedule_DScheduleSpec dScheduleSpec);
+
+Unit art_scheduling_static_Explorer_executeSlotNumIMP(STACK_FRAME Z slotNum);
+
+Unit art_scheduling_static_Explorer_advanceStateIMP(STACK_FRAME_ONLY);
+
+B art_scheduling_static_Explorer_isInitial(STACK_FRAME art_scheduling_static_Explorer_ScheduleState scheduleState);
+
+Unit art_scheduling_static_Explorer_executeSlotIMP(STACK_FRAME art_scheduling_static_Schedule_Slot slot);
+
+void art_scheduling_static_Explorer_nextState(STACK_FRAME art_scheduling_static_Explorer_ScheduleState result, art_scheduling_static_Explorer_ScheduleState state, art_scheduling_static_Schedule_DScheduleSpec dScheduleSpec);
+
+void art_scheduling_static_Explorer_init_scheduleState(STACK_FRAME_ONLY);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

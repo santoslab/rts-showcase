@@ -1,0 +1,78 @@
+name: Linux
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 6"
+    
+jobs:
+
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Checkout-Keninian
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          repository: sireum/kekinian
+          path: kekinian
+      - name: Retrieve versions.properties
+        run: |
+          wget -q https://raw.githubusercontent.com/sireum/kekinian/master/versions.properties
+          wget -q https://raw.githubusercontent.com/sireum/hamr-codegen/master/jvm/src/main/resources/phantom_versions.properties
+      - name: Cache Java
+        id: cache-java
+        uses: actions/cache@v3
+        with:
+          path: kekinian/bin/linux/java
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-java
+      - name: Cache Scala
+        id: cache-scala
+        uses: actions/cache@v3
+        with:
+          path: kekinian/bin/scala
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-scala
+      - name: Cache Coursier
+        id: cache-coursier
+        uses: actions/cache@v3
+        with:
+          path: cache/coursier
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-coursier
+      - name: Cache FMIDE
+        id: cache-fmide
+        uses: actions/cache@v3
+        with:
+          path: kekinian/bin/linux/fmide
+          key: ${{ runner.os }}-${{ hashFiles('kekinian/hamr/codegen/jvm/src/main/resources/phantom_versions.properties') }}-fmide
+      - name: Test
+        run: |
+          export COURSIER_CACHE=$GITHUB_WORKSPACE/cache/coursier
+          
+          export XHOME=$(pwd)
+
+          # see https://github.com/sireum/osate-plugin/blob/57785407d84793cf1f8d5926647e4dc75ab197a9/org.sireum.aadl.osate.cli/src/org/sireum/aadl/osate/cli/Phantom.java#L508-L517
+          export CHECK_PHANTOM_HAMR_API_COMPATIBILITY=true
+          
+
+          ################################################
+          # build Sireum
+          ################################################
+
+          ./kekinian/bin/build.cmd setup
+
+          export SIREUM_HOME=${XHOME}/kekinian
+          export PATH=$SIREUM_HOME/bin:$PATH
+
+
+          ################################################
+          # Install FMIDE
+          ################################################
+
+          $SIREUM_HOME/bin/install/fmide.cmd --verbose
+
+          .ci/test.cmd

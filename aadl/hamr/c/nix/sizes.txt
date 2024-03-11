@@ -1,0 +1,17 @@
+ISZ[((B, B, B, B, B, B, B, B, B, B, B, B), (B, B, B, B, B, B, B, B, B, B, B, B))]=9;
+ISZ[(B, B)]=9;
+ISZ[(String, Option[art.DataContent])]=1;
+ISZ[(String, art.Art.BridgeId)]=15;
+ISZ[(Z, art.ArtSlangMessage)]=92;
+ISZ[String]=3;
+ISZ[art.Art.BridgeId]=15;
+ISZ[art.Art.PortId]=24;
+ISZ[art.UPort]=24;
+ISZ[art.scheduling.static.Schedule.Slot]=15;
+IS[art.Art.BridgeId, art.Bridge]=15;
+IS[art.Art.ConnectionId, art.Art.PortId]=38;
+IS[art.Art.ConnectionId, art.UConnection]=38;
+MSZ[Option[art.Bridge]]=15;
+MS[art.Art.BridgeId, S64]=15;
+MS[art.Art.PortId, IS[art.Art.ConnectionId, art.Art.PortId]]=92;
+MS[art.Art.PortId, Option[art.UPort]]=92

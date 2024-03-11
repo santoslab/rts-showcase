@@ -1,0 +1,43 @@
+#ifndef SIREUM_H_RTS_EventControl_EventControlMockThread_i_Initialization_Api
+#define SIREUM_H_RTS_EventControl_EventControlMockThread_i_Initialization_Api
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+// RTS.EventControl.EventControlMockThread_i_Initialization_Api
+
+#define RTS_EventControl_EventControlMockThread_i_Initialization_Api_id_(this) ((this)->id)
+#define RTS_EventControl_EventControlMockThread_i_Initialization_Api_manualActuatorInput1_Id_(this) ((this)->manualActuatorInput1_Id)
+#define RTS_EventControl_EventControlMockThread_i_Initialization_Api_manualActuatorInput2_Id_(this) ((this)->manualActuatorInput2_Id)
+
+B RTS_EventControl_EventControlMockThread_i_Initialization_Api__eq(RTS_EventControl_EventControlMockThread_i_Initialization_Api this, RTS_EventControl_EventControlMockThread_i_Initialization_Api other);
+inline B RTS_EventControl_EventControlMockThread_i_Initialization_Api__ne(RTS_EventControl_EventControlMockThread_i_Initialization_Api this, RTS_EventControl_EventControlMockThread_i_Initialization_Api other) {
+  return !RTS_EventControl_EventControlMockThread_i_Initialization_Api__eq(this, other);
+};
+B RTS_EventControl_EventControlMockThread_i_Initialization_Api__equiv(RTS_EventControl_EventControlMockThread_i_Initialization_Api this, RTS_EventControl_EventControlMockThread_i_Initialization_Api other);
+inline B RTS_EventControl_EventControlMockThread_i_Initialization_Api__inequiv(RTS_EventControl_EventControlMockThread_i_Initialization_Api this, RTS_EventControl_EventControlMockThread_i_Initialization_Api other) {
+  return !RTS_EventControl_EventControlMockThread_i_Initialization_Api__equiv(this, other);
+};
+void RTS_EventControl_EventControlMockThread_i_Initialization_Api_string_(STACK_FRAME String result, RTS_EventControl_EventControlMockThread_i_Initialization_Api this);
+void RTS_EventControl_EventControlMockThread_i_Initialization_Api_cprint(RTS_EventControl_EventControlMockThread_i_Initialization_Api this, B isOut);
+
+inline B RTS_EventControl_EventControlMockThread_i_Initialization_Api__is(STACK_FRAME void* this) {
+  return ((RTS_EventControl_EventControlMockThread_i_Initialization_Api) this)->type == TRTS_EventControl_EventControlMockThread_i_Initialization_Api;
+}
+
+inline RTS_EventControl_EventControlMockThread_i_Initialization_Api RTS_EventControl_EventControlMockThread_i_Initialization_Api__as(STACK_FRAME void *this) {
+  if (RTS_EventControl_EventControlMockThread_i_Initialization_Api__is(CALLER this)) return (RTS_EventControl_EventControlMockThread_i_Initialization_Api) this;
+  sfAbortImpl(CALLER "Invalid cast to RTS.EventControl.EventControlMockThread_i_Initialization_Api.");
+  abort();
+}
+
+void RTS_EventControl_EventControlMockThread_i_Initialization_Api_apply(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, art_Art_BridgeId id, art_Art_PortId manualActuatorInput1_Id, art_Art_PortId manualActuatorInput2_Id);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,108 @@
+name: CAmkES
+
+on: 
+  push:
+  workflow_dispatch:
+    inputs:
+      docker_image:
+        type: string
+        description: Docker image to fetch
+        default: trustworthysystems/camkes:2022_08_18
+      verbose:
+        type: boolean
+        description: Enable verbose testing output
+        default: false
+        
+jobs:
+  container:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ inputs.docker_image != '' && inputs.docker_image || 'trustworthysystems/camkes:2022_08_18' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        VM_PARTITION: [false]
+    name: 'VM Partition=${{ matrix.VM_PARTITION }}'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: rts-showcase
+          submodules: recursive
+      - name: Checkout-Keninian
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          repository: sireum/kekinian
+          path: kekinian          
+      - name: Build
+        env:
+          # add verbose flag if workflow is restarted with "enable debug logging" checked or if requested
+          # via workflow dispatch
+          VERBOSE_DEBUG: ${{ ( runner.debug == '1' || inputs.verbose == '1' ) && ',verbose' || '' }}
+        run: |
+          # github sets HOME to /github/home but some tools (Sireum's Os.home, Haskell) use
+          # the containers /root instead leading to inconsistent installs. Setting HOME
+          # to be root resolves the issue
+          # https://github.com/actions/runner/issues/1474#issuecomment-965805123
+          export HOME=/root
+
+          mv ./rts-showcase /root/
+          mv ./kekinian /root/
+
+          df -h
+
+          export aptInstall="apt-get install -f -y --no-install-recommends"
+          export DEBIAN_FRONTEND=noninteractive
+          apt-get update
+          ${aptInstall} p7zip-full
+          
+          # Installing emacs installs some package(s) that resolve an issue where
+          # the OSATE gumbo parser fails to initialize when used in the docker container.
+          ${aptInstall} emacs
+          
+          mkdir -p $HOME/.ssh
+          touch $HOME/.ssh/config
+          chmod 700 $HOME/.ssh/config
+          (echo "Host gitlab.adventium.com"; echo "StrictHostKeyChecking no") >> $HOME/.ssh/config
+          
+          export CASE_DIR=$HOME/CASE
+          
+          mkdir -p $CASE_DIR/camkes
+          cd $CASE_DIR/camkes
+          repo init -u https://github.com/seL4/camkes-manifest.git
+          repo sync
+          
+          mkdir -p $CASE_DIR/camkes-vm-examples
+          cd $CASE_DIR/camkes-vm-examples
+          repo init -u https://github.com/seL4/camkes-vm-examples-manifest.git
+          repo sync
+
+          # see https://github.com/sireum/osate-plugin/blob/57785407d84793cf1f8d5926647e4dc75ab197a9/org.sireum.aadl.osate.cli/src/org/sireum/aadl/osate/cli/Phantom.java#L508-L517
+          export CHECK_PHANTOM_HAMR_API_COMPATIBILITY=true
+          
+          cd $HOME
+          
+          ################################################
+          # build Sireum
+          ################################################
+
+          $HOME/kekinian/bin/build.cmd setup
+
+          export SIREUM_HOME=${HOME}/kekinian
+          export PATH=$SIREUM_HOME/bin:$PATH
+
+
+          ################################################
+          # Install FMIDE
+          ################################################
+
+          $SIREUM_HOME/bin/install/fmide.cmd --verbose
+
+          ls -laF $HOME
+          chown -R $(whoami) $HOME
+          ls -laF $HOME
+
+          df -h
+
+          $HOME/rts-showcase/.ci/test.cmd

@@ -1,0 +1,275 @@
+package Instrumentation
+public
+	with Base_Types;
+	with RTS;
+
+	-- ===========================================================================================================
+	--
+	--   I n s t r u m e n t a t i o n  M o c k  T h r e a d    Thread
+	--
+	--   Notes:
+	--     - Test harness for Actuation subsystem corresponding to outputs of Instrumentation subsystem
+	--     - This thread must be enclosed in a process to form a valid AADL system instance (this concept is not present in SysMLv2)
+	-- ===========================================================================================================
+	thread InstrumentationMockThread extends RTS::Periodic_Thread
+		features
+			-- ==== OUTPUTS ==== 
+			-- myOutPort : out data port MyOutType;
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			unit1_temperatureLogic_channel1: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel2: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel3: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel4: out data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit1_pressureLogic_channel1: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel2: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel3: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel4: out data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit1_saturationLogic_channel1: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel2: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel3: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel4: out data port Base_Types::Boolean;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			unit2_temperatureLogic_channel1: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel2: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel3: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel4: out data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit2_pressureLogic_channel1: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel2: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel3: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel4: out data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit2_saturationLogic_channel1: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel2: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel3: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel4: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		-- Note: "flow source" indicates that the source of the "information" for the flow
+		-- originates inside the component
+		flows
+			ft_u1tLc1: flow source unit1_temperatureLogic_channel1;
+			ft_u1tLc2: flow source unit1_temperatureLogic_channel2;
+			ft_u1tLc3: flow source unit1_temperatureLogic_channel3;
+			ft_u1tLc4: flow source unit1_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			ft_u1pLc1: flow source unit1_pressureLogic_channel1;
+			ft_u1pLc2: flow source unit1_pressureLogic_channel2;
+			ft_u1pLc3: flow source unit1_pressureLogic_channel3;
+			ft_u1pLc4: flow source unit1_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			ft_u1sLc1: flow source unit1_saturationLogic_channel1;
+			ft_u1sLc2: flow source unit1_saturationLogic_channel2;
+			ft_u1sLc3: flow source unit1_saturationLogic_channel3;
+			ft_u1sLc4: flow source unit1_saturationLogic_channel4;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			ft_u2tLc1: flow source unit2_temperatureLogic_channel1;
+			ft_u2tLc2: flow source unit2_temperatureLogic_channel2;
+			ft_u2tLc3: flow source unit2_temperatureLogic_channel3;
+			ft_u2tLc4: flow source unit2_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			ft_u2pLc1: flow source unit2_pressureLogic_channel1;
+			ft_u2pLc2: flow source unit2_pressureLogic_channel2;
+			ft_u2pLc3: flow source unit2_pressureLogic_channel3;
+			ft_u2pLc4: flow source unit2_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			ft_u2sLc1: flow source unit2_saturationLogic_channel1;
+			ft_u2sLc2: flow source unit2_saturationLogic_channel2;
+			ft_u2sLc3: flow source unit2_saturationLogic_channel3;
+			ft_u2sLc4: flow source unit2_saturationLogic_channel4;
+		properties
+			Source_Text => ("resources/sel4_only_behavior_code/Instrumentation/Instrumentation.c");
+			Initialize_Entrypoint_Source_Text => "init";
+			Compute_Entrypoint_Source_Text => "time_triggered";			
+	end InstrumentationMockThread;
+
+	thread implementation InstrumentationMockThread.i
+	end InstrumentationMockThread.i;
+
+	-- ===========================================================================================================
+	--
+	--   I n s t r u m e n t a t i o n  M o c k  P r o c e s s    P r o c e s s 
+	--
+	--   Notes:
+	--     - Test harness for Actuation subsystem corresponding to outputs of Instrumentation subsystem
+	--     - This process encloses a thread with an identical interface.  (Unfortunately), in AADL
+	--       "outer" ports declarations in the enclosed component must be repeated in the enclosing component.
+	-- ===========================================================================================================
+	process InstrumentationMockProcess
+		features
+			-- ==== INPUTS ====	
+			-- (none -- this component is part of a test harness for the actuation subsystem)
+			--
+			-- ==== OUTPUTS ====	
+			-- myOutPort : out data port MyOutType;
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			unit1_temperatureLogic_channel1: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel2: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel3: out data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel4: out data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit1_pressureLogic_channel1: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel2: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel3: out data port Base_Types::Boolean;
+			unit1_pressureLogic_channel4: out data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit1_saturationLogic_channel1: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel2: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel3: out data port Base_Types::Boolean;
+			unit1_saturationLogic_channel4: out data port Base_Types::Boolean;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			unit2_temperatureLogic_channel1: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel2: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel3: out data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel4: out data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit2_pressureLogic_channel1: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel2: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel3: out data port Base_Types::Boolean;
+			unit2_pressureLogic_channel4: out data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit2_saturationLogic_channel1: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel2: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel3: out data port Base_Types::Boolean;
+			unit2_saturationLogic_channel4: out data port Base_Types::Boolean;
+		-- ==== FLOWS ====
+		flows
+			f_u1tLc1: flow source unit1_temperatureLogic_channel1;
+			f_u1tLc2: flow source unit1_temperatureLogic_channel2;
+			f_u1tLc3: flow source unit1_temperatureLogic_channel3;
+			f_u1tLc4: flow source unit1_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			f_u1pLc1: flow source unit1_pressureLogic_channel1;
+			f_u1pLc2: flow source unit1_pressureLogic_channel2;
+			f_u1pLc3: flow source unit1_pressureLogic_channel3;
+			f_u1pLc4: flow source unit1_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			f_u1sLc1: flow source unit1_saturationLogic_channel1;
+			f_u1sLc2: flow source unit1_saturationLogic_channel2;
+			f_u1sLc3: flow source unit1_saturationLogic_channel3;
+			f_u1sLc4: flow source unit1_saturationLogic_channel4;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			f_u2tLc1: flow source unit2_temperatureLogic_channel1;
+			f_u2tLc2: flow source unit2_temperatureLogic_channel2;
+			f_u2tLc3: flow source unit2_temperatureLogic_channel3;
+			f_u2tLc4: flow source unit2_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			f_u2pLc1: flow source unit2_pressureLogic_channel1;
+			f_u2pLc2: flow source unit2_pressureLogic_channel2;
+			f_u2pLc3: flow source unit2_pressureLogic_channel3;
+			f_u2pLc4: flow source unit2_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			f_u2sLc1: flow source unit2_saturationLogic_channel1;
+			f_u2sLc2: flow source unit2_saturationLogic_channel2;
+			f_u2sLc3: flow source unit2_saturationLogic_channel3;
+			f_u2sLc4: flow source unit2_saturationLogic_channel4;
+
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end InstrumentationMockProcess;
+
+	process implementation InstrumentationMockProcess.i
+		-- ==== S u b - c o m p o n e n t s ====	
+		subcomponents
+			instrumentationMockThread: thread InstrumentationMockThread.i;
+		-- ==== C o n n e c t i o n s  ====	
+		connections
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			u1tLc1: port instrumentationMockThread.unit1_temperatureLogic_channel1 -> unit1_temperatureLogic_channel1;
+			u1tLc2: port instrumentationMockThread.unit1_temperatureLogic_channel2 -> unit1_temperatureLogic_channel2;
+			u1tLc3: port instrumentationMockThread.unit1_temperatureLogic_channel3 -> unit1_temperatureLogic_channel3;
+			u1tLc4: port instrumentationMockThread.unit1_temperatureLogic_channel4 -> unit1_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			u1pLc1: port instrumentationMockThread.unit1_pressureLogic_channel1 -> unit1_pressureLogic_channel1;
+			u1pLc2: port instrumentationMockThread.unit1_pressureLogic_channel2 -> unit1_pressureLogic_channel2;
+			u1pLc3: port instrumentationMockThread.unit1_pressureLogic_channel3 -> unit1_pressureLogic_channel3;
+			u1pLc4: port instrumentationMockThread.unit1_pressureLogic_channel4 -> unit1_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			u1sLc1: port instrumentationMockThread.unit1_saturationLogic_channel1 -> unit1_saturationLogic_channel1;
+			u1sLc2: port instrumentationMockThread.unit1_saturationLogic_channel2 -> unit1_saturationLogic_channel2;
+			u1sLc3: port instrumentationMockThread.unit1_saturationLogic_channel3 -> unit1_saturationLogic_channel3;
+			u1sLc4: port instrumentationMockThread.unit1_saturationLogic_channel4 -> unit1_saturationLogic_channel4;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			u2tLc1: port instrumentationMockThread.unit2_temperatureLogic_channel1 -> unit2_temperatureLogic_channel1;
+			u2tLc2: port instrumentationMockThread.unit2_temperatureLogic_channel2 -> unit2_temperatureLogic_channel2;
+			u2tLc3: port instrumentationMockThread.unit2_temperatureLogic_channel3 -> unit2_temperatureLogic_channel3;
+			u2tLc4: port instrumentationMockThread.unit2_temperatureLogic_channel4 -> unit2_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			u2pLc1: port instrumentationMockThread.unit2_pressureLogic_channel1 -> unit2_pressureLogic_channel1;
+			u2pLc2: port instrumentationMockThread.unit2_pressureLogic_channel2 -> unit2_pressureLogic_channel2;
+			u2pLc3: port instrumentationMockThread.unit2_pressureLogic_channel3 -> unit2_pressureLogic_channel3;
+			u2pLc4: port instrumentationMockThread.unit2_pressureLogic_channel4 -> unit2_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			u2sLc1: port instrumentationMockThread.unit2_saturationLogic_channel1 -> unit2_saturationLogic_channel1;
+			u2sLc2: port instrumentationMockThread.unit2_saturationLogic_channel2 -> unit2_saturationLogic_channel2;
+			u2sLc3: port instrumentationMockThread.unit2_saturationLogic_channel3 -> unit2_saturationLogic_channel3;
+			u2sLc4: port instrumentationMockThread.unit2_saturationLogic_channel4 -> unit2_saturationLogic_channel4;
+		flows
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			f_u1tLc1: flow source instrumentationMockThread.ft_u1tLc1 -> u1tLc1 -> unit1_temperatureLogic_channel1;
+			f_u1tLc2: flow source instrumentationMockThread.ft_u1tLc2 -> u1tLc2 -> unit1_temperatureLogic_channel2;
+			f_u1tLc3: flow source instrumentationMockThread.ft_u1tLc3 -> u1tLc3 -> unit1_temperatureLogic_channel3;
+			f_u1tLc4: flow source instrumentationMockThread.ft_u1tLc4 -> u1tLc4 -> unit1_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			f_u1pLc1: flow source instrumentationMockThread.ft_u1pLc1 -> u1pLc1 -> unit1_pressureLogic_channel1;
+			f_u1pLc2: flow source instrumentationMockThread.ft_u1pLc2 -> u1pLc2 -> unit1_pressureLogic_channel2;
+			f_u1pLc3: flow source instrumentationMockThread.ft_u1pLc3 -> u1pLc3 -> unit1_pressureLogic_channel3;
+			f_u1pLc4: flow source instrumentationMockThread.ft_u1pLc4 -> u1pLc4 -> unit1_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			f_u1sLc1: flow source instrumentationMockThread.ft_u1sLc1 -> u1sLc1 -> unit1_saturationLogic_channel1;
+			f_u1sLc2: flow source instrumentationMockThread.ft_u1sLc2 -> u1sLc2 -> unit1_saturationLogic_channel2;
+			f_u1sLc3: flow source instrumentationMockThread.ft_u1sLc3 -> u1sLc3 -> unit1_saturationLogic_channel3;
+			f_u1sLc4: flow source instrumentationMockThread.ft_u1sLc4 -> u1sLc4 -> unit1_saturationLogic_channel4;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			f_u2tLc1: flow source instrumentationMockThread.ft_u2tLc1 -> u2tLc1 -> unit2_temperatureLogic_channel1;
+			f_u2tLc2: flow source instrumentationMockThread.ft_u2tLc2 -> u2tLc2 -> unit2_temperatureLogic_channel2;
+			f_u2tLc3: flow source instrumentationMockThread.ft_u2tLc3 -> u2tLc3 -> unit2_temperatureLogic_channel3;
+			f_u2tLc4: flow source instrumentationMockThread.ft_u2tLc4 -> u2tLc4 -> unit2_temperatureLogic_channel4;
+
+			-- pressureLogic ports
+			f_u2pLc1: flow source instrumentationMockThread.ft_u2pLc1 -> u2pLc1 -> unit2_pressureLogic_channel1;
+			f_u2pLc2: flow source instrumentationMockThread.ft_u2pLc2 -> u2pLc2 -> unit2_pressureLogic_channel2;
+			f_u2pLc3: flow source instrumentationMockThread.ft_u2pLc3 -> u2pLc3 -> unit2_pressureLogic_channel3;
+			f_u2pLc4: flow source instrumentationMockThread.ft_u2pLc4 -> u2pLc4 -> unit2_pressureLogic_channel4;
+
+			-- saturationLogic ports
+			f_u2sLc1: flow source instrumentationMockThread.ft_u2sLc1 -> u2sLc1 -> unit2_saturationLogic_channel1;
+			f_u2sLc2: flow source instrumentationMockThread.ft_u2sLc2 -> u2sLc2 -> unit2_saturationLogic_channel2;
+			f_u2sLc3: flow source instrumentationMockThread.ft_u2sLc3 -> u2sLc3 -> unit2_saturationLogic_channel3;
+			f_u2sLc4: flow source instrumentationMockThread.ft_u2sLc4 -> u2sLc4 -> unit2_saturationLogic_channel4;
+	end InstrumentationMockProcess.i;
+
+end Instrumentation;

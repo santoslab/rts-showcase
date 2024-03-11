@@ -1,0 +1,43 @@
+#ifndef SIREUM_H_RTS_Actuators_ActuatorsMockThread_i_Initialization_Api
+#define SIREUM_H_RTS_Actuators_ActuatorsMockThread_i_Initialization_Api
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+// RTS.Actuators.ActuatorsMockThread_i_Initialization_Api
+
+#define RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_id_(this) ((this)->id)
+#define RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_tempPressureActuate_Id_(this) ((this)->tempPressureActuate_Id)
+#define RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_saturationActuate_Id_(this) ((this)->saturationActuate_Id)
+
+B RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__eq(RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, RTS_Actuators_ActuatorsMockThread_i_Initialization_Api other);
+inline B RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__ne(RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, RTS_Actuators_ActuatorsMockThread_i_Initialization_Api other) {
+  return !RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__eq(this, other);
+};
+B RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__equiv(RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, RTS_Actuators_ActuatorsMockThread_i_Initialization_Api other);
+inline B RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__inequiv(RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, RTS_Actuators_ActuatorsMockThread_i_Initialization_Api other) {
+  return !RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__equiv(this, other);
+};
+void RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_string_(STACK_FRAME String result, RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this);
+void RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_cprint(RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, B isOut);
+
+inline B RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__is(STACK_FRAME void* this) {
+  return ((RTS_Actuators_ActuatorsMockThread_i_Initialization_Api) this)->type == TRTS_Actuators_ActuatorsMockThread_i_Initialization_Api;
+}
+
+inline RTS_Actuators_ActuatorsMockThread_i_Initialization_Api RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__as(STACK_FRAME void *this) {
+  if (RTS_Actuators_ActuatorsMockThread_i_Initialization_Api__is(CALLER this)) return (RTS_Actuators_ActuatorsMockThread_i_Initialization_Api) this;
+  sfAbortImpl(CALLER "Invalid cast to RTS.Actuators.ActuatorsMockThread_i_Initialization_Api.");
+  abort();
+}
+
+void RTS_Actuators_ActuatorsMockThread_i_Initialization_Api_apply(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Initialization_Api this, art_Art_BridgeId id, art_Art_PortId tempPressureActuate_Id, art_Art_PortId saturationActuate_Id);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

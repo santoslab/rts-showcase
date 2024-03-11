@@ -1,0 +1,14 @@
+**/.aadlbin-gen/
+**/instances
+**/c/nix
+**/*-build/
+**/slang_libraries/
+**/sel4-build/
+**/workspace/
+**/out/
+**/hamr/**/*.cml 
+**/compile-cakeml*.jar
+**/.idea/
+**/target/
+**/lib/
+jacob-misc

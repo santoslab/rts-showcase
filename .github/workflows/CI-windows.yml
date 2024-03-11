@@ -1,0 +1,115 @@
+name: Windows
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 6"
+    
+jobs:
+
+  ci:
+    runs-on: windows-latest
+    steps:
+      - name: Set git to use LF
+        run: |
+          git config -l
+          echo "---"
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+          echo "---"
+          git config -l
+      - name: Support longpaths
+        run: git config --system core.longpaths true
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Checkout-Keninian
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          repository: sireum/kekinian
+          path: kekinian          
+      - name: Install Cygwin
+        shell: cmd
+        run: |
+          choco config get cacheLocation
+          choco install --no-progress cygwin
+          C:\tools\cygwin\cygwinsetup.exe -qgnNdO -R C:/tools/cygwin -s http://mirrors.kernel.org/sourceware/cygwin/ -P gcc-core,gcc-g++,make,cmake
+      - name: Retrieve versions.properties
+        run: |
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/sireum/kekinian/master/versions.properties" -OutFile "versions.properties"
+      - name: Cache Java
+        id: cache-java
+        uses: actions/cache@v3
+        with:
+          path: kekinian\bin\win\java
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-java
+      - name: Cache Scala
+        id: cache-scala
+        uses: actions/cache@v3
+        with:
+          path: kekinian\bin\scala
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-scala
+      - name: Cache Coursier
+        id: cache-coursier
+        uses: actions/cache@v3
+        with:
+          path: cache\coursier
+          key: ${{ runner.os }}-${{ hashFiles('versions.properties') }}-coursier
+      - name: Cache FMIDE
+        id: cache-fmide
+        uses: actions/cache@v3
+        with:
+          path: kekinian\bin\win\fmide
+          key: ${{ runner.os }}-${{ hashFiles('kekinian\hamr\codegen\jvm\src\main\resources\phantom_versions.properties') }}-fmide
+      - name: Check LongPathsEnabled
+        run: |
+          (Get-ItemProperty "HKLM:System\CurrentControlSet\Control\FileSystem").LongPathsEnabled
+      - name: Test
+        shell: cmd
+        run: |
+          git config -l
+          echo "---"
+          
+          xcopy %GITHUB_WORKSPACE%\cache\coursier %HOMEDRIVE%%HOMEPATH%\cache\coursier\ /E/H
+          set COURSIER_CACHE=%HOMEDRIVE%%HOMEPATH%\cache\coursier
+          set PATH=C:\tools\cygwin\bin;C:\tools\cygwin\usr\bin;%PATH%
+          set CC=gcc.exe
+          set CXX=c++.exe
+          cd /d %GITHUB_WORKSPACE%
+          
+          set XHOME=%cd%
+
+          rem see https://github.com/sireum/osate-plugin/blob/57785407d84793cf1f8d5926647e4dc75ab197a9/org.sireum.aadl.osate.cli/src/org/sireum/aadl/osate/cli/Phantom.java#L508-L517
+          set CHECK_PHANTOM_HAMR_API_COMPATIBILITY=true
+          
+          set SIREUM_HOME=%XHOME%\kekinian
+          call %SIREUM_HOME%\bin\build.cmd setup
+
+          echo Done installing kekinian.  Errorlevel %errorlevel%
+
+          if %errorlevel% neq 0 (
+            if exist %SIREUM_HOME%\out\sireum-proyek\assemble\sireum.jar (
+              REM build.cmd sometimes fails on windows when it tries to
+              REM replace the in-use bin\sireum.jar with the freshly built one.
+              REM Workaround is to manually copy the jar over
+              copy %SIREUM_HOME%\out\sireum-proyek\assemble\sireum.jar %SIREUM_HOME%\bin
+
+              echo Manually copied sireum.jar to bin. Errorlevel %errorlevel%
+            ) else (
+              echo "Error occurred while building sireum.jar"
+              goto :error
+            )
+          )
+
+          set PATH=%SIREUM_HOME%\bin;%PATH%
+      
+          call %SIREUM_HOME%\bin\install\fmide.cmd --verbose || goto :error
+
+          call .ci\test.cmd || goto :error
+                    
+          goto :EOF
+          :error
+          exit /b %errorlevel%

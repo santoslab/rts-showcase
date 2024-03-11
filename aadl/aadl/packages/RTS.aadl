@@ -1,0 +1,204 @@
+package RTS
+public
+	with Actuation, Instrumentation, EventControl, Actuators;
+	with CASE_Scheduling, CASE_Properties;
+
+	-- ===========================================================================================================
+	--
+	--   R T S   System
+	--
+	--   Top-level AADL system component for the Reactor Trip System (RTS).
+	--
+	--   Notes:
+	--     Correspondence to SysMLv2 model 
+	--       part RTS  (in RTS_Static_Architecture.sysml)
+	--     with deviations
+	--       - semantics of generic SysMLv2 "part" is specialized to AADL "system"
+	--         accompanying dispatch/timing properties
+	--       - RTS SysMLv2 subparts are organized into AADL threads, processes, and 
+	--           system (representing a subsystem) components
+	--           The AADL notion of feature could potentially be used.  
+	--           The AADL notion of type alias (not currently 
+	--           by HAMR) could be used as a name abstraction for the value type.
+	--       - flows (not found in SysMLv2) are added to AADL model
+	-- ===========================================================================================================
+	system RTS
+		features
+			-- no inputs/outputs since this is the top level of the system
+			none;
+		-- ==== PROPERTIES ====
+		properties
+			none;
+
+	end RTS;
+
+	system implementation RTS.i
+		-- ==== S u b - c o m p o n e n t s ====	
+		subcomponents
+			actuationSubsystem: system Actuation::RTSActuation.i;
+			instrumentationMock: process Instrumentation::InstrumentationMockProcess.i;
+			eventControlMock: process EventControl::EventControlMockProcess.i;
+			actuatorsMock: process Actuators::ActuatorsMockProcess.i;
+			-- processor
+			rts_processor: processor RTSProcessor.i;
+		-- ==== C o n n e c t i o n s  ====	
+		connections
+			-- i n t e r n a l   c o n n e c t i o n s
+			-- Instrumentation Trip signals
+			-- actuation unit 1 
+			--  temperatureLogic ports
+			u1TLc1: port instrumentationMock.unit1_temperatureLogic_channel1 -> actuationSubsystem.unit1_temperatureLogic_channel1;
+			u1TLc2: port instrumentationMock.unit1_temperatureLogic_channel2 -> actuationSubsystem.unit1_temperatureLogic_channel2;
+			u1TLc3: port instrumentationMock.unit1_temperatureLogic_channel3 -> actuationSubsystem.unit1_temperatureLogic_channel3;
+			u1TLc4: port instrumentationMock.unit1_temperatureLogic_channel4 -> actuationSubsystem.unit1_temperatureLogic_channel4;
+			--  pressureLogic ports
+			u1PLc1: port instrumentationMock.unit1_pressureLogic_channel1 -> actuationSubsystem.unit1_pressureLogic_channel1;
+			u1PLc2: port instrumentationMock.unit1_pressureLogic_channel2 -> actuationSubsystem.unit1_pressureLogic_channel2;
+			u1PLc3: port instrumentationMock.unit1_pressureLogic_channel3 -> actuationSubsystem.unit1_pressureLogic_channel3;
+			u1PLc4: port instrumentationMock.unit1_pressureLogic_channel4 -> actuationSubsystem.unit1_pressureLogic_channel4;
+			--  saturationLogic ports
+			u1SLc1: port instrumentationMock.unit1_saturationLogic_channel1 -> actuationSubsystem.unit1_saturationLogic_channel1;
+			u1SLc2: port instrumentationMock.unit1_saturationLogic_channel2 -> actuationSubsystem.unit1_saturationLogic_channel2;
+			u1SLc3: port instrumentationMock.unit1_saturationLogic_channel3 -> actuationSubsystem.unit1_saturationLogic_channel3;
+			u1SLc4: port instrumentationMock.unit1_saturationLogic_channel4 -> actuationSubsystem.unit1_saturationLogic_channel4;
+			-- actuation unit 2
+			--  temperatureLogic ports
+			u2TLc1: port instrumentationMock.unit2_temperatureLogic_channel1 -> actuationSubsystem.unit2_temperatureLogic_channel1;
+			u2TLc2: port instrumentationMock.unit2_temperatureLogic_channel2 -> actuationSubsystem.unit2_temperatureLogic_channel2;
+			u2TLc3: port instrumentationMock.unit2_temperatureLogic_channel3 -> actuationSubsystem.unit2_temperatureLogic_channel3;
+			u2TLc4: port instrumentationMock.unit2_temperatureLogic_channel4 -> actuationSubsystem.unit2_temperatureLogic_channel4;
+			--  pressureLogic ports
+			u2PLc1: port instrumentationMock.unit2_pressureLogic_channel1 -> actuationSubsystem.unit2_pressureLogic_channel1;
+			u2PLc2: port instrumentationMock.unit2_pressureLogic_channel2 -> actuationSubsystem.unit2_pressureLogic_channel2;
+			u2PLc3: port instrumentationMock.unit2_pressureLogic_channel3 -> actuationSubsystem.unit2_pressureLogic_channel3;
+			u2PLc4: port instrumentationMock.unit2_pressureLogic_channel4 -> actuationSubsystem.unit2_pressureLogic_channel4;
+			--  saturationLogic ports
+			u2SLc1: port instrumentationMock.unit2_saturationLogic_channel1 -> actuationSubsystem.unit2_saturationLogic_channel1;
+			u2SLc2: port instrumentationMock.unit2_saturationLogic_channel2 -> actuationSubsystem.unit2_saturationLogic_channel2;
+			u2SLc3: port instrumentationMock.unit2_saturationLogic_channel3 -> actuationSubsystem.unit2_saturationLogic_channel3;
+			u2SLc4: port instrumentationMock.unit2_saturationLogic_channel4 -> actuationSubsystem.unit2_saturationLogic_channel4;
+
+			-- Manual Trip signals
+			mAI12tpMI: port eventControlMock.manualActuatorInput1 -> actuationSubsystem.tempPressureManualInput;
+			mAI22sMI: port eventControlMock.manualActuatorInput2 -> actuationSubsystem.saturationManualInput;
+
+			-- Actuator Output
+			foo1: port actuationSubsystem.tempPressureOutput -> actuatorsMock.tempPressureActuate;
+			foo2: port actuationSubsystem.saturationOutput -> actuatorsMock.saturationActuate;
+        
+		-- flows -- "End-to-end" flows are used when the flows are between internal subcomponents only and do not reference ports on 
+		--       -- (the RTS component has no ports on its interface.
+		--       -- See Feiler-al:Book, Section 11.1.3 "Declaring End-to-End Flows" 
+		properties
+			Actual_Processor_Binding => (
+				reference (rts_processor)) applies to instrumentationMock, eventControlMock, actuatorsMock, actuationSubsystem;
+			
+			CASE_Scheduling::Domain_Mapping => (
+				[
+					component => reference (instrumentationMock);
+					domain => 2;
+				], [
+					component => reference (eventControlMock);
+					domain => 3;
+				], [
+					component => reference (actuatorsMock);
+					domain => 4;
+				], [
+					component => reference (actuationSubsystem.actuationUnit1.temperatureLogic);
+					domain => 5;
+				], [
+					component => reference (actuationSubsystem.actuationUnit1.pressureLogic);
+					domain => 6;
+				], [
+					component => reference (actuationSubsystem.actuationUnit1.saturationLogic);
+					domain => 7;
+				], [
+					component => reference (actuationSubsystem.actuationUnit1.tempPressureTripOut);
+					domain => 8;
+				], [
+					component => reference (actuationSubsystem.actuationUnit2.temperatureLogic);
+					domain => 9;
+				], [
+					component => reference (actuationSubsystem.actuationUnit2.pressureLogic);
+					domain => 10;
+				], [
+					component => reference (actuationSubsystem.actuationUnit2.saturationLogic);
+					domain => 11;
+				], [
+					component => reference (actuationSubsystem.actuationUnit2.tempPressureTripOut);
+					domain => 12;
+				], [
+					component => reference (actuationSubsystem.tempPressureActuatorUnit.actuateTempPressureActuator);
+					domain => 13;
+				], [
+					component => reference (actuationSubsystem.tempPressureActuatorUnit.tempPressureActuator);
+					domain => 14;
+				], [
+					component => reference (actuationSubsystem.saturationActuatorUnit.actuateSaturationActuator);
+					domain => 15;
+				], [
+					component => reference (actuationSubsystem.saturationActuatorUnit.saturationActuator);
+					domain => 16;
+				]
+			);
+
+		annex resolute {**
+			check HAMR_Guidelines
+		**};
+	end RTS.i;
+
+	--=====================================================================
+	--  D a t a 
+	--
+	--  Note: the AADL model currently using AADL Base_Types::Boolean to
+	--  represent all data, since that seemed to be sufficient based on my
+	--  understand of the Galois artifacts.
+	--
+	--  AADL type aliases could POTENTIALLY be used, e.g., defining "TripPort"
+	--  as an alias for Boolean, but HAMR currently does not support type aliases.  
+	--
+	--  Some of the relevant type definitions from the SysML model are as follows.
+	--
+	--  == T r i p P o r t ==
+	--
+	--      port def TripPort {
+	--         out trip : Boolean;
+	--      }
+	--  Note: that TripPort seems to be represented as an 8-bit value in 
+	--   InstrumentationUnit.cry and I didn't understand the rationale for 
+	--   the discrepancy
+	--     type TripPort  = [8] 
+	--
+	--  == A c t u a t i o n P o r t ==
+	-- 
+	--   type ActuationPort = Bit
+	--
+	--=====================================================================
+	--=====================================================================
+	--
+	-- P r o c e s s o r 
+	--
+	--   For simplicity, host all the processes in the system on the same processor
+	--=====================================================================
+	processor RTSProcessor
+	end RTSProcessor;
+
+	processor implementation RTSProcessor.i
+		properties
+			Frame_Period => 1000ms;
+			Clock_Period => 2ms;
+			CASE_Scheduling::Max_Domain => 16;
+			
+			CASE_Scheduling::Schedule_Source_Text => "resources/domain_schedule.c";
+			
+			CASE_Properties::OS => seL4; 
+	end RTSProcessor.i;
+
+	
+	abstract Periodic_Thread
+		properties
+			Compute_Execution_Time => 10ms .. 10ms;
+			Dispatch_Protocol => Periodic;
+			Period => 1000ms;
+	end Periodic_Thread;
+end RTS;

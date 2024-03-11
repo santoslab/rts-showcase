@@ -1,0 +1,672 @@
+package Actuation
+public
+	with Base_Types;
+	with RTS;
+
+	-- ===========================================================================================================
+	--
+	--   C o i n c i d e n c e L o g i c   Thread
+	--
+	--   Notes:
+	--     Correspondence to SysMLv2 model 
+	--       part CoincidenceLogic
+	--     with deviations
+	--       - semantics of generic SysMLv2 "part" is specialized to AADL "thread" with 
+	--         accompanying dispatch/timing properties
+	--       - no analogue to SysMLv2 port def TripPort is used.
+	--           The AADL notion of feature could potentially be used.  
+	--           The AADL notion of type alias (not currently 
+	--           by HAMR) could be used as a name abstraction for the value type.
+	--       - flows (not found in SysMLv2) are added to AADL model
+	-- ===========================================================================================================
+	thread CoincidenceLogic extends RTS::Periodic_Thread
+		features
+			-- ==== INPUTS ====	
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+			channel3: in data port Base_Types::Boolean;
+			channel4: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====	
+			actuate: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12a: flow path channel1 -> actuate;
+			c22a: flow path channel2 -> actuate;
+			c32a: flow path channel3 -> actuate;
+			c42a: flow path channel4 -> actuate;
+			
+		annex GUMBO {**
+			compute
+
+			guarantee coincidenceOutput "from actuationUnit.cry
+										|Coincidence_2_4 : [4]TripPort -> Bit
+										|Coincidence_2_4 x =
+										|    (a&&b) || ((a||b) && (c||d)) || (c&&d)
+										|For specification redundancy, provide an alternate but equivalent specification
+										|of the concept 'at least two of the input channels are true.'" : 
+				actuate == ((channel1 & channel2) | 
+							(channel1 & channel3) | 
+							(channel1 & channel4) | 
+							(channel2 & channel3) | 
+							(channel2 & channel4) | 
+							(channel3 & channel4));
+		**};
+		
+	end CoincidenceLogic;
+
+	thread implementation CoincidenceLogic.i
+	end CoincidenceLogic.i;
+
+	-- =================
+	--   For seL4, declare process to provide spatial partition for thread (see aadl-seL4/README.md for rationale)
+	-- =================
+	process CoincidenceLogicPartition
+		features
+			-- ==== INPUTS ==== 
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+			channel3: in data port Base_Types::Boolean;
+			channel4: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====  
+			actuate: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12a: flow path channel1 -> actuate;
+			c22a: flow path channel2 -> actuate;
+			c32a: flow path channel3 -> actuate;
+			c42a: flow path channel4 -> actuate;
+	end CoincidenceLogicPartition;
+
+	process implementation CoincidenceLogicPartition.i
+		subcomponents
+			coincidenceLogic: thread coincidenceLogic.i;
+
+		connections
+			c1: port channel1 -> coincidenceLogic.channel1;
+			c2: port channel2 -> coincidenceLogic.channel2;
+			c3: port channel3 -> coincidenceLogic.channel3;
+			c4: port channel4 -> coincidenceLogic.channel4;
+			a: port coincidenceLogic.actuate -> actuate;
+	end CoincidenceLogicPartition.i;
+
+	-- ===========================================================================================================
+	--
+	--   O r L o g i c    Thread
+	--
+	-- ===========================================================================================================
+	thread OrLogic extends RTS::Periodic_Thread
+		features
+			-- ==== INPUTS ==== 
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====  
+			actuate: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12a: flow path channel1 -> actuate;
+			c22a: flow path channel2 -> actuate;
+		properties
+			Source_Text => ("resources/sel4_only_behavior_code/OrLogic/OrLogic.c");
+			Initialize_Entrypoint_Source_Text => "OrLogic_init";
+			Compute_Entrypoint_Source_Text => "OrLogic_time_triggered";			
+			
+		annex GUMBO {**
+			compute
+				-- (a || b)
+			guarantee orOutput: 
+				actuate == (channel1 | channel2);
+		**};
+			
+	end OrLogic;
+
+	thread implementation OrLogic.i
+	end OrLogic.i;
+
+	-- =================
+	--   For seL4, declare process to provide spatial partition for thread (see aadl-seL4/README.md for rationale)
+	-- =================
+	process OrLogicPartition
+		features
+			-- ==== INPUTS ==== 
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====  
+			actuate: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12a: flow path channel1 -> actuate;
+			c22a: flow path channel2 -> actuate;
+
+	end OrLogicPartition;
+
+	process implementation OrLogicPartition.i
+		subcomponents
+			orLogic: thread OrLogic.i;
+		connections
+			c1: port channel1 -> orLogic.channel1;
+			c2: port channel2 -> orLogic.channel2;
+			a: port orLogic.actuate -> actuate;
+	end OrLogicPartition.i;
+
+	-- ===========================================================================================================
+	--
+	--   A c t u a t o r    Thread
+	--
+	--   Notes:
+	--     Correspondence to SysMLv2 model 
+	--       part Actuator in RTS_Static_Architecture.sysml
+	--     with deviations
+	--       - semantics of generic SysMLv2 "part" is specialized to AADL "thread" with 
+	--         accompanying dispatch/timing properties
+	--       - an output port is added to represent communication to actual physical. 
+	--         This is a somewhat arbitrary choice of John H. to allow us to more easily
+	--         create visualizations of the actuator state on different platforms.  We can
+	--         easily consider the physical actuator to be wrapped by this component, i.e., 
+	--         this software component acts as the driver for the physical component.  
+	--       - flows (not found in SysMLv2) are added to AADL model
+	--
+	--    ToDo: I believe there may be a typo in the SysMLv2 model fragment below since
+	--      ActuationPort is a port def with an output port (but we need an input from the trip
+	--      system).
+	--
+	--    From RTS_Static_Architecture.sysml
+	--      part def Actuator {
+	--      // Actuate if either of these are true
+	--      port input: ActuationPort;
+	--      port manualActuatorInput: ~ActuationPort;
+	--     }
+	-- ===========================================================================================================
+	thread Actuator extends RTS::Periodic_Thread
+		-- ToDo:  Reconcile port structure with Galois model
+		features
+			-- ==== INPUTS ==== 
+			input: in data port Base_Types::Boolean;
+			manualActuatorInput: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====  
+			output: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			i2o: flow path input -> output;
+			mAI2o: flow path manualActuatorInput -> output;
+			
+		annex GUMBO {**
+			initialize
+				guarantee initOutputDataPort 
+					"The Initialize Entry Point must initialize all component 
+					|local state and all output data ports.":
+					output == F;
+					
+			compute
+				guarantee actuatorOutput: 
+					output == (input | manualActuatorInput);
+		**};
+			
+	end Actuator;
+
+	thread implementation Actuator.i
+	end Actuator.i;
+
+	-- =================
+	--   For seL4, declare process to provide spatial partition for thread (see aadl-seL4/README.md for rationale)
+	-- =================
+	process ActuatorPartition
+		-- ToDo:  Reconcile port structure with Galois model
+		features
+			-- ==== INPUTS ==== 
+			input: in data port Base_Types::Boolean;
+			manualActuatorInput: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====  
+			output: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			i2o: flow path input -> output;
+			mAI2o: flow path manualActuatorInput -> output;
+	end ActuatorPartition;
+
+	process implementation ActuatorPartition.i
+		subcomponents
+			actuator: thread Actuator.i;
+		connections
+			i: port input -> actuator.input;
+			mAi: port manualActuatorInput -> actuator.manualActuatorInput;
+			o: port actuator.output -> output;
+	end ActuatorPartition.i;
+
+	-- ===========================================================================================================
+	--
+	--   A c t u a t i o n   L o g i c   U n i t    Process
+	--
+	--   Notes:
+	--     Correspondence to SysMLv2 model 
+	--       part ActuatorUnit   (renamed here (added "Logic") to help distinguish from other units that do the
+	--                            actual actuation).  Renaming partly motivated by need to introduce process structures.
+	--     with deviations
+	--       - semantics of generic SysMLv2 "part" is specialized to AADL "process" 
+	--       - SysMLv2 definitions are split into AADL component type and component implementation
+	--       - explicit ports must be added on process interface that correspond to implicit ports in SysML model
+	--       - flows (not found in SysMLv2) are added to AADL model
+	--
+	--     Correspondence to Cryptol (see Actuator.cry)
+	--        
+	--   Note: Declare the Actuator Unit a process to obtain spatial partitioning from other parts
+	-- ===========================================================================================================
+	system ActuationLogicUnit
+		features
+			-- ==== INPUTS ====	
+			-- temperatureLogic ports
+			temperatureLogic_channel1: in data port Base_Types::Boolean;
+			temperatureLogic_channel2: in data port Base_Types::Boolean;
+			temperatureLogic_channel3: in data port Base_Types::Boolean;
+			temperatureLogic_channel4: in data port Base_Types::Boolean;
+			-- pressureLogic ports
+			pressureLogic_channel1: in data port Base_Types::Boolean;
+			pressureLogic_channel2: in data port Base_Types::Boolean;
+			pressureLogic_channel3: in data port Base_Types::Boolean;
+			pressureLogic_channel4: in data port Base_Types::Boolean;
+			-- saturationLogic ports
+			saturationLogic_channel1: in data port Base_Types::Boolean;
+			saturationLogic_channel2: in data port Base_Types::Boolean;
+			saturationLogic_channel3: in data port Base_Types::Boolean;
+			saturationLogic_channel4: in data port Base_Types::Boolean;
+			-- ==== OUTPUTS ====	
+			-- tempPressureTrip
+			tempPressureTripOut_actuate: out data port Base_Types::Boolean;
+			saturationLogic_actuate: out data port Base_Types::Boolean;
+		-- ==== FLOWS ====
+		flows
+			-- temperature and pressure flows
+			tLc12a: flow path temperatureLogic_channel1 -> tempPressureTripOut_actuate;
+			tLc22a: flow path temperatureLogic_channel2 -> tempPressureTripOut_actuate;
+			tLc32a: flow path temperatureLogic_channel3 -> tempPressureTripOut_actuate;
+			tLc42a: flow path temperatureLogic_channel4 -> tempPressureTripOut_actuate;
+			pLc12a: flow path pressureLogic_channel1 -> tempPressureTripOut_actuate;
+			pLc22a: flow path pressureLogic_channel2 -> tempPressureTripOut_actuate;
+			pLc32a: flow path pressureLogic_channel3 -> tempPressureTripOut_actuate;
+			pLc42a: flow path pressureLogic_channel4 -> tempPressureTripOut_actuate;
+			-- saturation flows
+			sLc12a: flow path saturationLogic_channel1 -> saturationLogic_actuate;
+			sLc22a: flow path saturationLogic_channel2 -> saturationLogic_actuate;
+			sLc32a: flow path saturationLogic_channel3 -> saturationLogic_actuate;
+			sLc42a: flow path saturationLogic_channel4 -> saturationLogic_actuate;
+
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end ActuationLogicUnit;
+
+	system implementation ActuationLogicUnit.i
+		-- ==== S u b - c o m p o n e n t s ====	
+		subcomponents
+			temperatureLogic: process CoincidenceLogicPartition.i;
+			pressureLogic: process CoincidenceLogicPartition.i;
+			saturationLogic: process CoincidenceLogicPartition.i;
+			tempPressureTripOut: process OrLogicPartition.i;
+		-- ==== C o n n e c t i o n s  ====	
+		connections
+			-- interface inputs
+			----- temperatureLogic
+			tLc1: port temperatureLogic_channel1 -> temperatureLogic.channel1;
+			tLc2: port temperatureLogic_channel2 -> temperatureLogic.channel2;
+			tLc3: port temperatureLogic_channel3 -> temperatureLogic.channel3;
+			tLc4: port temperatureLogic_channel4 -> temperatureLogic.channel4;
+			----- pressureLogic
+			pLc1: port pressureLogic_channel1 -> pressureLogic.channel1;
+			pLc2: port pressureLogic_channel2 -> pressureLogic.channel2;
+			pLc3: port pressureLogic_channel3 -> pressureLogic.channel3;
+			pLc4: port pressureLogic_channel4 -> pressureLogic.channel4;
+			----- saturationLogic
+			sLc1: port saturationLogic_channel1 -> saturationLogic.channel1;
+			sLc2: port saturationLogic_channel2 -> saturationLogic.channel2;
+			sLc3: port saturationLogic_channel3 -> saturationLogic.channel3;
+			sLc4: port saturationLogic_channel4 -> saturationLogic.channel4;
+			-- internal connections
+			tL2tPTO: port temperatureLogic.actuate -> tempPressureTripOut.channel1;
+			pL2tPTO: port pressureLogic.actuate -> tempPressureTripOut.channel2;
+			-- interface outputs
+			tPTOa: port tempPressureTripOut.actuate -> tempPressureTripOut_actuate;
+			sLa: port saturationLogic.actuate -> saturationLogic_actuate;
+		-- ==== F l o w s  ====       
+		flows
+			-- temperature logic flows 
+			tLc12a: flow path temperatureLogic_channel1 -> tLc1 -> temperatureLogic.c12a -> tL2tPTO -> tempPressureTripOut.c12a -> tPTOa -> tempPressureTripOut_actuate;
+			tLc22a: flow path temperatureLogic_channel2 -> tLc2 -> temperatureLogic.c22a -> tL2tPTO -> tempPressureTripOut.c12a -> tPTOa -> tempPressureTripOut_actuate;
+			tLc32a: flow path temperatureLogic_channel3 -> tLc3 -> temperatureLogic.c32a -> tL2tPTO -> tempPressureTripOut.c12a -> tPTOa -> tempPressureTripOut_actuate;
+			tLc42a: flow path temperatureLogic_channel4 -> tLc4 -> temperatureLogic.c42a -> tL2tPTO -> tempPressureTripOut.c12a -> tPTOa -> tempPressureTripOut_actuate;
+			-- pressures logic flows 
+			pLc12a: flow path pressureLogic_channel1 -> pLc1 -> pressureLogic.c12a -> pL2tPTO -> tempPressureTripOut.c22a -> tPTOa -> tempPressureTripOut_actuate;
+			pLc22a: flow path pressureLogic_channel2 -> pLc2 -> pressureLogic.c22a -> pL2tPTO -> tempPressureTripOut.c22a -> tPTOa -> tempPressureTripOut_actuate;
+			pLc32a: flow path pressureLogic_channel3 -> pLc3 -> pressureLogic.c32a -> pL2tPTO -> tempPressureTripOut.c22a -> tPTOa -> tempPressureTripOut_actuate;
+			pLc42a: flow path pressureLogic_channel4 -> pLc4 -> pressureLogic.c42a -> pL2tPTO -> tempPressureTripOut.c22a -> tPTOa -> tempPressureTripOut_actuate;
+			-- saturation logic flows 
+			sLc12a: flow path saturationLogic_channel1 -> sLc1 -> saturationLogic.c12a -> sLa -> saturationLogic_actuate;
+			sLc22a: flow path saturationLogic_channel2 -> sLc2 -> saturationLogic.c22a -> sLa -> saturationLogic_actuate;
+			sLc32a: flow path saturationLogic_channel3 -> sLc3 -> saturationLogic.c32a -> sLa -> saturationLogic_actuate;
+			sLc42a: flow path saturationLogic_channel4 -> sLc4 -> saturationLogic.c42a -> sLa -> saturationLogic_actuate;
+	end ActuationLogicUnit.i;
+
+	-- ===========================================================================================================
+	--
+	--   T e m p   P r e s s u r e    A c t u a t o r   U n i t    Process
+	--
+	--   Notes:
+	--     Correspondence to SysMLv2 model 
+	--       composition of actuateActuator (Or Logic) with actuator part
+	--     with deviations
+	--       - this composition is not expressed as a distinct unit in the SysMLv2 model; we need to do that
+	--         in AADL -- placing the subcomponents (which are AADL threads) in a process component -- before composing into
+	--         a AADL system component.
+	--       - SysMLv2 definitions are split into AADL component type and component implementation
+	--       - explicit ports must be added on process interface that correspond to implicit ports in SysML model
+	--       - it looks to me like the Cryptol model has an output on actuator whereas SysMLv2 model does not.
+	--         An output is included in the AADL model.
+	--       - flows (not found in SysMLv2) are added to AADL model
+	--
+	--     Future evolution:
+	--       - This structure probably needs to be parameterized or refined to something that enables a different
+	--         implementation of the actual actuator (e.g., for the Temp/Pressure and Saturation actuator drivers).
+	--         This also applies to the SysMLv2 model.
+	-- ===========================================================================================================
+	system TempPressureActuatorUnit
+		features
+			-- ==== INPUTS ====  
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+			manualActuatorInput: in data port Base_Types::Boolean;
+			-- ==== OUTPUTS ====	
+			output: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12o: flow path channel1 -> output;
+			c22o: flow path channel2 -> output;
+			mAI2o: flow path manualActuatorInput -> output;
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end TempPressureActuatorUnit;
+
+	system implementation TempPressureActuatorUnit.i
+		-- ==== S u b - c o m p o n e n t s ====	
+		subcomponents
+			actuateTempPressureActuator: process OrLogicPartition.i; -- (actuateActuator1 in SysMLv2 model)
+			tempPressureActuator: process ActuatorPartition.i; -- (actuator1 in SysMLv2 model)
+			-- ==== C o n n e c t i o n s  ====	
+		connections
+			-- interface inputs
+			c1: port channel1 -> actuateTempPressureActuator.channel1;
+			c2: port channel2 -> actuateTempPressureActuator.channel2;
+			mAI: port manualActuatorInput -> tempPressureActuator.manualActuatorInput;
+			-- internal connections
+			aTPAa2tPAa: port actuateTempPressureActuator.actuate -> tempPressureActuator.input;
+			-- interface outputs
+			tPAo2o: port tempPressureActuator.output -> output;
+		flows
+			-- channel flows
+			c12o: flow path channel1 -> c1 -> actuateTempPressureActuator.c12a -> aTPAa2tPAa -> tempPressureActuator.i2o -> tPAo2o -> output;
+			c22o: flow path channel2 -> c2 -> actuateTempPressureActuator.c22a -> aTPAa2tPAa -> tempPressureActuator.i2o -> tPAo2o -> output;
+			-- manualActuator flows
+			mAI2o: flow path manualActuatorInput -> mAI -> tempPressureActuator.mAI2o -> tPAo2o -> output;
+	end TempPressureActuatorUnit.i;
+
+	-- ===========================================================================================================
+	--
+	--   S a t u r a t i o n    A c t u a t o r   U n i t    Process
+	--
+	--   (see above -- this component's structure/function mirros  TempPressureActuatorUnit)
+	-- ===========================================================================================================
+	system SaturationActuatorUnit
+		features
+			-- ==== INPUTS ====  
+			channel1: in data port Base_Types::Boolean;
+			channel2: in data port Base_Types::Boolean;
+			manualActuatorInput: in data port Base_Types::Boolean;
+			-- ==== OUTPUTS ====  
+			output: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			c12o: flow path channel1 -> output;
+			c22o: flow path channel2 -> output;
+			mAI2o: flow path manualActuatorInput -> output;
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end SaturationActuatorUnit;
+
+	system implementation SaturationActuatorUnit.i
+		-- ==== S u b - c o m p o n e n t s ====  
+		subcomponents
+			actuateSaturationActuator: process OrLogicPartition.i; -- (actuateActuator1 in SysMLv2 model)
+			saturationActuator: process ActuatorPartition.i; -- (actuator1 in SysMLv2 model)
+			-- ==== C o n n e c t i o n s  ==== 
+		connections
+			-- interface inputs
+			c1: port channel1 -> actuateSaturationActuator.channel1;
+			c2: port channel2 -> actuateSaturationActuator.channel2;
+			mAI: port manualActuatorInput -> saturationActuator.manualActuatorInput;
+			-- internal connections
+			aSAa2sAi: port actuateSaturationActuator.actuate -> saturationActuator.input;
+			-- interface outputs
+			sAo2o: port saturationActuator.output -> output;
+		flows
+			-- channel flows
+			c12o: flow path channel1 -> c1 -> actuateSaturationActuator.c12a -> aSAa2sAi -> saturationActuator.i2o -> sAo2o -> output;
+			c22o: flow path channel2 -> c2 -> actuateSaturationActuator.c22a -> aSAa2sAi -> saturationActuator.i2o -> sAo2o -> output;
+			-- manualActuator flows
+			mAI2o: flow path manualActuatorInput -> mAI -> saturationActuator.mAI2o -> sAo2o -> output;
+	end SaturationActuatorUnit.i;
+
+	-- ===========================================================================================================
+	--
+	--   R T S  A c t u a t i o n    Subsystem
+	--
+	--  Notes:
+	--     Correspondence to SysMLv2 model 
+	--       part RTS.actuation (part defined named actuation within the RTS part)
+	--     with deviations
+	--       - semantics of generic SysMLv2 "part" is specialized to AADL "system" 
+	--         (representing a subsystem) because it aggregates AADL process components
+	--       - port/interface structure is much more verbose in AADL due to need to 
+	--         introduce explicit names for ports on boundary due to component type/instance distinction
+	--           The AADL notion of feature group could potentially be used to simplify  
+	--       - flows (not found in SysMLv2) are added to AADL model -- **TBD**
+	-- ===========================================================================================================
+	system RTSActuation
+		features
+			-- ==== INPUTS ====	
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			unit1_temperatureLogic_channel1: in data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel2: in data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel3: in data port Base_Types::Boolean;
+			unit1_temperatureLogic_channel4: in data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit1_pressureLogic_channel1: in data port Base_Types::Boolean;
+			unit1_pressureLogic_channel2: in data port Base_Types::Boolean;
+			unit1_pressureLogic_channel3: in data port Base_Types::Boolean;
+			unit1_pressureLogic_channel4: in data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit1_saturationLogic_channel1: in data port Base_Types::Boolean;
+			unit1_saturationLogic_channel2: in data port Base_Types::Boolean;
+			unit1_saturationLogic_channel3: in data port Base_Types::Boolean;
+			unit1_saturationLogic_channel4: in data port Base_Types::Boolean;
+
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			unit2_temperatureLogic_channel1: in data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel2: in data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel3: in data port Base_Types::Boolean;
+			unit2_temperatureLogic_channel4: in data port Base_Types::Boolean;
+			-- pressureLogic ports
+			unit2_pressureLogic_channel1: in data port Base_Types::Boolean;
+			unit2_pressureLogic_channel2: in data port Base_Types::Boolean;
+			unit2_pressureLogic_channel3: in data port Base_Types::Boolean;
+			unit2_pressureLogic_channel4: in data port Base_Types::Boolean;
+			-- saturationLogic ports
+			unit2_saturationLogic_channel1: in data port Base_Types::Boolean;
+			unit2_saturationLogic_channel2: in data port Base_Types::Boolean;
+			unit2_saturationLogic_channel3: in data port Base_Types::Boolean;
+			unit2_saturationLogic_channel4: in data port Base_Types::Boolean;
+
+			-- manual controls
+			tempPressureManualInput: in data port Base_Types::Boolean;
+			saturationManualInput: in data port Base_Types::Boolean;
+
+			-- ==== OUTPUTS ====	
+			tempPressureOutput: out data port Base_Types::Boolean;
+			saturationOutput: out data port Base_Types::Boolean;
+
+		-- ==== FLOWS ====
+		flows
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			u1tLc12tPO: flow path unit1_temperatureLogic_channel1 -> tempPressureOutput;
+			u1tLc22tPO: flow path unit1_temperatureLogic_channel2 -> tempPressureOutput;
+			u1tLc32tPO: flow path unit1_temperatureLogic_channel3 -> tempPressureOutput;
+			u1tLc42tPO: flow path unit1_temperatureLogic_channel4 -> tempPressureOutput;
+			-- pressureLogic ports
+			u1pLc12tPO: flow path unit1_pressureLogic_channel1 -> tempPressureOutput;
+			u1pLc22tPO: flow path unit1_pressureLogic_channel2 -> tempPressureOutput;
+			u1pLc32tPO: flow path unit1_pressureLogic_channel3 -> tempPressureOutput;
+			u1pLc42tPO: flow path unit1_pressureLogic_channel4 -> tempPressureOutput;
+			-- saturationLogic ports
+			u1sLc12tPO: flow path unit1_saturationLogic_channel1 -> saturationOutput;
+			u1sLc22tPO: flow path unit1_saturationLogic_channel2 -> saturationOutput;
+			u1sLc32tPO: flow path unit1_saturationLogic_channel3 -> saturationOutput;
+			u1sLc42tPO: flow path unit1_saturationLogic_channel4 -> saturationOutput;
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			u2tLc12tPO: flow path unit2_temperatureLogic_channel1 -> tempPressureOutput;
+			u2tLc22tPO: flow path unit2_temperatureLogic_channel2 -> tempPressureOutput;
+			u2tLc32tPO: flow path unit2_temperatureLogic_channel3 -> tempPressureOutput;
+			u2tLc42tPO: flow path unit2_temperatureLogic_channel4 -> tempPressureOutput;
+			-- pressureLogic ports
+			u2pLc12tPO: flow path unit2_pressureLogic_channel1 -> tempPressureOutput;
+			u2pLc22tPO: flow path unit2_pressureLogic_channel2 -> tempPressureOutput;
+			u2pLc32tPO: flow path unit2_pressureLogic_channel3 -> tempPressureOutput;
+			u2pLc42tPO: flow path unit2_pressureLogic_channel4 -> tempPressureOutput;
+			-- saturationLogic ports
+			u2sLc12tPO: flow path unit2_saturationLogic_channel1 -> saturationOutput;
+			u2sLc22tPO: flow path unit2_saturationLogic_channel2 -> saturationOutput;
+			u2sLc32tPO: flow path unit2_saturationLogic_channel3 -> saturationOutput;
+			u2sLc42tPO: flow path unit2_saturationLogic_channel4 -> saturationOutput;
+
+			-- manual controls
+			tPMI2tPO: flow path tempPressureManualInput -> tempPressureOutput;
+			sMI2sO: flow path saturationManualInput -> saturationOutput;
+		-- ==== PROPERTIES ====
+		properties
+			none;
+	end RTSActuation;
+
+	system implementation RTSActuation.i
+		-- ==== S u b - c o m p o n e n t s ====	
+		subcomponents
+			-- actuation logic units
+			actuationUnit1: system ActuationLogicUnit.i; -- (RTS.actuationUnit1 in SysMLv2 model)
+			actuationUnit2: system ActuationLogicUnit.i; -- (RTS.actuationUnit2 in SysMLv2 model)
+			-- actuator units
+			tempPressureActuatorUnit: system TempPressureActuatorUnit.i;
+			-- (composition of actuateActuator1 and actuator1 in RTS.actuation in SysMLv2 model)
+			saturationActuatorUnit: system SaturationActuatorUnit.i;
+		-- (composition of actuateActuator1 and actuator1 in RTS.actuation in SysMLv2 model)
+		-- ==== C o n n e c t i o n s  ====	
+		connections
+			-- interface inputs
+			-- actuation unit 1 
+			--  temperatureLogic ports
+			u1TLc1: port unit1_temperatureLogic_channel1 -> actuationUnit1.temperatureLogic_channel1;
+			u1TLc2: port unit1_temperatureLogic_channel2 -> actuationUnit1.temperatureLogic_channel2;
+			u1TLc3: port unit1_temperatureLogic_channel3 -> actuationUnit1.temperatureLogic_channel3;
+			u1TLc4: port unit1_temperatureLogic_channel4 -> actuationUnit1.temperatureLogic_channel4;
+			--  pressureLogic ports
+			u1PLc1: port unit1_pressureLogic_channel1 -> actuationUnit1.pressureLogic_channel1;
+			u1PLc2: port unit1_pressureLogic_channel2 -> actuationUnit1.pressureLogic_channel2;
+			u1PLc3: port unit1_pressureLogic_channel3 -> actuationUnit1.pressureLogic_channel3;
+			u1PLc4: port unit1_pressureLogic_channel4 -> actuationUnit1.pressureLogic_channel4;
+			--  saturationLogic ports
+			u1SLc1: port unit1_saturationLogic_channel1 -> actuationUnit1.saturationLogic_channel1;
+			u1SLc2: port unit1_saturationLogic_channel2 -> actuationUnit1.saturationLogic_channel2;
+			u1SLc3: port unit1_saturationLogic_channel3 -> actuationUnit1.saturationLogic_channel3;
+			u1SLc4: port unit1_saturationLogic_channel4 -> actuationUnit1.saturationLogic_channel4;
+			-- actuation unit 2 
+			--  temperatureLogic ports
+			u2TLc1: port unit2_temperatureLogic_channel1 -> actuationUnit2.temperatureLogic_channel1;
+			u2TLc2: port unit2_temperatureLogic_channel2 -> actuationUnit2.temperatureLogic_channel2;
+			u2TLc3: port unit2_temperatureLogic_channel3 -> actuationUnit2.temperatureLogic_channel3;
+			u2TLc4: port unit2_temperatureLogic_channel4 -> actuationUnit2.temperatureLogic_channel4;
+			--  pressureLogic ports
+			u2PLc1: port unit2_pressureLogic_channel1 -> actuationUnit2.pressureLogic_channel1;
+			u2PLc2: port unit2_pressureLogic_channel2 -> actuationUnit2.pressureLogic_channel2;
+			u2PLc3: port unit2_pressureLogic_channel3 -> actuationUnit2.pressureLogic_channel3;
+			u2PLc4: port unit2_pressureLogic_channel4 -> actuationUnit2.pressureLogic_channel4;
+			--  saturationLogic ports
+			u2SLc1: port unit2_saturationLogic_channel1 -> actuationUnit2.saturationLogic_channel1;
+			u2SLc2: port unit2_saturationLogic_channel2 -> actuationUnit2.saturationLogic_channel2;
+			u2SLc3: port unit2_saturationLogic_channel3 -> actuationUnit2.saturationLogic_channel3;
+			u2SLc4: port unit2_saturationLogic_channel4 -> actuationUnit2.saturationLogic_channel4;
+			-- manual controls
+			tpMI: port tempPressureManualInput -> tempPressureActuatorUnit.manualActuatorInput;
+			sMI: port saturationManualInput -> saturationActuatorUnit.manualActuatorInput;
+			-- internal connections
+			tpTOa2tpAUc1: port actuationUnit1.tempPressureTripOut_actuate -> tempPressureActuatorUnit.channel1;
+			sTOa2sAUc1: port actuationUnit1.saturationLogic_actuate -> saturationActuatorUnit.channel1;
+			tpTOa2tpAUc2: port actuationUnit2.tempPressureTripOut_actuate -> tempPressureActuatorUnit.channel2;
+			sTOa2sAUc2: port actuationUnit2.saturationLogic_actuate -> saturationActuatorUnit.channel2;
+			-- interface outputs
+			tpO: port tempPressureActuatorUnit.output -> tempPressureOutput;
+			sO: port saturationActuatorUnit.output -> saturationOutput;
+
+		-- ==== FLOWS ====
+		flows
+			-- actuation unit 1 - trip signals
+			-- temperatureLogic ports
+			u1tLc12tPO: flow path unit1_temperatureLogic_channel1 -> u1TLc1 -> actuationUnit1.tLc12a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1tLc22tPO: flow path unit1_temperatureLogic_channel2 -> u1TLc2 -> actuationUnit1.tLc22a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1tLc32tPO: flow path unit1_temperatureLogic_channel3 -> u1TLc3 -> actuationUnit1.tLc32a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1tLc42tPO: flow path unit1_temperatureLogic_channel4 -> u1TLc4 -> actuationUnit1.tLc42a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			-- pressureLogic ports
+			u1pLc12tPO: flow path unit1_pressureLogic_channel1 -> u1PLc1 -> actuationUnit1.pLc12a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1pLc22tPO: flow path unit1_pressureLogic_channel2 -> u1PLc2 -> actuationUnit1.pLc22a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1pLc32tPO: flow path unit1_pressureLogic_channel3 -> u1PLc3 -> actuationUnit1.pLc32a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			u1pLc42tPO: flow path unit1_pressureLogic_channel4 -> u1PLc4 -> actuationUnit1.pLc42a -> tpTOa2tpAUc1 -> tempPressureActuatorUnit.c12o -> tpO -> tempPressureOutput;
+			-- saturationLogic ports
+			u1sLc12tPO: flow path unit1_saturationLogic_channel1 -> u1SLc1 -> actuationUnit1.sLc12a -> sTOa2sAUc1 -> saturationActuatorUnit.c12o -> sO -> saturationOutput;
+			u1sLc22tPO: flow path unit1_saturationLogic_channel2 -> u1SLc2 -> actuationUnit1.sLc22a -> sTOa2sAUc1 -> saturationActuatorUnit.c12o -> sO -> saturationOutput;
+			u1sLc32tPO: flow path unit1_saturationLogic_channel3 -> u1SLc3 -> actuationUnit1.sLc32a -> sTOa2sAUc1 -> saturationActuatorUnit.c12o -> sO -> saturationOutput;
+			u1sLc42tPO: flow path unit1_saturationLogic_channel4 -> u1SLc4 -> actuationUnit1.sLc42a -> sTOa2sAUc1 -> saturationActuatorUnit.c12o -> sO -> saturationOutput;
+			-- actuation unit 2 - trip signals
+			-- temperatureLogic ports
+			u2tLc12tPO: flow path unit2_temperatureLogic_channel1 -> u2TLc1 -> actuationUnit2.tLc12a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2tLc22tPO: flow path unit2_temperatureLogic_channel2 -> u2TLc2 -> actuationUnit2.tLc22a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2tLc32tPO: flow path unit2_temperatureLogic_channel3 -> u2TLc3 -> actuationUnit2.tLc32a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2tLc42tPO: flow path unit2_temperatureLogic_channel4 -> u2TLc4 -> actuationUnit2.tLc42a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			-- pressureLogic ports
+			u2pLc12tPO: flow path unit2_pressureLogic_channel1 -> u2PLc1 -> actuationUnit2.pLc12a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2pLc22tPO: flow path unit2_pressureLogic_channel2 -> u2PLc2 -> actuationUnit2.pLc22a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2pLc32tPO: flow path unit2_pressureLogic_channel3 -> u2PLc3 -> actuationUnit2.pLc32a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			u2pLc42tPO: flow path unit2_pressureLogic_channel4 -> u2PLc4 -> actuationUnit2.pLc42a -> tpTOa2tpAUc2 -> tempPressureActuatorUnit.c22o -> tpO -> tempPressureOutput;
+			-- saturationLogic ports
+			u2sLc12tPO: flow path unit2_saturationLogic_channel1 -> u2SLc1 -> actuationUnit2.sLc12a -> sTOa2sAUc2 -> saturationActuatorUnit.c22o -> sO -> saturationOutput;
+			u2sLc22tPO: flow path unit2_saturationLogic_channel2 -> u2SLc2 -> actuationUnit2.sLc22a -> sTOa2sAUc2 -> saturationActuatorUnit.c22o -> sO -> saturationOutput;
+			u2sLc32tPO: flow path unit2_saturationLogic_channel3 -> u2SLc3 -> actuationUnit2.sLc32a -> sTOa2sAUc2 -> saturationActuatorUnit.c22o -> sO -> saturationOutput;
+			u2sLc42tPO: flow path unit2_saturationLogic_channel4 -> u2SLc4 -> actuationUnit2.sLc42a -> sTOa2sAUc2 -> saturationActuatorUnit.c22o -> sO -> saturationOutput;
+
+			-- manual controls
+			tPMI2tPO: flow path tempPressureManualInput -> tpMI -> tempPressureActuatorUnit.mAI2o -> tpO -> tempPressureOutput;
+			sMI2sO: flow path saturationManualInput -> sMI -> saturationActuatorUnit.mAI2o -> sO -> saturationOutput;
+	end RTSActuation.i;
+
+end Actuation;
