@@ -1,5 +1,5 @@
 <table><tr><td> 
-<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml/badge.svg" alt="macOS"> </a>
+<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml/badge.svg" alt="macOS"></a>
 <a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI_linux.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI_linux.yml/badge.svg" alt="Linux"></a>
 <a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-windows.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-windows.yml/badge.svg" alt="Windows"></a>
 <a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-camkes.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-camkes.yml/badge.svg" alt="CAmkES"></a>

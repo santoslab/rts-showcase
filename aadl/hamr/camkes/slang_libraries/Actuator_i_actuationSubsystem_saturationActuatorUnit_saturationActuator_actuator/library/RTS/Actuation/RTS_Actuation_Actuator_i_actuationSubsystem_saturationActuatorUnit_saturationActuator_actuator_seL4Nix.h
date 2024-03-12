@@ -1,0 +1,20 @@
+#ifndef SIREUM_H_RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix
+#define SIREUM_H_RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix_output_Send(STACK_FRAME art_DataContent d);
+
+void RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix_input_Receive(STACK_FRAME Option_8E9F45 result);
+
+void RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix_manualActuatorInput_Receive(STACK_FRAME Option_8E9F45 result);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

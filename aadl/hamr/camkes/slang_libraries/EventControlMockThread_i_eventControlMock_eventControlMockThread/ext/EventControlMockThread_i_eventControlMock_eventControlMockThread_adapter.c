@@ -1,0 +1,1 @@
+../../../../c/etc_seL4/adapters/EventControlMockThread_i_eventControlMock_eventControlMockThread/EventControlMockThread_i_eventControlMock_eventControlMockThread_adapter.c

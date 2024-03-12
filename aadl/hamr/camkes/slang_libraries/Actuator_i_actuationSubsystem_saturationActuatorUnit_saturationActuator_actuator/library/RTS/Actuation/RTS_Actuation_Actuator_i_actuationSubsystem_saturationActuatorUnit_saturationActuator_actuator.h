@@ -1,0 +1,20 @@
+#ifndef SIREUM_H_RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator
+#define SIREUM_H_RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_initialise(STACK_FRAME RTS_Actuation_Actuator_i_Initialization_Api api);
+
+Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_timeTriggered(STACK_FRAME RTS_Actuation_Actuator_i_Operational_Api api);
+
+Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_finalise(STACK_FRAME RTS_Actuation_Actuator_i_Operational_Api api);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

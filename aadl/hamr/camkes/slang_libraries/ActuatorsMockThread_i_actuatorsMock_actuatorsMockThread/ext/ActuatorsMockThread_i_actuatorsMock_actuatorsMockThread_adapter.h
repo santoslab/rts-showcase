@@ -1,0 +1,1 @@
+../../../../c/etc_seL4/adapters/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_adapter.h

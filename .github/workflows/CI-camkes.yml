@@ -7,7 +7,7 @@ on:
       docker_image:
         type: string
         description: Docker image to fetch
-        default: trustworthysystems/camkes:2022_08_18
+        default: trustworthysystems/camkes
       verbose:
         type: boolean
         description: Enable verbose testing output
@@ -17,7 +17,7 @@ jobs:
   container:
     runs-on: ubuntu-latest
     container:
-      image: ${{ inputs.docker_image != '' && inputs.docker_image || 'trustworthysystems/camkes:2022_08_18' }}
+      image: ${{ inputs.docker_image != '' && inputs.docker_image || 'trustworthysystems/camkes' }}
     strategy:
       fail-fast: false
       matrix:
@@ -50,7 +50,9 @@ jobs:
           mv ./rts-showcase /root/
           mv ./kekinian /root/
 
+          ls -alF
           df -h
+          ls -alF /root/
 
           export aptInstall="apt-get install -f -y --no-install-recommends"
           export DEBIAN_FRONTEND=noninteractive

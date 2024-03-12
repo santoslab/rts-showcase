@@ -1,0 +1,20 @@
+#ifndef SIREUM_H_RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread
+#define SIREUM_H_RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+Unit RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_initialise(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Initialization_Api api);
+
+Unit RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_timeTriggered(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Operational_Api api);
+
+Unit RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_finalise(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Operational_Api api);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

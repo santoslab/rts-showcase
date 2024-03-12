@@ -1,0 +1,1 @@
+../../../../c/etc_seL4/adapters/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_adapter.h

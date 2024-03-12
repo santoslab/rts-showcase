@@ -1,0 +1,18 @@
+#ifndef SIREUM_H_RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix
+#define SIREUM_H_RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+Unit RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix_manualActuatorInput1_Send(STACK_FRAME art_DataContent d);
+
+Unit RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix_manualActuatorInput2_Send(STACK_FRAME art_DataContent d);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
