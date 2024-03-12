@@ -1,3 +1,11 @@
+<table><tr><td> 
+<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-macOS.yml/badge.svg" alt="macOS"> </a>
+<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI_linux.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI_linux.yml/badge.svg" alt="Linux"></a>
+<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-windows.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-windows.yml/badge.svg" alt="Windows"></a>
+<a href="https://github.com/santoslab/rts-showcase/actions/workflows/CI-camkes.yml"><img src="https://github.com/santoslab/rts-showcase/actions/workflows/CI-camkes.yml/badge.svg" alt="CAmkES"></a>
+</td></tr></table>
+
+
 This repository provides artifacts developed by the Kansas State University (KSU) SAnToS research group that illustrate how the KSU HAMR tool can support formal-methods-integrated model-based development for nuclear reactor trip systems.  This work was inspired by the Galois HARDENS project.
 
 The Galois HARDENS project (https://galois.com/project/high-assurance-rigorous-digital-engineering-for-nuclear-safety-hardens/), funded by the Nuclear Regulatory Commission (NRC), built a collection of demonstration artifacts to illustrate how rigourous digital engineering (RDE), i.e., rigorous, formal-methods-based, model-driven development practices could produce a nuclear reactor protection system (Reactor Trip System - RTS) with high levels of assurance.  A distinguishing feature of the HARDENS efforts is that it produced *end-to-end* and *open source* artifacts to illustrate its advocated approach.  Part of the end-to-end development process illustrate how formal architecture models (in SysMLv2) could be used to define system architecture and then how system implementation artifacts (in Galois's Cryptol framework) could be constructed to provide an implementation aligned with the models.
@@ -55,7 +63,7 @@ HAMR / Sireum translation of Slang Component Implementations to C
 
 Using Sireum's Slang to C transpiler, HAMR generates C implementations of the system components.  An example of the C code for the pressure logic component can be found [here](aadl/hamr/c/nix/library/RTS/Actuation/RTS_Actuation_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.c).
 
-HAMR Automated Deployments to Linux and seL4
+HAMR Automated Deployments to JVM, Linux and seL4
 ===================================================================
 
-HAMR also generates system infrastructure and platform artifacts to create system deployments.  The readme for the AADL verion of RTS [here](aadl/readme.md) details how to build and deploy the project on the JVM, Linux, and seL4 platforms.
+HAMR also generates system infrastructure and platform artifacts to create system deployments.  The readme for the AADL version of RTS [here](aadl/readme.md) details how to build and deploy the project on the JVM, Linux, and seL4 platforms.

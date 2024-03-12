@@ -95,14 +95,14 @@ if (result == 0) {
 
 if (result == 0) {
   
-  result = run("Size before cleaning", T, proc"df -f")
+  result = run("Size before cleaning", T, proc"df -h")
 
   clean(sireumBin.up / "out")
   clean(homeDir / "hamr" / "c" / "nix")
   clean(homeDir / "hamr" / "slang" / "out")
   clean(Os.path("/root") / "Downloads" / "sireum")
 
-  result = run("Size after cleaning", T, proc"df -f")
+  result = run("Size after cleaning", T, proc"df -h")
 
   result = run("Running customized sel4 transpiler script", F, proc"${homeDir / "hamr" / "slang" / "bin" / "transpile-sel4-cust.cmd"}")
 }

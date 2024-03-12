@@ -130,7 +130,7 @@ Remove the ``--rm`` option if you want to reuse the container
 1. Now build the image and simulate it under QEMU
 
     ```
-    ./hamr/camkes/bin/run-camkes.sh -c /home/temp/camkes -s
+    ./rts/hamr/camkes/bin/run-camkes.sh -c /home/temp/camkes -s
     ```
 
 1. Type ``^a x`` to exit QEMU
