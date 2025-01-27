@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(EventControlMockThread_i_eventControlMock_eventControlMockThread)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(EventControlMockThread_i_eventControlMock_eventControlMockThread STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -169,9 +178,9 @@ add_library(EventControlMockThread_i_eventControlMock_eventControlMockThread STA
         library/RTS/EventControl/EventControlMockThread_i_eventControlMock_eventControlMockThread_Bridge/RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_Bridge_EntryPoints.c
         library/RTS/EventControl/type-RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix.h
         library/RTS/EventControl/RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix.h
-        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/type-RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread.h
-        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread.h
-        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread.c
+        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/type-RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread_seL4App.h
+        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread_seL4App.h
+        library/RTS/EventControlMockThread_i_eventControlMock_eventControlMockThread/RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread_seL4App.c
         library/RTS/type-RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.c
@@ -316,7 +325,7 @@ add_library(EventControlMockThread_i_eventControlMock_eventControlMockThread STA
         ext/EventControlMockThread_i_eventControlMock_eventControlMockThread_adapter.c)
 
 target_include_directories(EventControlMockThread_i_eventControlMock_eventControlMockThread
-        PUBLIC PUBLIC app-eventControlMockThread
+        PUBLIC PUBLIC app-eventControlMockThread_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS
         PUBLIC PUBLIC library/RTS/Base_Types

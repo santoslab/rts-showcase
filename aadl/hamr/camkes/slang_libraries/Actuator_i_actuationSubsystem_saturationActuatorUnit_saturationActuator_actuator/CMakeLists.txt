@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -121,9 +130,9 @@ add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActua
         library/RTS/Actuation/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge/RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge_EntryPoints.c
         library/RTS/Actuation/type-RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix.h
         library/RTS/Actuation/RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix.h
-        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/type-RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator.h
-        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator.h
-        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator.c
+        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/type-RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator_seL4App.h
+        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator_seL4App.h
+        library/RTS/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator/RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator_seL4App.c
         library/RTS/type-RTS_Base_Types.h
         library/RTS/RTS_Base_Types.h
         library/RTS/RTS_Base_Types.c
@@ -319,7 +328,7 @@ add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActua
         ext/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_adapter.c)
 
 target_include_directories(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator
-        PUBLIC PUBLIC app-actuator
+        PUBLIC PUBLIC app-actuator_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS/Actuation
         PUBLIC PUBLIC library/RTS/Actuation/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge

@@ -16,6 +16,10 @@ object Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_a
     return RandomLib(Random.Gen64Impl(Xoshiro256.create))
   }
 
+  val tq: String = "\"\"\""
+
+  type DefaultInitializeProfile = Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile
+
   def defaultInitializeConfig: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Initialize_UnitTestConfiguration = {
     return (Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Initialize_UnitTestConfiguration (
       verbose = F,
@@ -25,12 +29,13 @@ object Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_a
       numTestVectorGenRetries = 100,
       failOnUnsatPreconditions = F,
       profile = Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile (
-        name = "Initialize_Default_Profile", // needed for old framework
-        numTests = 100, // needed for old framework
+        name = "Initialize_Default_Profile",
       ),
-      genReplay = (c: Container, r: GumboXResult.Type) => None())
+      genReplay = (c: Container, testName: String, r: GumboXResult.Type) => None())
     )
   }
+
+  type DefaultComputeProfile = Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P
 
   def defaultComputeConfig: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Compute_UnitTestConfiguration = {
     return (Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Compute_UnitTestConfiguration (
@@ -41,15 +46,18 @@ object Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_a
       numTestVectorGenRetries = 100,
       failOnUnsatPreconditions = F,
       profile = Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P (
-        name = "Compute_Default_Profile", // needed for old framework
-        numTests = 100, // needed for old framework
-        numTestVectorGenRetries = 100, // needed for old framework,
+        name = "Compute_Default_Profile",
         api_input = freshRandomLib,
         api_manualActuatorInput = freshRandomLib
       ),
-      genReplay = (c: Container, r: GumboXResult.Type) => Some(
-        st"""val testVector = RTS.JSON.toActuationActuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(json).left
-            |assert (testComputeCBV(testVector) == results)""".render))
+      genReplay = (c: Container, testName: String, r: GumboXResult.Type) => Some(
+       st"""Replay Unit Test:
+            |  test("Replay: $testName") {
+            |    val results = RTS.GumboXUtil.GumboXResult.$r
+            |    val json = st${tq}${RTS.JSON.fromutilContainer(c, T)}${tq}.render
+            |    val testVector = RTS.JSON.toActuationActuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(json).left
+            |    assert (testComputeCBV(testVector) == results)
+            |  }""".render))
     )
   }
 }
@@ -61,8 +69,8 @@ object Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_a
   var numTests: Z,
   var numTestVectorGenRetries: Z,
   var failOnUnsatPreconditions: B,
-  var profile: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile,
-  var genReplay: (Container, GumboXResult.Type) => Option[String])
+  var profile: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_Trait,
+  var genReplay: (Container, String, GumboXResult.Type) => Option[String])
   extends UnitTestConfigurationBatch with Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX_TestHarness {
 
   override def test(c: Container): GumboXResult.Type = {
@@ -77,11 +85,11 @@ object Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_a
   var numTests: Z,
   var numTestVectorGenRetries: Z,
   var failOnUnsatPreconditions: B,
-  var profile: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P,
-  var genReplay: (Container, GumboXResult.Type) => Option[String])
+  var profile: Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait,
+  var genReplay: (Container, String, GumboXResult.Type) => Option[String])
   extends UnitTestConfigurationBatch with Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX_TestHarness {
 
   override def test(c: Container): GumboXResult.Type = {
-    return testComputeCBV(c.asInstanceOf[Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P])
+    return testComputeCBV(c.asInstanceOf[Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container])
   }
 }

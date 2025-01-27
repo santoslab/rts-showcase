@@ -13,7 +13,7 @@ extern "C" {
 #include <type-RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.h>
 #include <type-RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge_EntryPoints.h>
 #include <type-RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_seL4Nix.h>
-#include <type-RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator.h>
+#include <type-RTS_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_actuator_seL4App.h>
 #include <type-RTS_Base_Types.h>
 #include <type-RTS_Base_Types_Boolean_Payload.h>
 #include <type-RTS_Base_Types_Character_Payload.h>

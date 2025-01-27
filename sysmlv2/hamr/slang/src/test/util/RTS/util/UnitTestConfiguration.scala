@@ -13,7 +13,7 @@ import RTS.GumboXUtil.GumboXResult
   def description: String
   def profile: Profile
   def test(c: Container): GumboXResult.Type
-  def genReplay: (Container, GumboXResult.Type) => Option[String]
+  def genReplay: (Container, String, GumboXResult.Type) => Option[String]
   def verbose: B
 }
 

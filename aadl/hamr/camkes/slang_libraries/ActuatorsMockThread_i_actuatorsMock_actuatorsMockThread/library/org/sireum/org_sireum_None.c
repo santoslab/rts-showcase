@@ -11,7 +11,7 @@ void None_8D8A06_get_(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Initializa
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }
@@ -31,7 +31,7 @@ void None_C050C2_get_(STACK_FRAME RTS_Actuators_ActuatorsMockThread_i_Operationa
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }
@@ -62,7 +62,7 @@ void None_734370_get_(STACK_FRAME art_Bridge result, None_734370 this) {
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }

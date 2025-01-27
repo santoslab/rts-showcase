@@ -29,7 +29,7 @@ extern "C" {
 #include <RTS_Base_Types_Unsigned_32_Payload.h>
 #include <RTS_Base_Types_Unsigned_64_Payload.h>
 #include <RTS_Base_Types_Unsigned_8_Payload.h>
-#include <RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_coincidenceLogic.h>
+#include <RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_coincidenceLogic_seL4App.h>
 #include <RTS_TranspilerToucher.h>
 #include <art_Art.h>
 #include <art_Art_BridgeId.h>

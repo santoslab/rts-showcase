@@ -16,6 +16,10 @@ object CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coi
     return RandomLib(Random.Gen64Impl(Xoshiro256.create))
   }
 
+  val tq: String = "\"\"\""
+
+  type DefaultComputeProfile = CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Profile_P
+
   def defaultComputeConfig: CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Compute_UnitTestConfiguration = {
     return (CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Compute_UnitTestConfiguration (
       verbose = F,
@@ -25,17 +29,20 @@ object CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coi
       numTestVectorGenRetries = 100,
       failOnUnsatPreconditions = F,
       profile = CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Profile_P (
-        name = "Compute_Default_Profile", // needed for old framework
-        numTests = 100, // needed for old framework
-        numTestVectorGenRetries = 100, // needed for old framework,
+        name = "Compute_Default_Profile",
         api_channel1 = freshRandomLib,
         api_channel2 = freshRandomLib,
         api_channel3 = freshRandomLib,
         api_channel4 = freshRandomLib
       ),
-      genReplay = (c: Container, r: GumboXResult.Type) => Some(
-        st"""val testVector = RTS.JSON.toActuationCoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(json).left
-            |assert (testComputeCBV(testVector) == results)""".render))
+      genReplay = (c: Container, testName: String, r: GumboXResult.Type) => Some(
+       st"""Replay Unit Test:
+            |  test("Replay: $testName") {
+            |    val results = RTS.GumboXUtil.GumboXResult.$r
+            |    val json = st${tq}${RTS.JSON.fromutilContainer(c, T)}${tq}.render
+            |    val testVector = RTS.JSON.toActuationCoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(json).left
+            |    assert (testComputeCBV(testVector) == results)
+            |  }""".render))
     )
   }
 }
@@ -47,11 +54,11 @@ object CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coi
   var numTests: Z,
   var numTestVectorGenRetries: Z,
   var failOnUnsatPreconditions: B,
-  var profile: CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Profile_P,
-  var genReplay: (Container, GumboXResult.Type) => Option[String])
+  var profile: CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Profile_P_Trait,
+  var genReplay: (Container, String, GumboXResult.Type) => Option[String])
   extends UnitTestConfigurationBatch with CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_GumboX_TestHarness {
 
   override def test(c: Container): GumboXResult.Type = {
-    return testComputeCBV(c.asInstanceOf[CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P])
+    return testComputeCBV(c.asInstanceOf[CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container])
   }
 }

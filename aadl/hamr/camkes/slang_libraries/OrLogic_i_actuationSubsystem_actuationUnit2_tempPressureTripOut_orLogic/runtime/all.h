@@ -29,7 +29,7 @@ extern "C" {
 #include <RTS_Base_Types_Unsigned_32_Payload.h>
 #include <RTS_Base_Types_Unsigned_64_Payload.h>
 #include <RTS_Base_Types_Unsigned_8_Payload.h>
-#include <RTS_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_orLogic.h>
+#include <RTS_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_orLogic_seL4App.h>
 #include <RTS_TranspilerToucher.h>
 #include <art_Art.h>
 #include <art_Art_BridgeId.h>

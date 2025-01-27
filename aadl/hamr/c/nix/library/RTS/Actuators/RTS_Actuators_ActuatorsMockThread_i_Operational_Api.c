@@ -98,7 +98,7 @@ void RTS_Actuators_ActuatorsMockThread_i_Operational_Api_get_tempPressureActuate
       sfUpdateLoc(50);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port tempPressureActuate.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port tempPressureActuate.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_49_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuators_ActuatorsMockThread_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -164,7 +164,7 @@ void RTS_Actuators_ActuatorsMockThread_i_Operational_Api_get_saturationActuate_(
       sfUpdateLoc(69);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port saturationActuate.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port saturationActuate.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_68_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuators_ActuatorsMockThread_i_Operational_Api_id_(this), (String) ((String) &t_3));

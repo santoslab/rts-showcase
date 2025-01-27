@@ -211,15 +211,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -236,15 +230,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -261,15 +249,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -286,15 +268,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -311,15 +287,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -336,15 +306,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -361,15 +325,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -386,15 +344,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -411,15 +363,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -436,15 +382,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -461,15 +401,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -486,15 +420,9 @@ object GumboXDispatcher {
                 |import RTS.Actuation._
                 |
                 |class ${suiteName} extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -511,15 +439,9 @@ object GumboXDispatcher {
                 |import RTS.Instrumentation._
                 |
                 |class ${suiteName} extends InstrumentationMockThread_instrumentationMock_instrumentationMockThread_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -536,15 +458,9 @@ object GumboXDispatcher {
                 |import RTS.EventControl._
                 |
                 |class ${suiteName} extends EventControlMockThread_eventControlMock_eventControlMockThread_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)
@@ -561,15 +477,9 @@ object GumboXDispatcher {
                 |import RTS.Actuators._
                 |
                 |class ${suiteName} extends ActuatorsMockThread_actuatorsMock_actuatorsMockThread_GumboX_TestHarness_ScalaTest {
-                |  val verbose: B = true
+                |  val verbose: B = T
                 |
-                |  var i = 0 // ensures generated test case names are unique
-                |  def incrementI: Int = {
-                |    i += 1
-                |    return i
-                |  }
-                |
-                |  ${(p._2, "\nincrementI\n\n")}
+                |  ${p._2}
                 |}"""
           val filename = path / s"${suiteName}.scala"
           filename.writeOver(testSuite.render)

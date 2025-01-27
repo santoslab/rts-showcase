@@ -1,4 +1,6 @@
 **/.aadlbin-gen/
+**/.metals/
+**/.vscode/
 **/instances
 **/c/nix
 **/*-build/

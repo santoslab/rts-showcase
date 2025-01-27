@@ -1,5 +1,28 @@
 #include <all.h>
 
+// RTS.Instrumentation.InstrumentationMockThread_i_Api
+
+B RTS_Instrumentation_InstrumentationMockThread_i_Api__is(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api: return T;
+    case TRTS_Instrumentation_InstrumentationMockThread_i_Operational_Api: return T;
+    default: return F;
+  }
+}
+
+RTS_Instrumentation_InstrumentationMockThread_i_Api RTS_Instrumentation_InstrumentationMockThread_i_Api__as(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api: break;
+    case TRTS_Instrumentation_InstrumentationMockThread_i_Operational_Api: break;
+    default:
+      fprintf(stderr, "Invalid cast from %s to RTS.Instrumentation.InstrumentationMockThread_i_Api.", TYPE_string_(this));
+      sfAbortImpl(CALLER "");
+  }
+  return (RTS_Instrumentation_InstrumentationMockThread_i_Api) this;
+}
+
+void RTS_Instrumentation_InstrumentationMockThread_i_Api_string_(STACK_FRAME String result, RTS_Instrumentation_InstrumentationMockThread_i_Api this);
+
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logInfo", 0);
 

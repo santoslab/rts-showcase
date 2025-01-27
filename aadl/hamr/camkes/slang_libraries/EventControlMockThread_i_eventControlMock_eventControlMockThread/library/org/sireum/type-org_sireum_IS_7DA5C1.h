@@ -10,7 +10,7 @@ extern "C" {
 // IS[Z, (B, B)]
 #include <type-org_sireum_Tuple2_0862A0.h>
 
-#define MaxIS_7DA5C1 9
+#define MaxIS_7DA5C1 1
 #define IS_7DA5C1SizeT int8_t
 
 typedef struct IS_7DA5C1 *IS_7DA5C1;

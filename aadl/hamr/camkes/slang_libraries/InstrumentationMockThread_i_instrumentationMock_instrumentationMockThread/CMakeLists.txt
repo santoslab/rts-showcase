@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -169,9 +178,9 @@ add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockT
         library/RTS/Instrumentation/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge/RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge_EntryPoints.c
         library/RTS/Instrumentation/type-RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_seL4Nix.h
         library/RTS/Instrumentation/RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_seL4Nix.h
-        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/type-RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread.h
-        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread.h
-        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread.c
+        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/type-RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread_seL4App.h
+        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread_seL4App.h
+        library/RTS/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread/RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread_seL4App.c
         library/RTS/type-RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.c
@@ -319,7 +328,7 @@ add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockT
         ext/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_adapter.c)
 
 target_include_directories(InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread
-        PUBLIC PUBLIC app-instrumentationMockThread
+        PUBLIC PUBLIC app-instrumentationMockThread_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS
         PUBLIC PUBLIC library/RTS/Base_Types

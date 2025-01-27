@@ -29,7 +29,7 @@ extern "C" {
 #include <type-RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_Bridge.h>
 #include <type-RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_Bridge_EntryPoints.h>
 #include <type-RTS_EventControl_EventControlMockThread_i_eventControlMock_eventControlMockThread_seL4Nix.h>
-#include <type-RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread.h>
+#include <type-RTS_EventControlMockThread_i_eventControlMock_eventControlMockThread_eventControlMockThread_seL4App.h>
 #include <type-RTS_TranspilerToucher.h>
 #include <type-art_Art.h>
 #include <type-art_Art_BridgeId.h>

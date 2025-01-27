@@ -13,7 +13,7 @@ extern "C" {
 #include <RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_Bridge.h>
 #include <RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_Bridge_EntryPoints.h>
 #include <RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_seL4Nix.h>
-#include <RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread.h>
+#include <RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread_seL4App.h>
 #include <RTS_Base_Types.h>
 #include <RTS_Base_Types_Boolean_Payload.h>
 #include <RTS_Base_Types_Character_Payload.h>

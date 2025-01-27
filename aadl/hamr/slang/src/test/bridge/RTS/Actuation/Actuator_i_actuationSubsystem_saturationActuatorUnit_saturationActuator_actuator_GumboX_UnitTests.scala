@@ -2,14 +2,20 @@ package RTS.Actuation
 
 import org.sireum._
 import RTS.GumboXUtil.GumboXResult
-import RTS.util.{Container, Profile, UnitTestConfigurationBatch}
+import RTS.util.{Container, UnitTestConfigurationBatch}
 import RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_UnitTestConfiguration_Util._
 
 // This file will not be overwritten so is safe to edit
 
 class Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX_UnitTests extends Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX_TestHarness_ScalaTest {
 
+  // set verbose to T to see pre/post state values and generated unit tests
+  // that can be copied/pasted to replay a test
   val verbose: B = F
+
+  // set failOnUnsatPreconditions to T if the unit tests should fail when either
+  // SlangCheck is never able to satisfy a datatype's filter or the generated
+  // test vectors are never able to satisfy an entry point's assume pre-condition
   val failOnUnsatPreconditions: B = F
 
   def configs: MSZ[UnitTestConfigurationBatch] = {
@@ -48,15 +54,8 @@ class Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_ac
               val results = c.test(o)
 
               if (verbose) {
-                c.genReplay(o, results) match {
-                  case Some(s) =>
-                    val tq = "\"\"\""
-                    println(st"""Replay Unit Test:
-                                |  test("Replay: $testName") {
-                                |    val results = RTS.GumboXUtil.GumboXResult.$results
-                                |    val json = st${tq}${RTS.JSON.fromutilContainer(o, T)}${tq}.render
-                                |    $s
-                                |  }""".render)
+                c.genReplay(o, testName, results) match {
+                  case Some(s) => println(s)
                   case _ =>
                 }
               }

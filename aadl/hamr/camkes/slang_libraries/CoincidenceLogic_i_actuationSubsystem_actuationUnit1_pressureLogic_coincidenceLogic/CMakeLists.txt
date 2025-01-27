@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -169,9 +178,9 @@ add_library(CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_c
         library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_8_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.c
-        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/type-RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic.h
-        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic.h
-        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic.c
+        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/type-RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic_seL4App.h
+        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic_seL4App.h
+        library/RTS/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic/RTS_CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_coincidenceLogic_seL4App.c
         library/RTS/type-RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.c
@@ -319,7 +328,7 @@ add_library(CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_c
         ext/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_adapter.c)
 
 target_include_directories(CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic
-        PUBLIC PUBLIC app-coincidenceLogic
+        PUBLIC PUBLIC app-coincidenceLogic_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS/Actuation
         PUBLIC PUBLIC library/RTS/Actuation/CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_Bridge

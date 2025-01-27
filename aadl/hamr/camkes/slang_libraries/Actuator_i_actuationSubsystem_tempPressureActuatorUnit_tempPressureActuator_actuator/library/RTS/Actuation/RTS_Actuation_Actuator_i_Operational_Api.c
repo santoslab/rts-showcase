@@ -105,7 +105,7 @@ void RTS_Actuation_Actuator_i_Operational_Api_get_input_(STACK_FRAME Option_8F4D
       sfUpdateLoc(69);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port input.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port input.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_68_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_Actuator_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -171,7 +171,7 @@ void RTS_Actuation_Actuator_i_Operational_Api_get_manualActuatorInput_(STACK_FRA
       sfUpdateLoc(88);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port manualActuatorInput.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port manualActuatorInput.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_87_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_Actuator_i_Operational_Api_id_(this), (String) ((String) &t_3));

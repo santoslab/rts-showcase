@@ -119,7 +119,7 @@ void RTS_Actuation_CoincidenceLogic_i_Operational_Api_get_channel1_(STACK_FRAME 
       sfUpdateLoc(75);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel1.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel1.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_74_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -185,7 +185,7 @@ void RTS_Actuation_CoincidenceLogic_i_Operational_Api_get_channel2_(STACK_FRAME 
       sfUpdateLoc(94);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel2.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel2.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_93_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -251,7 +251,7 @@ void RTS_Actuation_CoincidenceLogic_i_Operational_Api_get_channel3_(STACK_FRAME 
       sfUpdateLoc(113);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel3.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel3.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_112_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -317,7 +317,7 @@ void RTS_Actuation_CoincidenceLogic_i_Operational_Api_get_channel4_(STACK_FRAME 
       sfUpdateLoc(132);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel4.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel4.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_131_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));

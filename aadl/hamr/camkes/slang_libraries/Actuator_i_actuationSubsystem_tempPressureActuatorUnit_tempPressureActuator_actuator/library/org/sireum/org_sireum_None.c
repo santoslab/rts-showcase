@@ -11,7 +11,7 @@ void None_8BED90_get_(STACK_FRAME RTS_Actuation_Actuator_i_Initialization_Api re
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }
@@ -31,7 +31,7 @@ void None_52D9AF_get_(STACK_FRAME RTS_Actuation_Actuator_i_Operational_Api resul
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }
@@ -62,7 +62,7 @@ void None_734370_get_(STACK_FRAME art_Bridge result, None_734370 this) {
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }
@@ -83,7 +83,7 @@ B None_7E20F8_get_(STACK_FRAME None_7E20F8 this) {
       {
         DeclNewString(t_0);
         String t_1 = (String) &t_0;
-        String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+        String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
         sfAbort(t_1->value);
         abort();
       }
@@ -114,7 +114,7 @@ void None_964667_get_(STACK_FRAME art_DataContent result, None_964667 this) {
     {
       DeclNewString(t_0);
       String t_1 = (String) &t_0;
-      String_string_(SF t_1, string("Invalid 'None' operation 'get'."));
+      String_string_(SF t_1, string("Invalid \'None\' operation \'get\'."));
       sfAbort(t_1->value);
       abort();
     }

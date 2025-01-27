@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(SlangTypeLibrary)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(SlangTypeLibrary STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h

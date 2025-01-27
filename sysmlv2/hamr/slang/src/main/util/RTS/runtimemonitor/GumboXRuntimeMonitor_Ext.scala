@@ -30,7 +30,7 @@ class GumboXRuntimeMonitor_Ext extends JFrame with RuntimeMonitorListener {
 
     val js = new JScrollPane(jtable)
     js.setVisible(true)
-    add(js, BorderLayout.PAGE_START)
+    add(js, BorderLayout.CENTER)
 
     val btnGenTestSuite = new JButton("Generate TestSuite")
     btnGenTestSuite.addActionListener(e => {
@@ -42,7 +42,7 @@ class GumboXRuntimeMonitor_Ext extends JFrame with RuntimeMonitorListener {
           val id = data.bridgeId.toZ
           testCases = testCases + id ~>
             (testCases.getOrElse(id, ISZ[ST]()) :+
-              GumboXDispatcher.genTestCase(data.observationKind, data.pre, data.post, Some(": $i")))
+              GumboXDispatcher.genTestCase(data.observationKind, data.pre, data.post, Some(s": $row")))
         }
         GumboXDispatcher.genTestSuite(testCases.entries)
       }

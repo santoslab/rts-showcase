@@ -7,7 +7,7 @@ Unit art_scheduling_static_CliInfoProvider_printHelpMessage(STACK_FRAME_ONLY) {
 
   sfUpdateLoc(16);
   {
-    String_cprint(string("s <n?>     - step n slots (default 0)"), T);
+    String_cprint(string("s <n\?>     - step n slots (default 0)"), T);
     cprintln(T);
     cflush(T);
   }
@@ -18,7 +18,7 @@ Unit art_scheduling_static_CliInfoProvider_printHelpMessage(STACK_FRAME_ONLY) {
 
   sfUpdateLoc(17);
   {
-    String_cprint(string("h <n?>     - step n hyper-periods (default 0)"), T);
+    String_cprint(string("h <n\?>     - step n hyper-periods (default 0)"), T);
     cprintln(T);
     cflush(T);
   }

@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -169,9 +178,9 @@ add_library(OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPre
         library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_8_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.c
-        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/type-RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic.h
-        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic.h
-        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic.c
+        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/type-RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic_seL4App.h
+        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic_seL4App.h
+        library/RTS/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic/RTS_OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_orLogic_seL4App.c
         library/RTS/type-RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.c
@@ -319,7 +328,7 @@ add_library(OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPre
         ext/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_adapter.c)
 
 target_include_directories(OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic
-        PUBLIC PUBLIC app-orLogic
+        PUBLIC PUBLIC app-orLogic_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS/Actuation
         PUBLIC PUBLIC library/RTS/Actuation/OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_Bridge

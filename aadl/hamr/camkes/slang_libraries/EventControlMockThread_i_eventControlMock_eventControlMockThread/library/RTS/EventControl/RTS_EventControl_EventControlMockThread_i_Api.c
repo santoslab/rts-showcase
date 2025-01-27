@@ -1,5 +1,28 @@
 #include <all.h>
 
+// RTS.EventControl.EventControlMockThread_i_Api
+
+B RTS_EventControl_EventControlMockThread_i_Api__is(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_EventControl_EventControlMockThread_i_Initialization_Api: return T;
+    case TRTS_EventControl_EventControlMockThread_i_Operational_Api: return T;
+    default: return F;
+  }
+}
+
+RTS_EventControl_EventControlMockThread_i_Api RTS_EventControl_EventControlMockThread_i_Api__as(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_EventControl_EventControlMockThread_i_Initialization_Api: break;
+    case TRTS_EventControl_EventControlMockThread_i_Operational_Api: break;
+    default:
+      fprintf(stderr, "Invalid cast from %s to RTS.EventControl.EventControlMockThread_i_Api.", TYPE_string_(this));
+      sfAbortImpl(CALLER "");
+  }
+  return (RTS_EventControl_EventControlMockThread_i_Api) this;
+}
+
+void RTS_EventControl_EventControlMockThread_i_Api_string_(STACK_FRAME String result, RTS_EventControl_EventControlMockThread_i_Api this);
+
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logInfo_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logInfo", 0);
 

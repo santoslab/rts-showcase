@@ -105,7 +105,7 @@ void RTS_Actuation_OrLogic_i_Operational_Api_get_channel1_(STACK_FRAME Option_8F
       sfUpdateLoc(69);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel1.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel1.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_68_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_OrLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));
@@ -171,7 +171,7 @@ void RTS_Actuation_OrLogic_i_Operational_Api_get_channel2_(STACK_FRAME Option_8F
       sfUpdateLoc(88);
       {
         DeclNewString(t_3);
-        String_string_(SF (String) &t_3, string("Unexpected payload on port channel2.  Expecting 'Base_Types.Boolean_Payload' but received "));
+        String_string_(SF (String) &t_3, string("Unexpected payload on port channel2.  Expecting \'Base_Types.Boolean_Payload\' but received "));
         art_DataContent_string_(SF (String) &t_3, v_87_17);
         String_string_(SF (String) &t_3, string(""));
         art_Art_logError(SF RTS_Actuation_OrLogic_i_Operational_Api_id_(this), (String) ((String) &t_3));

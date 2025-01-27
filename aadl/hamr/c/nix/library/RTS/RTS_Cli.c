@@ -110,7 +110,7 @@ Unit RTS_Cli_help_(STACK_FRAME RTS_Cli this) {
 
   sfUpdateLoc(102);
   {
-    String_cprint(string("                           on 'default' (expects one of { default, roundRobin,"), T);
+    String_cprint(string("                           on \'default\' (expects one of { default, roundRobin,"), T);
     cprintln(T);
     cflush(T);
   }
@@ -261,9 +261,9 @@ void RTS_Cli_parseRun_(STACK_FRAME Option_BF489E result, RTS_Cli this, IS_948B60
         sfUpdateLoc(122);
         {
           DeclNewString(t_11);
-          String_string_(SF (String) &t_11, string("Unrecognized option '"));
+          String_string_(SF (String) &t_11, string("Unrecognized option \'"));
           String_string_(SF (String) &t_11, arg);
-          String_string_(SF (String) &t_11, string("'."));
+          String_string_(SF (String) &t_11, string("\'."));
           String_cprint(((String) &t_11), F);
           cprintln(F);
           cflush(F);
@@ -411,9 +411,9 @@ void RTS_Cli_parseRunChoiceH_(STACK_FRAME Option_E8BC07 result, RTS_Cli this, St
       sfUpdateLoc(79);
       {
         DeclNewString(t_5);
-        String_string_(SF (String) &t_5, string("Expecting one of the following: { default, roundRobin, static, legacy }, but found '"));
+        String_string_(SF (String) &t_5, string("Expecting one of the following: { default, roundRobin, static, legacy }, but found \'"));
         String_string_(SF (String) &t_5, s_78_12);
-        String_string_(SF (String) &t_5, string("'."));
+        String_string_(SF (String) &t_5, string("\'."));
         String_cprint(((String) &t_5), F);
         cprintln(F);
         cflush(F);

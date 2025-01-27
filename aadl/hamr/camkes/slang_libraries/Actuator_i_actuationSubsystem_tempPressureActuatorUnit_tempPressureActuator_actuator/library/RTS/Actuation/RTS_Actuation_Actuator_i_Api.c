@@ -1,5 +1,28 @@
 #include <all.h>
 
+// RTS.Actuation.Actuator_i_Api
+
+B RTS_Actuation_Actuator_i_Api__is(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_Actuation_Actuator_i_Initialization_Api: return T;
+    case TRTS_Actuation_Actuator_i_Operational_Api: return T;
+    default: return F;
+  }
+}
+
+RTS_Actuation_Actuator_i_Api RTS_Actuation_Actuator_i_Api__as(STACK_FRAME void *this) {
+  switch(((Type) this)->type) {
+    case TRTS_Actuation_Actuator_i_Initialization_Api: break;
+    case TRTS_Actuation_Actuator_i_Operational_Api: break;
+    default:
+      fprintf(stderr, "Invalid cast from %s to RTS.Actuation.Actuator_i_Api.", TYPE_string_(this));
+      sfAbortImpl(CALLER "");
+  }
+  return (RTS_Actuation_Actuator_i_Api) this;
+}
+
+void RTS_Actuation_Actuator_i_Api_string_(STACK_FRAME String result, RTS_Actuation_Actuator_i_Api this);
+
 Unit RTS_Actuation_Actuator_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Actuation_Actuator_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "Actuator_i_Api.scala", "RTS.Actuation.Actuator_i_Api", "logInfo", 0);
 

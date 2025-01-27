@@ -1,4 +1,13 @@
-cmake_minimum_required(VERSION 3.5.1)
+if(APPLE)
+  cmake_minimum_required(VERSION 3.27)
+  if($ENV{CC} MATCHES "^.*ccomp$")
+    execute_process(COMMAND uname -m
+      OUTPUT_VARIABLE CMAKE_C_COMPILER_TARGET
+      OUTPUT_STRIP_TRAILING_WHITESPACE)
+  endif()
+else()
+  cmake_minimum_required(VERSION 3.5.1)
+endif(APPLE)
 
 project(ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread)
 
@@ -88,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread STATIC
-        runtime/stackframe.c
         runtime/type.h
-        runtime/stackframe.h
-        runtime/lib.h
         runtime/misc.c
         runtime/misc.h
+        runtime/stackframe.c
+        runtime/stackframe.h
         runtime/type.c
+        runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -121,9 +130,9 @@ add_library(ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread STATIC
         library/RTS/Actuators/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_Bridge/RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_Bridge_EntryPoints.c
         library/RTS/Actuators/type-RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_seL4Nix.h
         library/RTS/Actuators/RTS_Actuators_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_seL4Nix.h
-        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/type-RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread.h
-        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread.h
-        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread.c
+        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/type-RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread_seL4App.h
+        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread_seL4App.h
+        library/RTS/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread/RTS_ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_actuatorsMockThread_seL4App.c
         library/RTS/type-RTS_Base_Types.h
         library/RTS/RTS_Base_Types.h
         library/RTS/RTS_Base_Types.c
@@ -319,7 +328,7 @@ add_library(ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread STATIC
         ext/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_adapter.c)
 
 target_include_directories(ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread
-        PUBLIC PUBLIC app-actuatorsMockThread
+        PUBLIC PUBLIC app-actuatorsMockThread_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/RTS/Actuators
         PUBLIC PUBLIC library/RTS/Actuators/ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_Bridge

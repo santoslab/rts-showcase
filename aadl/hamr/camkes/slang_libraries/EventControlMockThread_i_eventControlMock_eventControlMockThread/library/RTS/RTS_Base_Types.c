@@ -52,7 +52,7 @@ U64 RTS_Base_Types_Unsigned_64_example(STACK_FRAME_ONLY) {
 
 R RTS_Base_Types_Float_example(STACK_FRAME_ONLY) {
   DeclNewStackFrame(caller, "Base_Types.scala", "RTS.Base_Types", "Float_example", 0);
-  return 0L;
+  return 80L;
 }
 
 F32 RTS_Base_Types_Float_32_example(STACK_FRAME_ONLY) {

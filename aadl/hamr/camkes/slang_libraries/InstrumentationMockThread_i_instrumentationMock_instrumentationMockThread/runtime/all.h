@@ -29,7 +29,7 @@ extern "C" {
 #include <RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge.h>
 #include <RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge_EntryPoints.h>
 #include <RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_seL4Nix.h>
-#include <RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread.h>
+#include <RTS_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_instrumentationMockThread_seL4App.h>
 #include <RTS_TranspilerToucher.h>
 #include <art_Art.h>
 #include <art_Art_BridgeId.h>
