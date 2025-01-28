@@ -62,7 +62,7 @@ jobs:
         id: cache-fmide
         uses: actions/cache@v3
         with:
-          path: kekinian\bin\win\fmide
+          path: kekinian\hamr\codegen\bin\win\osate
           key: ${{ runner.os }}-${{ hashFiles('kekinian\hamr\codegen\jvm\src\main\resources\phantom_versions.properties') }}-fmide
       - name: Check LongPathsEnabled
         run: |
@@ -106,7 +106,10 @@ jobs:
 
           set PATH=%SIREUM_HOME%\bin;%PATH%
       
-          call %SIREUM_HOME%\bin\install\fmide.cmd --verbose || goto :error
+          REM call %SIREUM_HOME%\bin\install\fmide.cmd --verbose || goto :error
+
+          set OSATE_HOME=%SIREUM_HOME%\hamr\codegen\bin\win\osate
+          call %SIREUM_HOME%\hamr\codegen\bin\build.cmd install-osate-gumbo || goto :error
 
           call .ci\test.cmd || goto :error
                     

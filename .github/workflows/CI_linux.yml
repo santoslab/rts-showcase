@@ -47,7 +47,7 @@ jobs:
         id: cache-fmide
         uses: actions/cache@v3
         with:
-          path: kekinian/bin/linux/fmide
+          path: kekinian/hamr/codegen/bin/linux/osate
           key: ${{ runner.os }}-${{ hashFiles('kekinian/hamr/codegen/jvm/src/main/resources/phantom_versions.properties') }}-fmide
       - name: Test
         run: |
@@ -70,9 +70,12 @@ jobs:
 
 
           ################################################
-          # Install FMIDE
+          # Install OSATE
           ################################################
 
-          $SIREUM_HOME/bin/install/fmide.cmd --verbose
+          #$SIREUM_HOME/bin/install/fmide.cmd --verbose
+          
+          export OSATE_HOME=$SIREUM_HOME/hamr/codegen/bin/linux/osate
+          $SIREUM_HOME/hamr/codegen/bin/build.cmd install-osate-gumbo
 
           .ci/test.cmd

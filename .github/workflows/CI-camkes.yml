@@ -96,11 +96,14 @@ jobs:
 
 
           ################################################
-          # Install FMIDE
+          # Install OSATE
           ################################################
 
-          $SIREUM_HOME/bin/install/fmide.cmd --verbose
+          #$SIREUM_HOME/bin/install/fmide.cmd --verbose
 
+          export OSATE_HOME=$SIREUM_HOME/hamr/codegen/bin/linux/osate
+          $SIREUM_HOME/hamr/codegen/bin/build.cmd install-osate-gumbo
+          
           ls -laF $HOME
           chown -R $(whoami) $HOME
           ls -laF $HOME
