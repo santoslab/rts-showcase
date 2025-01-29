@@ -97,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(main STATIC
-        runtime/type.h
         runtime/misc.c
-        runtime/misc.h
         runtime/stackframe.c
-        runtime/stackframe.h
-        runtime/type.c
+        runtime/misc.h
         runtime/lib.h
+        runtime/stackframe.h
+        runtime/type.h
+        runtime/type.c
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h

@@ -97,12 +97,12 @@ endif(WITH_LOC)
 
 
 add_library(EventControlMockThread_i_eventControlMock_eventControlMockThread STATIC
-        runtime/type.h
-        runtime/misc.c
-        runtime/misc.h
         runtime/stackframe.c
-        runtime/stackframe.h
+        runtime/misc.c
+        runtime/type.h
         runtime/type.c
+        runtime/misc.h
+        runtime/stackframe.h
         runtime/lib.h
         runtime/ztype.h
         runtime/type-composite.h

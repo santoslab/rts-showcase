@@ -98,7 +98,6 @@ if (result == 0) {
   result = run("Size before cleaning", T, proc"df -h")
 
   clean(sireumBin.up / "out")
-  clean(homeDir / "hamr" / "c" / "nix")
   clean(homeDir / "hamr" / "slang" / "out")
   clean(Os.path("/root") / "Downloads" / "sireum")
 

@@ -1,5 +1,5 @@
-ISZ[((B, B, B, B, B, B, B, B, B, B, B, B), (B, B, B, B, B, B, B, B, B, B, B, B))]=1;
-ISZ[(B, B)]=1;
+ISZ[((B, B, B, B, B, B, B, B, B, B, B, B), (B, B, B, B, B, B, B, B, B, B, B, B))]=9;
+ISZ[(B, B)]=9;
 ISZ[(String, Option[art.DataContent])]=1;
 ISZ[(String, art.Art.BridgeId)]=15;
 ISZ[(Z, art.ArtSlangMessage)]=92;
