@@ -1,7 +1,7 @@
 package RTS
 public
 	with Actuation, Instrumentation, EventControl, Actuators;
-	with CASE_Scheduling, CASE_Properties;
+	with CASE_Scheduling, CASE_Properties_Sireum;
 
 	-- ===========================================================================================================
 	--
@@ -191,7 +191,7 @@ public
 			
 			CASE_Scheduling::Schedule_Source_Text => "resources/domain_schedule.c";
 			
-			CASE_Properties::OS => seL4; 
+			CASE_Properties_Sireum::OS => seL4; 
 	end RTSProcessor.i;
 
 	
