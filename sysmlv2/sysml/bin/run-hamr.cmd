@@ -30,7 +30,8 @@ val packageName: String = "RTS"
 
 var sourcePath: String = sysmlDir.string
 if (!(sysmlDir / "sysml-aadl-libraries").exists && Os.envs.contains("SYSML_AADL_LIBRARIES")) {
-  sourcePath = s"$sourcePath:${Os.env("SYSML_AADL_LIBRARIES").get}"
+  val sep: String = if (Os.isWin) ";" else ":"
+  sourcePath = s"$sourcePath$sep${Os.env("SYSML_AADL_LIBRARIES").get}"
 }
 
 var codegenArgs: ISZ[String] = ISZ(
@@ -46,7 +47,7 @@ var codegenArgs: ISZ[String] = ISZ(
 
 codegenArgs = codegenArgs ++ Os.cliArgs
 
-codegenArgs = codegenArgs :+ (sysmlDir / "rts.sysml").value
+codegenArgs = codegenArgs :+ (sysmlDir / "RTS.sysml").value
 
 val results = Os.proc(codegenArgs).at(home).echo.console.run()
 

@@ -111,6 +111,9 @@ jobs:
           set OSATE_HOME=%SIREUM_HOME%\hamr\codegen\bin\win\osate
           call %SIREUM_HOME%\hamr\codegen\bin\build.cmd install-osate-gumbo || goto :error
 
+          git clone --depth 1 https://github.com/santoslab/sysml-aadl-libraries.git sysml-aadl-libraries
+          set SYSML_AADL_LIBRARIES=%cd%\sysml-aadl-libraries
+
           call .ci\test.cmd || goto :error
                     
           goto :EOF

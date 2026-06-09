@@ -110,4 +110,7 @@ jobs:
 
           df -h
 
+          git clone --depth 1 https://github.com/santoslab/sysml-aadl-libraries.git sysml-aadl-libraries
+          export SYSML_AADL_LIBRARIES=$(pwd)/sysml-aadl-libraries
+
           $HOME/rts-showcase/.ci/test.cmd

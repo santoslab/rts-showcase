@@ -77,4 +77,7 @@ jobs:
           export OSATE_HOME=$SIREUM_HOME/hamr/codegen/bin/mac/osate.app
           $SIREUM_HOME/hamr/codegen/bin/build.cmd install-osate-gumbo
 
+          git clone --depth 1 https://github.com/santoslab/sysml-aadl-libraries.git sysml-aadl-libraries
+          export SYSML_AADL_LIBRARIES=$(pwd)/sysml-aadl-libraries
+
           .ci/test.cmd
