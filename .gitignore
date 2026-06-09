@@ -13,4 +13,5 @@
 **/.idea/
 **/target/
 **/lib/
+**/sysml-aadl-libraries/
 jacob-misc

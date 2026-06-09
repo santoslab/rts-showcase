@@ -15,20 +15,20 @@ import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_pressur
   val dispatchProtocol: DispatchPropertyProtocol,
   val dispatchTriggers: Option[ISZ[Art.PortId]],
 
-  ports_channel1: Port[Base_Types.Boolean],
-  ports_channel2: Port[Base_Types.Boolean],
-  ports_channel3: Port[Base_Types.Boolean],
-  ports_channel4: Port[Base_Types.Boolean],
-  ports_actuate: Port[Base_Types.Boolean]
+  channel1: Port[Base_Types.Boolean],
+  channel2: Port[Base_Types.Boolean],
+  channel3: Port[Base_Types.Boolean],
+  channel4: Port[Base_Types.Boolean],
+  actuate: Port[Base_Types.Boolean]
   ) extends Bridge {
 
   val ports : Bridge.Ports = Bridge.Ports(
-    dataIns = ISZ[art.UPort](ports_channel1,
-                             ports_channel2,
-                             ports_channel3,
-                             ports_channel4),
+    dataIns = ISZ[art.UPort](channel1,
+                             channel2,
+                             channel3,
+                             channel4),
 
-    dataOuts = ISZ[art.UPort](ports_actuate),
+    dataOuts = ISZ[art.UPort](actuate),
 
     eventIns = ISZ[art.UPort](),
 
@@ -38,11 +38,11 @@ import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_pressur
   val initialization_api : CoincidenceLogic_Initialization_Api = {
     val api = CoincidenceLogic_Initialization_Api(
       id,
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_channel3.id,
-      ports_channel4.id,
-      ports_actuate.id
+      channel1.id,
+      channel2.id,
+      channel3.id,
+      channel4.id,
+      actuate.id
     )
     CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_Bridge.c_initialization_api = Some(api)
     api
@@ -51,11 +51,11 @@ import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_pressur
   val operational_api : CoincidenceLogic_Operational_Api = {
     val api = CoincidenceLogic_Operational_Api(
       id,
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_channel3.id,
-      ports_channel4.id,
-      ports_actuate.id
+      channel1.id,
+      channel2.id,
+      channel3.id,
+      channel4.id,
+      actuate.id
     )
     CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_Bridge.c_operational_api = Some(api)
     api
@@ -65,11 +65,11 @@ import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_pressur
     CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_Bridge.EntryPoints(
       id,
 
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_channel3.id,
-      ports_channel4.id,
-      ports_actuate.id,
+      channel1.id,
+      channel2.id,
+      channel3.id,
+      channel4.id,
+      actuate.id,
 
       dispatchTriggers,
 
@@ -84,23 +84,23 @@ object CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincide
 
   @datatype class EntryPoints(
     CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_BridgeId : Art.BridgeId,
-    ports_channel1_Id : Art.PortId,
-    ports_channel2_Id : Art.PortId,
-    ports_channel3_Id : Art.PortId,
-    ports_channel4_Id : Art.PortId,
-    ports_actuate_Id : Art.PortId,
+    channel1_Id : Art.PortId,
+    channel2_Id : Art.PortId,
+    channel3_Id : Art.PortId,
+    channel4_Id : Art.PortId,
+    actuate_Id : Art.PortId,
     dispatchTriggers : Option[ISZ[Art.PortId]],
     initialization_api: CoincidenceLogic_Initialization_Api,
     operational_api: CoincidenceLogic_Operational_Api) extends Bridge.EntryPoints {
 
-    val dataInPortIds: ISZ[Art.PortId] = IS(ports_channel1_Id,
-                                            ports_channel2_Id,
-                                            ports_channel3_Id,
-                                            ports_channel4_Id)
+    val dataInPortIds: ISZ[Art.PortId] = IS(channel1_Id,
+                                            channel2_Id,
+                                            channel3_Id,
+                                            channel4_Id)
 
     val eventInPortIds: ISZ[Art.PortId] = IS()
 
-    val dataOutPortIds: ISZ[Art.PortId] = IS(ports_actuate_Id)
+    val dataOutPortIds: ISZ[Art.PortId] = IS(actuate_Id)
 
     val eventOutPortIds: ISZ[Art.PortId] = IS()
 

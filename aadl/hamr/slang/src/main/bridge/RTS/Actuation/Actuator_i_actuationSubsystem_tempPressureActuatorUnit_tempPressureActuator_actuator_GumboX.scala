@@ -10,7 +10,7 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
   /** Initialize Entrypoint Contract
     *
     * guarantee initOutputDataPort
-    *   The Initialize Entry Point must initialize all component 
+    *   The Initialize Entry Point must initialize all component
     *   local state and all output data ports.
     * @param api_output outgoing data port
     */
@@ -32,8 +32,10 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
     */
   @strictpure def inititialize_IEP_Post (
       api_output: Base_Types.Boolean): B =
-    (// IEP-Guar: Initialize Entrypoint contract for actuator
-     initialize_IEP_Guar(api_output))
+    {
+      // IEP-Guar: Initialize Entrypoint contract for actuator
+      initialize_IEP_Guar(api_output)
+    }
 
   /** IEP-Post: Initialize Entrypoint Post-Condition via container
     *
@@ -68,6 +70,63 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
       api_output: Base_Types.Boolean): B =
     compute_spec_actuatorOutput_guarantee(api_input, api_manualActuatorInput, api_output)
 
+  /** guarantee input_only
+    *   Only input true
+    * @param api_input incoming data port
+    * @param api_manualActuatorInput incoming data port
+    * @param api_output outgoing data port
+    */
+  @strictpure def compute_case_input_only(
+      api_input: Base_Types.Boolean,
+      api_manualActuatorInput: Base_Types.Boolean,
+      api_output: Base_Types.Boolean): B =
+    (api_input & !api_manualActuatorInput) ___>:
+      (api_output)
+
+  /** guarantee manual_only
+    *   Only manual input true
+    * @param api_input incoming data port
+    * @param api_manualActuatorInput incoming data port
+    * @param api_output outgoing data port
+    */
+  @strictpure def compute_case_manual_only(
+      api_input: Base_Types.Boolean,
+      api_manualActuatorInput: Base_Types.Boolean,
+      api_output: Base_Types.Boolean): B =
+    (!api_input & api_manualActuatorInput) ___>:
+      (api_output)
+
+  /** guarantee both_false
+    *   Both inputs false
+    * @param api_input incoming data port
+    * @param api_manualActuatorInput incoming data port
+    * @param api_output outgoing data port
+    */
+  @strictpure def compute_case_both_false(
+      api_input: Base_Types.Boolean,
+      api_manualActuatorInput: Base_Types.Boolean,
+      api_output: Base_Types.Boolean): B =
+    (!api_input & !api_manualActuatorInput) ___>:
+      (!api_output)
+
+  /** CEP-T-Case: Top-Level case contracts for actuator's compute entrypoint
+    *
+    * @param api_input incoming data port
+    * @param api_manualActuatorInput incoming data port
+    * @param api_output outgoing data port
+    */
+  @strictpure def compute_CEP_T_Case (
+      api_input: Base_Types.Boolean,
+      api_manualActuatorInput: Base_Types.Boolean,
+      api_output: Base_Types.Boolean): B =
+    {
+      val r0 = compute_case_input_only(api_input, api_manualActuatorInput, api_output)
+      val r1 = compute_case_manual_only(api_input, api_manualActuatorInput, api_output)
+      val r2 = compute_case_both_false(api_input, api_manualActuatorInput, api_output)
+
+      r0 & r1 & r2
+    }
+
   /** CEP-Post: Compute Entrypoint Post-Condition for actuator
     *
     * @param api_input incoming data port
@@ -78,8 +137,15 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
       api_input: Base_Types.Boolean,
       api_manualActuatorInput: Base_Types.Boolean,
       api_output: Base_Types.Boolean): B =
-    (// CEP-Guar: guarantee clauses of actuator's compute entrypoint
-     compute_CEP_T_Guar (api_input, api_manualActuatorInput, api_output))
+    {
+      // CEP-Guar: guarantee clauses of actuator's compute entrypoint
+      val r0 = compute_CEP_T_Guar (api_input, api_manualActuatorInput, api_output)
+
+      // CEP-T-Case: case clauses of actuator's compute entrypoint
+      val r1 = compute_CEP_T_Case (api_input, api_manualActuatorInput, api_output)
+
+      r0 & r1
+    }
 
   /** CEP-Post: Compute Entrypoint Post-Condition for actuator via containers
     *

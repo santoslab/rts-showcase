@@ -10,36 +10,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -47,36 +47,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -84,36 +84,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -121,24 +121,24 @@ object ModelInfo {
   val OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_MI : Component =
     Component(
       name = "OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -146,36 +146,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -183,36 +183,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -220,36 +220,36 @@ object ModelInfo {
   val CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_MI : Component =
     Component(
       name = "CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel3",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.ports_channel3.id.toZ,
+          name = "channel3",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel4",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.ports_channel4.id.toZ,
+          name = "channel4",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -257,24 +257,24 @@ object ModelInfo {
   val OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_MI : Component =
     Component(
       name = "OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic",
-      id = Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -282,24 +282,24 @@ object ModelInfo {
   val OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_MI : Component =
     Component(
       name = "OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic",
-      id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -307,24 +307,24 @@ object ModelInfo {
   val Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_MI : Component =
     Component(
       name = "Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator",
-      id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_input",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.ports_input.id.toZ,
+          name = "input",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.input.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_manualActuatorInput",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.ports_manualActuatorInput.id.toZ,
+          name = "manualActuatorInput",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.manualActuatorInput.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_output",
-          id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.ports_output.id.toZ,
+          name = "output",
+          id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.output.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -332,24 +332,24 @@ object ModelInfo {
   val OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_MI : Component =
     Component(
       name = "OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic",
-      id = Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_channel1",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.ports_channel1.id.toZ,
+          name = "channel1",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_channel2",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.ports_channel2.id.toZ,
+          name = "channel2",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_actuate",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.ports_actuate.id.toZ,
+          name = "actuate",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.actuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -357,24 +357,24 @@ object ModelInfo {
   val Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_MI : Component =
     Component(
       name = "Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator",
-      id = Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id.toZ,
+      id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_input",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.ports_input.id.toZ,
+          name = "input",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.input.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_manualActuatorInput",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.ports_manualActuatorInput.id.toZ,
+          name = "manualActuatorInput",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.manualActuatorInput.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_output",
-          id = Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.ports_output.id.toZ,
+          name = "output",
+          id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.output.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -382,150 +382,150 @@ object ModelInfo {
   val InstrumentationMockThread_instrumentationMock_instrumentationMockThread_MI : Component =
     Component(
       name = "InstrumentationMockThread_instrumentationMock_instrumentationMockThread",
-      id = Arch.rts_instrumentationMock_instrumentationMockThread.id.toZ,
+      id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_unit1_temperatureLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_temperatureLogic_channel1.id.toZ,
+          name = "unit1_temperatureLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_temperatureLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_temperatureLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_temperatureLogic_channel2.id.toZ,
+          name = "unit1_temperatureLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_temperatureLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_temperatureLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_temperatureLogic_channel3.id.toZ,
+          name = "unit1_temperatureLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_temperatureLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_temperatureLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_temperatureLogic_channel4.id.toZ,
+          name = "unit1_temperatureLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_temperatureLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_pressureLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_pressureLogic_channel1.id.toZ,
+          name = "unit1_pressureLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_pressureLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_pressureLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_pressureLogic_channel2.id.toZ,
+          name = "unit1_pressureLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_pressureLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_pressureLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_pressureLogic_channel3.id.toZ,
+          name = "unit1_pressureLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_pressureLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_pressureLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_pressureLogic_channel4.id.toZ,
+          name = "unit1_pressureLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_pressureLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_saturationLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_saturationLogic_channel1.id.toZ,
+          name = "unit1_saturationLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_saturationLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_saturationLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_saturationLogic_channel2.id.toZ,
+          name = "unit1_saturationLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_saturationLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_saturationLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_saturationLogic_channel3.id.toZ,
+          name = "unit1_saturationLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_saturationLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit1_saturationLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit1_saturationLogic_channel4.id.toZ,
+          name = "unit1_saturationLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit1_saturationLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_temperatureLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_temperatureLogic_channel1.id.toZ,
+          name = "unit2_temperatureLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_temperatureLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_temperatureLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_temperatureLogic_channel2.id.toZ,
+          name = "unit2_temperatureLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_temperatureLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_temperatureLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_temperatureLogic_channel3.id.toZ,
+          name = "unit2_temperatureLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_temperatureLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_temperatureLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_temperatureLogic_channel4.id.toZ,
+          name = "unit2_temperatureLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_temperatureLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_pressureLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_pressureLogic_channel1.id.toZ,
+          name = "unit2_pressureLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_pressureLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_pressureLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_pressureLogic_channel2.id.toZ,
+          name = "unit2_pressureLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_pressureLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_pressureLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_pressureLogic_channel3.id.toZ,
+          name = "unit2_pressureLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_pressureLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_pressureLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_pressureLogic_channel4.id.toZ,
+          name = "unit2_pressureLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_pressureLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_saturationLogic_channel1",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_saturationLogic_channel1.id.toZ,
+          name = "unit2_saturationLogic_channel1",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_saturationLogic_channel1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_saturationLogic_channel2",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_saturationLogic_channel2.id.toZ,
+          name = "unit2_saturationLogic_channel2",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_saturationLogic_channel2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_saturationLogic_channel3",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_saturationLogic_channel3.id.toZ,
+          name = "unit2_saturationLogic_channel3",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_saturationLogic_channel3.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_unit2_saturationLogic_channel4",
-          id = Arch.rts_instrumentationMock_instrumentationMockThread.ports_unit2_saturationLogic_channel4.id.toZ,
+          name = "unit2_saturationLogic_channel4",
+          id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.unit2_saturationLogic_channel4.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -533,18 +533,18 @@ object ModelInfo {
   val EventControlMockThread_eventControlMock_eventControlMockThread_MI : Component =
     Component(
       name = "EventControlMockThread_eventControlMock_eventControlMockThread",
-      id = Arch.rts_eventControlMock_eventControlMockThread.id.toZ,
+      id = Arch.RTS_Instance_eventControlMock_eventControlMockThread.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_manualActuatorInput1",
-          id = Arch.rts_eventControlMock_eventControlMockThread.ports_manualActuatorInput1.id.toZ,
+          name = "manualActuatorInput1",
+          id = Arch.RTS_Instance_eventControlMock_eventControlMockThread.manualActuatorInput1.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = ""),
         Port(
-          name = "ports_manualActuatorInput2",
-          id = Arch.rts_eventControlMock_eventControlMockThread.ports_manualActuatorInput2.id.toZ,
+          name = "manualActuatorInput2",
+          id = Arch.RTS_Instance_eventControlMock_eventControlMockThread.manualActuatorInput2.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.Out,
           slangType = "")))
@@ -552,18 +552,18 @@ object ModelInfo {
   val ActuatorsMockThread_actuatorsMock_actuatorsMockThread_MI : Component =
     Component(
       name = "ActuatorsMockThread_actuatorsMock_actuatorsMockThread",
-      id = Arch.rts_actuatorsMock_actuatorsMockThread.id.toZ,
+      id = Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.id.toZ,
       dispatchProtocol = iDispatchProtocol.Periodic,
       state = ISZ(
         Port(
-          name = "ports_tempPressureActuate",
-          id = Arch.rts_actuatorsMock_actuatorsMockThread.ports_tempPressureActuate.id.toZ,
+          name = "tempPressureActuate",
+          id = Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.tempPressureActuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = ""),
         Port(
-          name = "ports_saturationActuate",
-          id = Arch.rts_actuatorsMock_actuatorsMockThread.ports_saturationActuate.id.toZ,
+          name = "saturationActuate",
+          id = Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.saturationActuate.id.toZ,
           kind = PortKind.Data,
           direction = StateDirection.In,
           slangType = "")))

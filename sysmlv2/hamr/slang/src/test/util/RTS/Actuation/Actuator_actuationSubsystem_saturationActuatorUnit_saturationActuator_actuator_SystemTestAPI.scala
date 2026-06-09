@@ -11,48 +11,48 @@ import RTS._
 
 object Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_SystemTestAPI {
   /** helper method to set the values of all incoming ports
-    * @param api_ports_input incoming data port
-    * @param api_ports_manualActuatorInput incoming data port
+    * @param api_input incoming data port
+    * @param api_manualActuatorInput incoming data port
     */
-  def put_concrete_inputs(api_ports_input: Base_Types.Boolean,
-                          api_ports_manualActuatorInput: Base_Types.Boolean): Unit = {
-    put_ports_input(api_ports_input)
-    put_ports_manualActuatorInput(api_ports_manualActuatorInput)
+  def put_concrete_inputs(api_input: Base_Types.Boolean,
+                          api_manualActuatorInput: Base_Types.Boolean): Unit = {
+    put_input(api_input)
+    put_manualActuatorInput(api_manualActuatorInput)
   }
 
   // setter for incoming data port
-  def put_ports_input(value: Base_Types.Boolean): Unit = {
-    Art.insertInInfrastructurePort(Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.operational_api.ports_input_Id, Base_Types.Boolean_Payload(value))
+  def put_input(value: Base_Types.Boolean): Unit = {
+    Art.insertInInfrastructurePort(Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.operational_api.input_Id, Base_Types.Boolean_Payload(value))
   }
 
   // setter for incoming data port
-  def put_ports_manualActuatorInput(value: Base_Types.Boolean): Unit = {
-    Art.insertInInfrastructurePort(Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.operational_api.ports_manualActuatorInput_Id, Base_Types.Boolean_Payload(value))
+  def put_manualActuatorInput(value: Base_Types.Boolean): Unit = {
+    Art.insertInInfrastructurePort(Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.operational_api.manualActuatorInput_Id, Base_Types.Boolean_Payload(value))
   }
 
   def fetchContainer(): RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = {
-    if (runtimeMonitorStream.contains(Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id)) {
-      val (_, postContainer_) = runtimeMonitorStream.get(Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id).get
+    if (runtimeMonitorStream.contains(Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id)) {
+      val (_, postContainer_) = runtimeMonitorStream.get(Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id).get
       return postContainer_.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS]
     }
     else {
-      assert(F, s"No post state recorded for ${Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name}")
-      halt(s"No post state recorded for ${Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name}")
+      assert(F, s"No post state recorded for ${Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name}")
+      halt(s"No post state recorded for ${Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name}")
     }
   }
 
-  def check_concrete_outputs(api_ports_output: Base_Types.Boolean): Unit = {
+  def check_concrete_outputs(api_output: Base_Types.Boolean): Unit = {
     var failureReasons: ISZ[ST] = ISZ()
 
-    val actual_ports_output = get_api_ports_output()
-    if (api_ports_output != actual_ports_output) {
-      failureReasons = failureReasons :+ st"'ports_output' did not match expected.  Expected: $api_ports_output, Actual: $actual_ports_output"
+    val actual_output = get_api_output()
+    if (api_output != actual_output) {
+      failureReasons = failureReasons :+ st"'output' did not match expected.  Expected: $api_output, Actual: $actual_output"
     }
 
     assert(failureReasons.isEmpty, st"${(failureReasons, "\n")}".render)
   }
 
-  def get_api_ports_output(): Base_Types.Boolean = {
-    return fetchContainer().api_ports_output
+  def get_api_output(): Base_Types.Boolean = {
+    return fetchContainer().api_output
   }
 }

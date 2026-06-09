@@ -34,7 +34,16 @@ object OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic {
       Ensures(
         // BEGIN COMPUTE ENSURES timeTriggered
         // guarantee orOutput
-        api.actuate == (api.channel1 | api.channel2)
+        api.actuate == (api.channel1 | api.channel2),
+        // case ch1_only
+        //   Only channel 1 true
+        (api.channel1 & !(api.channel2)) ___>: (api.actuate),
+        // case ch2_only
+        //   Only channel 2 true
+        (!(api.channel1) & api.channel2) ___>: (api.actuate),
+        // case both_false
+        //   Both channels false
+        (!(api.channel1) & !(api.channel2)) ___>: (!(api.actuate))
         // END COMPUTE ENSURES timeTriggered
       )
     )

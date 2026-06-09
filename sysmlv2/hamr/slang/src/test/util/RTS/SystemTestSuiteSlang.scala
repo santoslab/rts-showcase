@@ -28,9 +28,11 @@ object SystemTestSuiteSlang {
   override def observeInitialisePostState(bridgeId: Art.BridgeId, observationKind: ObservationKind.Type, post: DataContent): Unit = {
     runtimeMonitorStream = runtimeMonitorStream + (bridgeId ~> (observationKind, post))
 
+    assert(GumboXDispatcher.checkContract(observationKind, None(), Some(post)), s"GUMBO post condition for the initialization phase did not hold for $observationKind")
   }
 
   override def observeComputePreState(bridgeId: art.Art.BridgeId, observationKind: RTS.runtimemonitor.ObservationKind.Type, pre: Option[art.DataContent]): Unit = {
+    assert(GumboXDispatcher.checkContract(observationKind, pre, None()), s"GUMBO pre condition for the compute phase did not hold for $observationKind")
   }
 
   override def observeComputePrePostState(bridgeId: Art.BridgeId,
@@ -39,6 +41,7 @@ object SystemTestSuiteSlang {
                                           post: DataContent): Unit = {
     runtimeMonitorStream = runtimeMonitorStream + (bridgeId ~> (observationKind, post))
 
+    assert(GumboXDispatcher.checkContract(observationKind, pre, Some(post)), s"GUMBO post condition for the compute phase did not hold for $observationKind")
   }
 
   def beforeEachSlang(): Unit = {

@@ -26,7 +26,7 @@ void RTS_EventControl_EventControlMockThread_i_Api_string_(STACK_FRAME String re
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logInfo_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(49);
+  sfUpdateLoc(51);
   {
     art_Art_logInfo(SF RTS_EventControl_EventControlMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -35,7 +35,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logInfo_(STACK
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logDebug_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(53);
+  sfUpdateLoc(55);
   {
     art_Art_logDebug(SF RTS_EventControl_EventControlMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -44,7 +44,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logDebug_(STAC
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logError_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logError", 0);
 
-  sfUpdateLoc(57);
+  sfUpdateLoc(59);
   {
     art_Art_logError(SF RTS_EventControl_EventControlMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -53,7 +53,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_logError_(STAC
 Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logInfo_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(49);
+  sfUpdateLoc(51);
   {
     art_Art_logInfo(SF RTS_EventControl_EventControlMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -62,7 +62,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logInfo_(STACK_FR
 Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logDebug_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(53);
+  sfUpdateLoc(55);
   {
     art_Art_logDebug(SF RTS_EventControl_EventControlMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -71,7 +71,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logDebug_(STACK_F
 Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logError_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "logError", 0);
 
-  sfUpdateLoc(57);
+  sfUpdateLoc(59);
   {
     art_Art_logError(SF RTS_EventControl_EventControlMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -80,7 +80,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_logError_(STACK_F
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_put_manualActuatorInput1_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "put_manualActuatorInput1", 0);
 
-  sfUpdateLoc(28);
+  sfUpdateLoc(30);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -91,7 +91,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_put_manualActu
 Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_put_manualActuatorInput1_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "put_manualActuatorInput1", 0);
 
-  sfUpdateLoc(28);
+  sfUpdateLoc(30);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -102,7 +102,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_put_manualActuato
 Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_put_manualActuatorInput2_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "put_manualActuatorInput2", 0);
 
-  sfUpdateLoc(45);
+  sfUpdateLoc(47);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -113,7 +113,7 @@ Unit RTS_EventControl_EventControlMockThread_i_Initialization_Api_put_manualActu
 Unit RTS_EventControl_EventControlMockThread_i_Operational_Api_put_manualActuatorInput2_(STACK_FRAME RTS_EventControl_EventControlMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "EventControlMockThread_i_Api.scala", "RTS.EventControl.EventControlMockThread_i_Api", "put_manualActuatorInput2", 0);
 
-  sfUpdateLoc(45);
+  sfUpdateLoc(47);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);

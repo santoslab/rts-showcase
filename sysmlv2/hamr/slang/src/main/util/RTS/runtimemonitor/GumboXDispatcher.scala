@@ -10,153 +10,167 @@ import RTS._
 object GumboXDispatcher {
   def checkContract(observationKind: ObservationKind.Type, preContainer: Option[art.DataContent], postContainer: Option[art.DataContent]): B = {
     observationKind match {
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit =>
         // checking the post-state values of orLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute =>
         // checking the pre-state values of orLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute =>
-        // checking the post-state values of orLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute =>
+        val result: B = RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS])
+        //println(s"orLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit =>
         // checking the post-state values of coincidenceLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute =>
         // checking the pre-state values of coincidenceLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute =>
-        // checking the post-state values of coincidenceLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute =>
+        val result: B = RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS])
+        //println(s"coincidenceLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit =>
         // checking the post-state values of orLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute =>
         // checking the pre-state values of orLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute =>
-        // checking the post-state values of orLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute =>
+        val result: B = RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS])
+        //println(s"orLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit =>
         // checking the post-state values of orLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute =>
         // checking the pre-state values of orLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute =>
-        // checking the post-state values of orLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute =>
+        val result: B = RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS])
+        //println(s"orLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit =>
-        // checking the post-state values of actuator's initialise entrypoint is not required
-        return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit =>
+        val result: B = RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_GumboX.inititialize_IEP_Post_Container(postContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS])
+        //println(s"actuator.initialise: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute =>
         // checking the pre-state values of actuator's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute =>
-        // checking the post-state values of actuator's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute =>
+        val result: B = RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS])
+        //println(s"actuator.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit =>
         // checking the post-state values of orLogic's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute =>
         // checking the pre-state values of orLogic's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute =>
-        // checking the post-state values of orLogic's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute =>
+        val result: B = RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS])
+        //println(s"orLogic.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit =>
-        // checking the post-state values of actuator's initialise entrypoint is not required
-        return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit =>
+        val result: B = RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX.inititialize_IEP_Post_Container(postContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS])
+        //println(s"actuator.initialise: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute =>
         // checking the pre-state values of actuator's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute =>
-        // checking the post-state values of actuator's compute entrypoint is not required
-        return T
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute =>
+        val result: B = RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX.compute_CEP_Post_Container(preContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS], postContainer.get.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS])
+        //println(s"actuator.timeTriggered: Post-condition: ${if (result) "" else "un"}satisfied")
+        return result
 
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postInit =>
         // checking the post-state values of instrumentationMockThread's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_preCompute =>
         // checking the pre-state values of instrumentationMockThread's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postCompute =>
         // checking the post-state values of instrumentationMockThread's compute entrypoint is not required
         return T
 
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postInit =>
         // checking the post-state values of eventControlMockThread's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_preCompute =>
         // checking the pre-state values of eventControlMockThread's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postCompute =>
         // checking the post-state values of eventControlMockThread's compute entrypoint is not required
         return T
 
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postInit =>
         // checking the post-state values of actuatorsMockThread's initialise entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_preCompute =>
         // checking the pre-state values of actuatorsMockThread's compute entrypoint is not required
         return T
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postCompute =>
         // checking the post-state values of actuatorsMockThread's compute entrypoint is not required
         return T
 
@@ -169,21 +183,21 @@ object GumboXDispatcher {
 
     val testRoot = Os.path(".") / "src" / "test" / "bridge"
 
-    val CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id
-    val CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id
-    val CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id
-    val OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_id = Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id
-    val CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id
-    val CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id
-    val CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_id = Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id
-    val OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_id = Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id
-    val OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id
-    val Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_id = Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id
-    val OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_id = Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id
-    val Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_id = Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id
-    val InstrumentationMockThread_instrumentationMock_instrumentationMockThread_id = Arch.rts_instrumentationMock_instrumentationMockThread.id
-    val EventControlMockThread_eventControlMock_eventControlMockThread_id = Arch.rts_eventControlMock_eventControlMockThread.id
-    val ActuatorsMockThread_actuatorsMock_actuatorsMockThread_id = Arch.rts_actuatorsMock_actuatorsMockThread.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id
+    val OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id
+    val CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id
+    val OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_id = Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id
+    val OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id
+    val Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_id = Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id
+    val OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id
+    val Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_id = Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id
+    val InstrumentationMockThread_instrumentationMock_instrumentationMockThread_id = Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.id
+    val EventControlMockThread_eventControlMock_eventControlMockThread_id = Arch.RTS_Instance_eventControlMock_eventControlMockThread.id
+    val ActuatorsMockThread_actuatorsMock_actuatorsMockThread_id = Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.id
 
     def genUniqueSuiteName(path: Os.Path, prefix: String): String = {
       var i = 0
@@ -496,18 +510,228 @@ object GumboXDispatcher {
       else ""
 
     observationKind match {
-
-
-
-
-
-
-
-
-
-
-
-
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit: Check Post-condition$suffix") {
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val postContainer = RTS.JSON.toActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(postJson).left
+                    |  assert(RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_GumboX.inititialize_IEP_Post_Container(postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit: Check Post-condition$suffix") {
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val postContainer = RTS.JSON.toActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(postJson).left
+                    |  assert(RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX.inititialize_IEP_Post_Container(postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit""")
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute =>
+        return (st"""// Begin test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute
+                    |
+                    |test(s"RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute: Check Post-condition$suffix") {
+                    |  val preJson: String = st${tq}${preContainer.get}${tq}.render
+                    |  val postJson: String = st${tq}${postContainer.get}${tq}.render
+                    |  val preContainer = RTS.JSON.toActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(preJson).left
+                    |  val postContainer = RTS.JSON.toActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(postJson).left
+                    |  if (verbose) {
+                    |    println("Pre-State Values:")
+                    |    println(s"  $$preContainer")
+                    |    println("Post-State Values:")
+                    |    println(s"  $$postContainer");
+                    |  }
+                    |  assert(RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_GumboX.compute_CEP_Post_Container(preContainer, postContainer))
+                    |}
+                    |// End test cases for RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute""")
 
 
 
@@ -517,297 +741,297 @@ object GumboXDispatcher {
 
   def getUpdates(bridge_id: art.Art.BridgeId, observationKind: ObservationKind.Type, container: art.DataContent): Map[String, String] = {
     observationKind match {
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_output" ~> postContainer.api_ports_output.string
+        updates = updates + s"${bridge_id}_Out_output" ~> postContainer.api_output.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_output" ~> postContainer.api_ports_output.string
+        updates = updates + s"${bridge_id}_Out_output" ~> postContainer.api_output.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel1" ~> postContainer.api_ports_unit1_temperatureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel2" ~> postContainer.api_ports_unit1_temperatureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel3" ~> postContainer.api_ports_unit1_temperatureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel4" ~> postContainer.api_ports_unit1_temperatureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel1" ~> postContainer.api_ports_unit1_pressureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel2" ~> postContainer.api_ports_unit1_pressureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel3" ~> postContainer.api_ports_unit1_pressureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel4" ~> postContainer.api_ports_unit1_pressureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel1" ~> postContainer.api_ports_unit1_saturationLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel2" ~> postContainer.api_ports_unit1_saturationLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel3" ~> postContainer.api_ports_unit1_saturationLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel4" ~> postContainer.api_ports_unit1_saturationLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel1" ~> postContainer.api_ports_unit2_temperatureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel2" ~> postContainer.api_ports_unit2_temperatureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel3" ~> postContainer.api_ports_unit2_temperatureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel4" ~> postContainer.api_ports_unit2_temperatureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel1" ~> postContainer.api_ports_unit2_pressureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel2" ~> postContainer.api_ports_unit2_pressureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel3" ~> postContainer.api_ports_unit2_pressureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel4" ~> postContainer.api_ports_unit2_pressureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel1" ~> postContainer.api_ports_unit2_saturationLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel2" ~> postContainer.api_ports_unit2_saturationLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel3" ~> postContainer.api_ports_unit2_saturationLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel4" ~> postContainer.api_ports_unit2_saturationLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel1" ~> postContainer.api_unit1_temperatureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel2" ~> postContainer.api_unit1_temperatureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel3" ~> postContainer.api_unit1_temperatureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel4" ~> postContainer.api_unit1_temperatureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel1" ~> postContainer.api_unit1_pressureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel2" ~> postContainer.api_unit1_pressureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel3" ~> postContainer.api_unit1_pressureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel4" ~> postContainer.api_unit1_pressureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel1" ~> postContainer.api_unit1_saturationLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel2" ~> postContainer.api_unit1_saturationLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel3" ~> postContainer.api_unit1_saturationLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel4" ~> postContainer.api_unit1_saturationLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel1" ~> postContainer.api_unit2_temperatureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel2" ~> postContainer.api_unit2_temperatureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel3" ~> postContainer.api_unit2_temperatureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel4" ~> postContainer.api_unit2_temperatureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel1" ~> postContainer.api_unit2_pressureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel2" ~> postContainer.api_unit2_pressureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel3" ~> postContainer.api_unit2_pressureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel4" ~> postContainer.api_unit2_pressureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel1" ~> postContainer.api_unit2_saturationLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel2" ~> postContainer.api_unit2_saturationLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel3" ~> postContainer.api_unit2_saturationLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel4" ~> postContainer.api_unit2_saturationLogic_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_manualActuatorInput1" ~> postContainer.api_ports_manualActuatorInput1.string
-        updates = updates + s"${bridge_id}_Out_ports_manualActuatorInput2" ~> postContainer.api_ports_manualActuatorInput2.string
+        updates = updates + s"${bridge_id}_Out_manualActuatorInput1" ~> postContainer.api_manualActuatorInput1.string
+        updates = updates + s"${bridge_id}_Out_manualActuatorInput2" ~> postContainer.api_manualActuatorInput2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postInit =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postInit =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_PS]
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
-        updates = updates + s"${bridge_id}_In_ports_channel3" ~> preContainer.api_ports_channel3.string
-        updates = updates + s"${bridge_id}_In_ports_channel4" ~> preContainer.api_ports_channel4.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
+        updates = updates + s"${bridge_id}_In_channel3" ~> preContainer.api_channel3.string
+        updates = updates + s"${bridge_id}_In_channel4" ~> preContainer.api_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_input" ~> preContainer.api_ports_input.string
-        updates = updates + s"${bridge_id}_In_ports_manualActuatorInput" ~> preContainer.api_ports_manualActuatorInput.string
+        updates = updates + s"${bridge_id}_In_input" ~> preContainer.api_input.string
+        updates = updates + s"${bridge_id}_In_manualActuatorInput" ~> preContainer.api_manualActuatorInput.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_channel1" ~> preContainer.api_ports_channel1.string
-        updates = updates + s"${bridge_id}_In_ports_channel2" ~> preContainer.api_ports_channel2.string
+        updates = updates + s"${bridge_id}_In_channel1" ~> preContainer.api_channel1.string
+        updates = updates + s"${bridge_id}_In_channel2" ~> preContainer.api_channel2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_input" ~> preContainer.api_ports_input.string
-        updates = updates + s"${bridge_id}_In_ports_manualActuatorInput" ~> preContainer.api_ports_manualActuatorInput.string
+        updates = updates + s"${bridge_id}_In_input" ~> preContainer.api_input.string
+        updates = updates + s"${bridge_id}_In_manualActuatorInput" ~> preContainer.api_manualActuatorInput.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_PS]
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_PS]
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_preCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_preCompute =>
         var updates: Map[String, String] = Map.empty
         val preContainer = container.asInstanceOf[RTS.Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS]
-        updates = updates + s"${bridge_id}_In_ports_tempPressureActuate" ~> preContainer.api_ports_tempPressureActuate.string
-        updates = updates + s"${bridge_id}_In_ports_saturationActuate" ~> preContainer.api_ports_saturationActuate.string
+        updates = updates + s"${bridge_id}_In_tempPressureActuate" ~> preContainer.api_tempPressureActuate.string
+        updates = updates + s"${bridge_id}_In_saturationActuate" ~> preContainer.api_saturationActuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_output" ~> postContainer.api_ports_output.string
+        updates = updates + s"${bridge_id}_Out_output" ~> postContainer.api_output.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_actuate" ~> postContainer.api_ports_actuate.string
+        updates = updates + s"${bridge_id}_Out_actuate" ~> postContainer.api_actuate.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_output" ~> postContainer.api_ports_output.string
+        updates = updates + s"${bridge_id}_Out_output" ~> postContainer.api_output.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel1" ~> postContainer.api_ports_unit1_temperatureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel2" ~> postContainer.api_ports_unit1_temperatureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel3" ~> postContainer.api_ports_unit1_temperatureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_temperatureLogic_channel4" ~> postContainer.api_ports_unit1_temperatureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel1" ~> postContainer.api_ports_unit1_pressureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel2" ~> postContainer.api_ports_unit1_pressureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel3" ~> postContainer.api_ports_unit1_pressureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_pressureLogic_channel4" ~> postContainer.api_ports_unit1_pressureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel1" ~> postContainer.api_ports_unit1_saturationLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel2" ~> postContainer.api_ports_unit1_saturationLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel3" ~> postContainer.api_ports_unit1_saturationLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit1_saturationLogic_channel4" ~> postContainer.api_ports_unit1_saturationLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel1" ~> postContainer.api_ports_unit2_temperatureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel2" ~> postContainer.api_ports_unit2_temperatureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel3" ~> postContainer.api_ports_unit2_temperatureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_temperatureLogic_channel4" ~> postContainer.api_ports_unit2_temperatureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel1" ~> postContainer.api_ports_unit2_pressureLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel2" ~> postContainer.api_ports_unit2_pressureLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel3" ~> postContainer.api_ports_unit2_pressureLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_pressureLogic_channel4" ~> postContainer.api_ports_unit2_pressureLogic_channel4.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel1" ~> postContainer.api_ports_unit2_saturationLogic_channel1.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel2" ~> postContainer.api_ports_unit2_saturationLogic_channel2.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel3" ~> postContainer.api_ports_unit2_saturationLogic_channel3.string
-        updates = updates + s"${bridge_id}_Out_ports_unit2_saturationLogic_channel4" ~> postContainer.api_ports_unit2_saturationLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel1" ~> postContainer.api_unit1_temperatureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel2" ~> postContainer.api_unit1_temperatureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel3" ~> postContainer.api_unit1_temperatureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_temperatureLogic_channel4" ~> postContainer.api_unit1_temperatureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel1" ~> postContainer.api_unit1_pressureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel2" ~> postContainer.api_unit1_pressureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel3" ~> postContainer.api_unit1_pressureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_pressureLogic_channel4" ~> postContainer.api_unit1_pressureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel1" ~> postContainer.api_unit1_saturationLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel2" ~> postContainer.api_unit1_saturationLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel3" ~> postContainer.api_unit1_saturationLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit1_saturationLogic_channel4" ~> postContainer.api_unit1_saturationLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel1" ~> postContainer.api_unit2_temperatureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel2" ~> postContainer.api_unit2_temperatureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel3" ~> postContainer.api_unit2_temperatureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_temperatureLogic_channel4" ~> postContainer.api_unit2_temperatureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel1" ~> postContainer.api_unit2_pressureLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel2" ~> postContainer.api_unit2_pressureLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel3" ~> postContainer.api_unit2_pressureLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_pressureLogic_channel4" ~> postContainer.api_unit2_pressureLogic_channel4.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel1" ~> postContainer.api_unit2_saturationLogic_channel1.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel2" ~> postContainer.api_unit2_saturationLogic_channel2.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel3" ~> postContainer.api_unit2_saturationLogic_channel3.string
+        updates = updates + s"${bridge_id}_Out_unit2_saturationLogic_channel4" ~> postContainer.api_unit2_saturationLogic_channel4.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS]
-        updates = updates + s"${bridge_id}_Out_ports_manualActuatorInput1" ~> postContainer.api_ports_manualActuatorInput1.string
-        updates = updates + s"${bridge_id}_Out_ports_manualActuatorInput2" ~> postContainer.api_ports_manualActuatorInput2.string
+        updates = updates + s"${bridge_id}_Out_manualActuatorInput1" ~> postContainer.api_manualActuatorInput1.string
+        updates = updates + s"${bridge_id}_Out_manualActuatorInput2" ~> postContainer.api_manualActuatorInput2.string
         return updates
-      case RTS.runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postCompute =>
+      case RTS.runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postCompute =>
         var updates: Map[String, String] = Map.empty
         val postContainer = container.asInstanceOf[RTS.Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_PS]
         return updates

@@ -15,13 +15,13 @@ import RTS.Actuators.{ActuatorsMockThread_actuatorsMock_actuatorsMockThread => c
   val dispatchProtocol: DispatchPropertyProtocol,
   val dispatchTriggers: Option[ISZ[Art.PortId]],
 
-  ports_tempPressureActuate: Port[Base_Types.Boolean],
-  ports_saturationActuate: Port[Base_Types.Boolean]
+  tempPressureActuate: Port[Base_Types.Boolean],
+  saturationActuate: Port[Base_Types.Boolean]
   ) extends Bridge {
 
   val ports : Bridge.Ports = Bridge.Ports(
-    dataIns = ISZ[art.UPort](ports_tempPressureActuate,
-                             ports_saturationActuate),
+    dataIns = ISZ[art.UPort](tempPressureActuate,
+                             saturationActuate),
 
     dataOuts = ISZ[art.UPort](),
 
@@ -33,8 +33,8 @@ import RTS.Actuators.{ActuatorsMockThread_actuatorsMock_actuatorsMockThread => c
   val initialization_api : ActuatorsMockThread_Initialization_Api = {
     val api = ActuatorsMockThread_Initialization_Api(
       id,
-      ports_tempPressureActuate.id,
-      ports_saturationActuate.id
+      tempPressureActuate.id,
+      saturationActuate.id
     )
     ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Bridge.c_initialization_api = Some(api)
     api
@@ -43,8 +43,8 @@ import RTS.Actuators.{ActuatorsMockThread_actuatorsMock_actuatorsMockThread => c
   val operational_api : ActuatorsMockThread_Operational_Api = {
     val api = ActuatorsMockThread_Operational_Api(
       id,
-      ports_tempPressureActuate.id,
-      ports_saturationActuate.id
+      tempPressureActuate.id,
+      saturationActuate.id
     )
     ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Bridge.c_operational_api = Some(api)
     api
@@ -54,8 +54,8 @@ import RTS.Actuators.{ActuatorsMockThread_actuatorsMock_actuatorsMockThread => c
     ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Bridge.EntryPoints(
       id,
 
-      ports_tempPressureActuate.id,
-      ports_saturationActuate.id,
+      tempPressureActuate.id,
+      saturationActuate.id,
 
       dispatchTriggers,
 
@@ -70,14 +70,14 @@ object ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Bridge {
 
   @datatype class EntryPoints(
     ActuatorsMockThread_actuatorsMock_actuatorsMockThread_BridgeId : Art.BridgeId,
-    ports_tempPressureActuate_Id : Art.PortId,
-    ports_saturationActuate_Id : Art.PortId,
+    tempPressureActuate_Id : Art.PortId,
+    saturationActuate_Id : Art.PortId,
     dispatchTriggers : Option[ISZ[Art.PortId]],
     initialization_api: ActuatorsMockThread_Initialization_Api,
     operational_api: ActuatorsMockThread_Operational_Api) extends Bridge.EntryPoints {
 
-    val dataInPortIds: ISZ[Art.PortId] = IS(ports_tempPressureActuate_Id,
-                                            ports_saturationActuate_Id)
+    val dataInPortIds: ISZ[Art.PortId] = IS(tempPressureActuate_Id,
+                                            saturationActuate_Id)
 
     val eventInPortIds: ISZ[Art.PortId] = IS()
 

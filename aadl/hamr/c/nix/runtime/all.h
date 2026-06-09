@@ -60,20 +60,6 @@ extern "C" {
 #include <RTS_Arch.h>
 #include <RTS_Base_Types.h>
 #include <RTS_Base_Types_Boolean_Payload.h>
-#include <RTS_Base_Types_Character_Payload.h>
-#include <RTS_Base_Types_Float_32_Payload.h>
-#include <RTS_Base_Types_Float_64_Payload.h>
-#include <RTS_Base_Types_Float_Payload.h>
-#include <RTS_Base_Types_Integer_16_Payload.h>
-#include <RTS_Base_Types_Integer_32_Payload.h>
-#include <RTS_Base_Types_Integer_64_Payload.h>
-#include <RTS_Base_Types_Integer_8_Payload.h>
-#include <RTS_Base_Types_Integer_Payload.h>
-#include <RTS_Base_Types_String_Payload.h>
-#include <RTS_Base_Types_Unsigned_16_Payload.h>
-#include <RTS_Base_Types_Unsigned_32_Payload.h>
-#include <RTS_Base_Types_Unsigned_64_Payload.h>
-#include <RTS_Base_Types_Unsigned_8_Payload.h>
 #include <RTS_Cli.h>
 #include <RTS_Cli_HelpOption.h>
 #include <RTS_Cli_RunChoice_Type.h>
@@ -237,10 +223,7 @@ extern "C" {
 #include <org_sireum_Option_E142FF.h>
 #include <org_sireum_Option_E8BC07.h>
 #include <org_sireum_Option_FEE1DB.h>
-#include <org_sireum_S16.h>
-#include <org_sireum_S32.h>
 #include <org_sireum_S64.h>
-#include <org_sireum_S8.h>
 #include <org_sireum_Some.h>
 #include <org_sireum_Some_24B656.h>
 #include <org_sireum_Some_2BC073.h>
@@ -276,10 +259,6 @@ extern "C" {
 #include <org_sireum_Tuple2_E0098E.h>
 #include <org_sireum_Tuple2_EC3B57.h>
 #include <org_sireum_Tuple4_FA9F23.h>
-#include <org_sireum_U16.h>
-#include <org_sireum_U32.h>
-#include <org_sireum_U64.h>
-#include <org_sireum_U8.h>
 #include <org_sireum_conversions_Z.h>
 
 

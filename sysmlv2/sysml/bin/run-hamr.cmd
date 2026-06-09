@@ -18,56 +18,37 @@ exit /B %errorlevel%
 
 import org.sireum._
 
-val aadlDir = Os.slashDir.up
+val home: Os.Path = Os.slashDir.up
 
+val sysmlDir: Os.Path = home
+val hamrDir: Os.Path = sysmlDir.up / "hamr"
 
-val sireumBin = Os.path(Os.env("SIREUM_HOME").get) / "bin" 
-val sireum = sireumBin / (if(Os.isWin) "sireum.bat" else "sireum")
+val sireumBin: Os.Path = Os.path(Os.env("SIREUM_HOME").get) / "bin"
+val sireum: Os.Path = sireumBin / (if(Os.isWin) "sireum.bat" else "sireum")
 
-if(Os.cliArgs.size > 1) {
-  eprintln("Only expecting a single argument")
-  Os.exit(1)
+val packageName: String = "RTS"
+
+var sourcePath: String = sysmlDir.string
+if (!(sysmlDir / "sysml-aadl-libraries").exists && Os.envs.contains("SYSML_AADL_LIBRARIES")) {
+  sourcePath = s"$sourcePath:${Os.env("SYSML_AADL_LIBRARIES").get}"
 }
 
-val platform: String =
-  if(Os.cliArgs.nonEmpty) Os.cliArgs(0)
-  else "JVM"
-
-val packageName = "RTS"
-val excludeComponentImpl = F
-
-var codegenArgs: ISZ[String] = ISZ(sireum.value, "hamr", "codegen",
-  "--platform", platform,
+var codegenArgs: ISZ[String] = ISZ(
+  sireum.value, "hamr", "sysml", "codegen",
   "--package-name", packageName,
-  "--output-dir", (aadlDir.up / "hamr").string,
-  "--output-c-dir", (aadlDir.up / "hamr" / "c").string,
-  "--sel4-output-dir", (aadlDir.up / "hamr" / "camkes").string,  
-  "--run-transpiler",
-  "--bit-width", "32",
-  "--max-string-size", "256",
-  "--max-array-size", "1",
+  "--output-dir", hamrDir.value,
   "--verbose",
-  "--workspace-root-dir", aadlDir.string)
+  "--no-proyek-ive",
+  "--workspace-root-dir", sysmlDir.string,
+  "--sourcepath", sourcePath,
+  "--system-name", "RTS::RTS",
+)
 
-if (platform == "JVM") {
-  codegenArgs = codegenArgs :+ "--runtime-monitoring"
-} else {
-  println("***********************************************************************")
-  println(s"Note: runtime-monitoring support is not yet avialable for ${platform}")
-  println("***********************************************************************")
-}
+codegenArgs = codegenArgs ++ Os.cliArgs
 
-if (excludeComponentImpl) {
-  codegenArgs = codegenArgs :+ "--exclude-component-impl"
-}
+codegenArgs = codegenArgs :+ (sysmlDir / "rts.sysml").value
 
-if ((aadlDir.up / "hamr" / "slang" / ".idea").exists) {
-  codegenArgs = codegenArgs :+ "--no-proyek-ive"
-}
-
-codegenArgs = codegenArgs :+ (aadlDir / "air" / "rts.json").string
-
-val results = Os.proc(codegenArgs).echo.console.run()
+val results = Os.proc(codegenArgs).at(home).echo.console.run()
 
 // Running under windows results in 23 which is an indication 
 // a platform restart was requested. Codegen completes 

@@ -268,18 +268,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -291,12 +291,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container): Unit = {
@@ -308,18 +308,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -331,12 +331,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container): Unit = {
@@ -348,18 +348,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -371,12 +371,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container): Unit = {
@@ -388,14 +388,14 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container): Unit = {
@@ -407,12 +407,12 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container): Unit = {
@@ -424,18 +424,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -447,12 +447,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container): Unit = {
@@ -464,18 +464,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -487,12 +487,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container): Unit = {
@@ -504,18 +504,18 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
-      writer.writeB(o.api_ports_channel3)
-      writer.writeB(o.api_ports_channel4)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
+      writer.writeB(o.api_channel3)
+      writer.writeB(o.api_channel4)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container): Unit = {
@@ -527,12 +527,12 @@ object MsgPack {
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container): Unit = {
@@ -544,14 +544,14 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container): Unit = {
@@ -563,12 +563,12 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container): Unit = {
@@ -580,14 +580,14 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container): Unit = {
@@ -599,12 +599,12 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container): Unit = {
@@ -616,14 +616,14 @@ object MsgPack {
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P)
-      writer.writeB(o.api_ports_input)
-      writer.writeB(o.api_ports_manualActuatorInput)
+      writer.writeB(o.api_input)
+      writer.writeB(o.api_manualActuatorInput)
     }
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS)
-      writer.writeB(o.api_ports_input)
-      writer.writeB(o.api_ports_manualActuatorInput)
+      writer.writeB(o.api_input)
+      writer.writeB(o.api_manualActuatorInput)
     }
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container): Unit = {
@@ -635,12 +635,12 @@ object MsgPack {
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P)
-      writer.writeB(o.api_ports_output)
+      writer.writeB(o.api_output)
     }
 
     def writeActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS)
-      writer.writeB(o.api_ports_output)
+      writer.writeB(o.api_output)
     }
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container): Unit = {
@@ -652,14 +652,14 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS)
-      writer.writeB(o.api_ports_channel1)
-      writer.writeB(o.api_ports_channel2)
+      writer.writeB(o.api_channel1)
+      writer.writeB(o.api_channel2)
     }
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container): Unit = {
@@ -671,12 +671,12 @@ object MsgPack {
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS)
-      writer.writeB(o.api_ports_actuate)
+      writer.writeB(o.api_actuate)
     }
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container): Unit = {
@@ -688,14 +688,14 @@ object MsgPack {
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P)
-      writer.writeB(o.api_ports_input)
-      writer.writeB(o.api_ports_manualActuatorInput)
+      writer.writeB(o.api_input)
+      writer.writeB(o.api_manualActuatorInput)
     }
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS)
-      writer.writeB(o.api_ports_input)
-      writer.writeB(o.api_ports_manualActuatorInput)
+      writer.writeB(o.api_input)
+      writer.writeB(o.api_manualActuatorInput)
     }
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container): Unit = {
@@ -707,12 +707,12 @@ object MsgPack {
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P)
-      writer.writeB(o.api_ports_output)
+      writer.writeB(o.api_output)
     }
 
     def writeActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS)
-      writer.writeB(o.api_ports_output)
+      writer.writeB(o.api_output)
     }
 
     def writeInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container(o: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container): Unit = {
@@ -739,58 +739,58 @@ object MsgPack {
 
     def writeInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(o: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P): Unit = {
       writer.writeZ(Constants.InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel1)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel2)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel3)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel4)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel1)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel2)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel3)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel4)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel1)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel2)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel3)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel4)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel1)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel2)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel3)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel4)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel1)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel2)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel3)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel4)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel1)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel2)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel3)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel4)
+      writer.writeB(o.api_unit1_pressureLogic_channel1)
+      writer.writeB(o.api_unit1_pressureLogic_channel2)
+      writer.writeB(o.api_unit1_pressureLogic_channel3)
+      writer.writeB(o.api_unit1_pressureLogic_channel4)
+      writer.writeB(o.api_unit1_saturationLogic_channel1)
+      writer.writeB(o.api_unit1_saturationLogic_channel2)
+      writer.writeB(o.api_unit1_saturationLogic_channel3)
+      writer.writeB(o.api_unit1_saturationLogic_channel4)
+      writer.writeB(o.api_unit1_temperatureLogic_channel1)
+      writer.writeB(o.api_unit1_temperatureLogic_channel2)
+      writer.writeB(o.api_unit1_temperatureLogic_channel3)
+      writer.writeB(o.api_unit1_temperatureLogic_channel4)
+      writer.writeB(o.api_unit2_pressureLogic_channel1)
+      writer.writeB(o.api_unit2_pressureLogic_channel2)
+      writer.writeB(o.api_unit2_pressureLogic_channel3)
+      writer.writeB(o.api_unit2_pressureLogic_channel4)
+      writer.writeB(o.api_unit2_saturationLogic_channel1)
+      writer.writeB(o.api_unit2_saturationLogic_channel2)
+      writer.writeB(o.api_unit2_saturationLogic_channel3)
+      writer.writeB(o.api_unit2_saturationLogic_channel4)
+      writer.writeB(o.api_unit2_temperatureLogic_channel1)
+      writer.writeB(o.api_unit2_temperatureLogic_channel2)
+      writer.writeB(o.api_unit2_temperatureLogic_channel3)
+      writer.writeB(o.api_unit2_temperatureLogic_channel4)
     }
 
     def writeInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(o: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel1)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel2)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel3)
-      writer.writeB(o.api_ports_unit1_pressureLogic_channel4)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel1)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel2)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel3)
-      writer.writeB(o.api_ports_unit1_saturationLogic_channel4)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel1)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel2)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel3)
-      writer.writeB(o.api_ports_unit1_temperatureLogic_channel4)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel1)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel2)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel3)
-      writer.writeB(o.api_ports_unit2_pressureLogic_channel4)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel1)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel2)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel3)
-      writer.writeB(o.api_ports_unit2_saturationLogic_channel4)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel1)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel2)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel3)
-      writer.writeB(o.api_ports_unit2_temperatureLogic_channel4)
+      writer.writeB(o.api_unit1_pressureLogic_channel1)
+      writer.writeB(o.api_unit1_pressureLogic_channel2)
+      writer.writeB(o.api_unit1_pressureLogic_channel3)
+      writer.writeB(o.api_unit1_pressureLogic_channel4)
+      writer.writeB(o.api_unit1_saturationLogic_channel1)
+      writer.writeB(o.api_unit1_saturationLogic_channel2)
+      writer.writeB(o.api_unit1_saturationLogic_channel3)
+      writer.writeB(o.api_unit1_saturationLogic_channel4)
+      writer.writeB(o.api_unit1_temperatureLogic_channel1)
+      writer.writeB(o.api_unit1_temperatureLogic_channel2)
+      writer.writeB(o.api_unit1_temperatureLogic_channel3)
+      writer.writeB(o.api_unit1_temperatureLogic_channel4)
+      writer.writeB(o.api_unit2_pressureLogic_channel1)
+      writer.writeB(o.api_unit2_pressureLogic_channel2)
+      writer.writeB(o.api_unit2_pressureLogic_channel3)
+      writer.writeB(o.api_unit2_pressureLogic_channel4)
+      writer.writeB(o.api_unit2_saturationLogic_channel1)
+      writer.writeB(o.api_unit2_saturationLogic_channel2)
+      writer.writeB(o.api_unit2_saturationLogic_channel3)
+      writer.writeB(o.api_unit2_saturationLogic_channel4)
+      writer.writeB(o.api_unit2_temperatureLogic_channel1)
+      writer.writeB(o.api_unit2_temperatureLogic_channel2)
+      writer.writeB(o.api_unit2_temperatureLogic_channel3)
+      writer.writeB(o.api_unit2_temperatureLogic_channel4)
     }
 
     def writeEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container(o: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container): Unit = {
@@ -817,14 +817,14 @@ object MsgPack {
 
     def writeEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(o: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P): Unit = {
       writer.writeZ(Constants.EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P)
-      writer.writeB(o.api_ports_manualActuatorInput1)
-      writer.writeB(o.api_ports_manualActuatorInput2)
+      writer.writeB(o.api_manualActuatorInput1)
+      writer.writeB(o.api_manualActuatorInput2)
     }
 
     def writeEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(o: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS): Unit = {
       writer.writeZ(Constants.EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS)
-      writer.writeB(o.api_ports_manualActuatorInput1)
-      writer.writeB(o.api_ports_manualActuatorInput2)
+      writer.writeB(o.api_manualActuatorInput1)
+      writer.writeB(o.api_manualActuatorInput2)
     }
 
     def writeActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container): Unit = {
@@ -836,14 +836,14 @@ object MsgPack {
 
     def writeActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P): Unit = {
       writer.writeZ(Constants.ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P)
-      writer.writeB(o.api_ports_saturationActuate)
-      writer.writeB(o.api_ports_tempPressureActuate)
+      writer.writeB(o.api_saturationActuate)
+      writer.writeB(o.api_tempPressureActuate)
     }
 
     def writeActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS): Unit = {
       writer.writeZ(Constants.ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS)
-      writer.writeB(o.api_ports_saturationActuate)
-      writer.writeB(o.api_ports_tempPressureActuate)
+      writer.writeB(o.api_saturationActuate)
+      writer.writeB(o.api_tempPressureActuate)
     }
 
     def writeActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container): Unit = {
@@ -1272,11 +1272,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1288,11 +1288,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container = {
@@ -1317,8 +1317,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1330,8 +1330,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container = {
@@ -1356,11 +1356,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1372,11 +1372,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container = {
@@ -1401,8 +1401,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1414,8 +1414,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container = {
@@ -1440,11 +1440,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1456,11 +1456,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container = {
@@ -1485,8 +1485,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1498,8 +1498,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container = {
@@ -1524,9 +1524,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS = {
@@ -1538,9 +1538,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container = {
@@ -1565,8 +1565,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS = {
@@ -1578,8 +1578,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container = {
@@ -1604,11 +1604,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1620,11 +1620,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container = {
@@ -1649,8 +1649,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1662,8 +1662,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container = {
@@ -1688,11 +1688,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1704,11 +1704,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container = {
@@ -1733,8 +1733,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1746,8 +1746,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container = {
@@ -1772,11 +1772,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1788,11 +1788,11 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      val api_ports_channel3 = reader.readB()
-      val api_ports_channel4 = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      val api_channel3 = reader.readB()
+      val api_channel4 = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container = {
@@ -1817,8 +1817,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1830,8 +1830,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container = {
@@ -1856,9 +1856,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS = {
@@ -1870,9 +1870,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container = {
@@ -1897,8 +1897,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS = {
@@ -1910,8 +1910,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container = {
@@ -1936,9 +1936,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS = {
@@ -1950,9 +1950,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container = {
@@ -1977,8 +1977,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS = {
@@ -1990,8 +1990,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container = {
@@ -2016,9 +2016,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P)
       }
-      val api_ports_input = reader.readB()
-      val api_ports_manualActuatorInput = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+      val api_input = reader.readB()
+      val api_manualActuatorInput = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
     }
 
     def readActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS = {
@@ -2030,9 +2030,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS)
       }
-      val api_ports_input = reader.readB()
-      val api_ports_manualActuatorInput = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+      val api_input = reader.readB()
+      val api_manualActuatorInput = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
     }
 
     def readActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container = {
@@ -2057,8 +2057,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P)
       }
-      val api_ports_output = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_ports_output)
+      val api_output = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_output)
     }
 
     def readActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS = {
@@ -2070,8 +2070,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS)
       }
-      val api_ports_output = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_ports_output)
+      val api_output = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_output)
     }
 
     def readActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container = {
@@ -2096,9 +2096,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS = {
@@ -2110,9 +2110,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS)
       }
-      val api_ports_channel1 = reader.readB()
-      val api_ports_channel2 = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      val api_channel1 = reader.readB()
+      val api_channel2 = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def readActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container = {
@@ -2137,8 +2137,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_actuate)
     }
 
     def readActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS = {
@@ -2150,8 +2150,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS)
       }
-      val api_ports_actuate = reader.readB()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+      val api_actuate = reader.readB()
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def readActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container = {
@@ -2176,9 +2176,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P)
       }
-      val api_ports_input = reader.readB()
-      val api_ports_manualActuatorInput = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+      val api_input = reader.readB()
+      val api_manualActuatorInput = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
     }
 
     def readActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS = {
@@ -2190,9 +2190,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS)
       }
-      val api_ports_input = reader.readB()
-      val api_ports_manualActuatorInput = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+      val api_input = reader.readB()
+      val api_manualActuatorInput = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
     }
 
     def readActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container = {
@@ -2217,8 +2217,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P)
       }
-      val api_ports_output = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_ports_output)
+      val api_output = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_output)
     }
 
     def readActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = {
@@ -2230,8 +2230,8 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS)
       }
-      val api_ports_output = reader.readB()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_ports_output)
+      val api_output = reader.readB()
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_output)
     }
 
     def readInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container = {
@@ -2293,31 +2293,31 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P)
       }
-      val api_ports_unit1_pressureLogic_channel1 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel2 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel3 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel4 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel1 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel2 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel3 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel4 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel1 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel2 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel3 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel4 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel1 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel2 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel3 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel4 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel1 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel2 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel3 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel4 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel1 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel2 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel3 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel4 = reader.readB()
-      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+      val api_unit1_pressureLogic_channel1 = reader.readB()
+      val api_unit1_pressureLogic_channel2 = reader.readB()
+      val api_unit1_pressureLogic_channel3 = reader.readB()
+      val api_unit1_pressureLogic_channel4 = reader.readB()
+      val api_unit1_saturationLogic_channel1 = reader.readB()
+      val api_unit1_saturationLogic_channel2 = reader.readB()
+      val api_unit1_saturationLogic_channel3 = reader.readB()
+      val api_unit1_saturationLogic_channel4 = reader.readB()
+      val api_unit1_temperatureLogic_channel1 = reader.readB()
+      val api_unit1_temperatureLogic_channel2 = reader.readB()
+      val api_unit1_temperatureLogic_channel3 = reader.readB()
+      val api_unit1_temperatureLogic_channel4 = reader.readB()
+      val api_unit2_pressureLogic_channel1 = reader.readB()
+      val api_unit2_pressureLogic_channel2 = reader.readB()
+      val api_unit2_pressureLogic_channel3 = reader.readB()
+      val api_unit2_pressureLogic_channel4 = reader.readB()
+      val api_unit2_saturationLogic_channel1 = reader.readB()
+      val api_unit2_saturationLogic_channel2 = reader.readB()
+      val api_unit2_saturationLogic_channel3 = reader.readB()
+      val api_unit2_saturationLogic_channel4 = reader.readB()
+      val api_unit2_temperatureLogic_channel1 = reader.readB()
+      val api_unit2_temperatureLogic_channel2 = reader.readB()
+      val api_unit2_temperatureLogic_channel3 = reader.readB()
+      val api_unit2_temperatureLogic_channel4 = reader.readB()
+      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
     }
 
     def readInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS = {
@@ -2329,31 +2329,31 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS)
       }
-      val api_ports_unit1_pressureLogic_channel1 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel2 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel3 = reader.readB()
-      val api_ports_unit1_pressureLogic_channel4 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel1 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel2 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel3 = reader.readB()
-      val api_ports_unit1_saturationLogic_channel4 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel1 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel2 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel3 = reader.readB()
-      val api_ports_unit1_temperatureLogic_channel4 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel1 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel2 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel3 = reader.readB()
-      val api_ports_unit2_pressureLogic_channel4 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel1 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel2 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel3 = reader.readB()
-      val api_ports_unit2_saturationLogic_channel4 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel1 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel2 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel3 = reader.readB()
-      val api_ports_unit2_temperatureLogic_channel4 = reader.readB()
-      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+      val api_unit1_pressureLogic_channel1 = reader.readB()
+      val api_unit1_pressureLogic_channel2 = reader.readB()
+      val api_unit1_pressureLogic_channel3 = reader.readB()
+      val api_unit1_pressureLogic_channel4 = reader.readB()
+      val api_unit1_saturationLogic_channel1 = reader.readB()
+      val api_unit1_saturationLogic_channel2 = reader.readB()
+      val api_unit1_saturationLogic_channel3 = reader.readB()
+      val api_unit1_saturationLogic_channel4 = reader.readB()
+      val api_unit1_temperatureLogic_channel1 = reader.readB()
+      val api_unit1_temperatureLogic_channel2 = reader.readB()
+      val api_unit1_temperatureLogic_channel3 = reader.readB()
+      val api_unit1_temperatureLogic_channel4 = reader.readB()
+      val api_unit2_pressureLogic_channel1 = reader.readB()
+      val api_unit2_pressureLogic_channel2 = reader.readB()
+      val api_unit2_pressureLogic_channel3 = reader.readB()
+      val api_unit2_pressureLogic_channel4 = reader.readB()
+      val api_unit2_saturationLogic_channel1 = reader.readB()
+      val api_unit2_saturationLogic_channel2 = reader.readB()
+      val api_unit2_saturationLogic_channel3 = reader.readB()
+      val api_unit2_saturationLogic_channel4 = reader.readB()
+      val api_unit2_temperatureLogic_channel1 = reader.readB()
+      val api_unit2_temperatureLogic_channel2 = reader.readB()
+      val api_unit2_temperatureLogic_channel3 = reader.readB()
+      val api_unit2_temperatureLogic_channel4 = reader.readB()
+      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
     }
 
     def readEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container = {
@@ -2415,9 +2415,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P)
       }
-      val api_ports_manualActuatorInput1 = reader.readB()
-      val api_ports_manualActuatorInput2 = reader.readB()
-      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+      val api_manualActuatorInput1 = reader.readB()
+      val api_manualActuatorInput2 = reader.readB()
+      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_manualActuatorInput1, api_manualActuatorInput2)
     }
 
     def readEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = {
@@ -2429,9 +2429,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS)
       }
-      val api_ports_manualActuatorInput1 = reader.readB()
-      val api_ports_manualActuatorInput2 = reader.readB()
-      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+      val api_manualActuatorInput1 = reader.readB()
+      val api_manualActuatorInput2 = reader.readB()
+      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_manualActuatorInput1, api_manualActuatorInput2)
     }
 
     def readActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container = {
@@ -2456,9 +2456,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P)
       }
-      val api_ports_saturationActuate = reader.readB()
-      val api_ports_tempPressureActuate = reader.readB()
-      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_ports_saturationActuate, api_ports_tempPressureActuate)
+      val api_saturationActuate = reader.readB()
+      val api_tempPressureActuate = reader.readB()
+      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_saturationActuate, api_tempPressureActuate)
     }
 
     def readActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS = {
@@ -2470,9 +2470,9 @@ object MsgPack {
       if (!typeParsed) {
         reader.expectZ(Constants.ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS)
       }
-      val api_ports_saturationActuate = reader.readB()
-      val api_ports_tempPressureActuate = reader.readB()
-      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_ports_saturationActuate, api_ports_tempPressureActuate)
+      val api_saturationActuate = reader.readB()
+      val api_tempPressureActuate = reader.readB()
+      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_saturationActuate, api_tempPressureActuate)
     }
 
     def readActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container = {

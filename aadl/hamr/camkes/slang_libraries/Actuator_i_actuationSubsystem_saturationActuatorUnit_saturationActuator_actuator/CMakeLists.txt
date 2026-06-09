@@ -6,7 +6,7 @@ if(APPLE)
       OUTPUT_STRIP_TRAILING_WHITESPACE)
   endif()
 else()
-  cmake_minimum_required(VERSION 3.5.1)
+  cmake_minimum_required(VERSION 3.10)
 endif(APPLE)
 
 project(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator)
@@ -97,11 +97,11 @@ endif(WITH_LOC)
 
 
 add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator STATIC
-        runtime/stackframe.c
         runtime/misc.c
-        runtime/type.h
         runtime/type.c
+        runtime/type.h
         runtime/misc.h
+        runtime/stackframe.c
         runtime/stackframe.h
         runtime/lib.h
         runtime/ztype.h
@@ -139,48 +139,6 @@ add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActua
         library/RTS/Base_Types/type-RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.c
         library/RTS/type-RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.h
         library/RTS/RTS_TranspilerToucher.c
@@ -283,18 +241,6 @@ add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActua
         library/org/sireum/type-org_sireum_Option_DB2CFC.h
         library/org/sireum/org_sireum_Option_DB2CFC.h
         library/org/sireum/org_sireum_Option_DB2CFC.c
-        library/org/sireum/type-org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.c
-        library/org/sireum/type-org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.c
-        library/org/sireum/type-org_sireum_S64.h
-        library/org/sireum/org_sireum_S64.h
-        library/org/sireum/org_sireum_S64.c
-        library/org/sireum/type-org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.c
         library/org/sireum/type-org_sireum_Some.h
         library/org/sireum/org_sireum_Some.h
         library/org/sireum/org_sireum_Some.c
@@ -310,18 +256,6 @@ add_library(Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActua
         library/org/sireum/type-org_sireum_Some_E8C0F3.h
         library/org/sireum/org_sireum_Some_E8C0F3.h
         library/org/sireum/org_sireum_Some_E8C0F3.c
-        library/org/sireum/type-org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.c
-        library/org/sireum/type-org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.c
-        library/org/sireum/type-org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.c
-        library/org/sireum/type-org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.c
         ext/ext.c
         ext/ext.h
         ext/Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_adapter.h
@@ -343,6 +277,8 @@ target_include_directories(Actuator_i_actuationSubsystem_saturationActuatorUnit_
         PUBLIC PUBLIC library/org/sireum
         PUBLIC PUBLIC ext)
 
+
+# This file will not be overwritten if HAMR codegen is rerun
 
 add_definitions(-DCAMKES)
 

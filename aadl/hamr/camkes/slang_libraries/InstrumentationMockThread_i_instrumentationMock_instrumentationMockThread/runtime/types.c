@@ -18,20 +18,6 @@ size_t sizeOf(Type t) {
     case TNone_734370: return sizeof(struct None_734370); // None[art.Bridge]
     case TNone_964667: return sizeof(struct None_964667); // None[art.DataContent]
     case TRTS_Base_Types_Boolean_Payload: return sizeof(struct RTS_Base_Types_Boolean_Payload); // RTS.Base_Types.Boolean_Payload
-    case TRTS_Base_Types_Character_Payload: return sizeof(struct RTS_Base_Types_Character_Payload); // RTS.Base_Types.Character_Payload
-    case TRTS_Base_Types_Float_32_Payload: return sizeof(struct RTS_Base_Types_Float_32_Payload); // RTS.Base_Types.Float_32_Payload
-    case TRTS_Base_Types_Float_64_Payload: return sizeof(struct RTS_Base_Types_Float_64_Payload); // RTS.Base_Types.Float_64_Payload
-    case TRTS_Base_Types_Float_Payload: return sizeof(struct RTS_Base_Types_Float_Payload); // RTS.Base_Types.Float_Payload
-    case TRTS_Base_Types_Integer_16_Payload: return sizeof(struct RTS_Base_Types_Integer_16_Payload); // RTS.Base_Types.Integer_16_Payload
-    case TRTS_Base_Types_Integer_32_Payload: return sizeof(struct RTS_Base_Types_Integer_32_Payload); // RTS.Base_Types.Integer_32_Payload
-    case TRTS_Base_Types_Integer_64_Payload: return sizeof(struct RTS_Base_Types_Integer_64_Payload); // RTS.Base_Types.Integer_64_Payload
-    case TRTS_Base_Types_Integer_8_Payload: return sizeof(struct RTS_Base_Types_Integer_8_Payload); // RTS.Base_Types.Integer_8_Payload
-    case TRTS_Base_Types_Integer_Payload: return sizeof(struct RTS_Base_Types_Integer_Payload); // RTS.Base_Types.Integer_Payload
-    case TRTS_Base_Types_String_Payload: return sizeof(struct RTS_Base_Types_String_Payload); // RTS.Base_Types.String_Payload
-    case TRTS_Base_Types_Unsigned_16_Payload: return sizeof(struct RTS_Base_Types_Unsigned_16_Payload); // RTS.Base_Types.Unsigned_16_Payload
-    case TRTS_Base_Types_Unsigned_32_Payload: return sizeof(struct RTS_Base_Types_Unsigned_32_Payload); // RTS.Base_Types.Unsigned_32_Payload
-    case TRTS_Base_Types_Unsigned_64_Payload: return sizeof(struct RTS_Base_Types_Unsigned_64_Payload); // RTS.Base_Types.Unsigned_64_Payload
-    case TRTS_Base_Types_Unsigned_8_Payload: return sizeof(struct RTS_Base_Types_Unsigned_8_Payload); // RTS.Base_Types.Unsigned_8_Payload
     case TRTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api: return sizeof(struct RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api); // RTS.Instrumentation.InstrumentationMockThread_i_Initialization_Api
     case TRTS_Instrumentation_InstrumentationMockThread_i_Operational_Api: return sizeof(struct RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api); // RTS.Instrumentation.InstrumentationMockThread_i_Operational_Api
     case TRTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge: return sizeof(struct RTS_Instrumentation_InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge); // RTS.Instrumentation.InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge
@@ -76,20 +62,6 @@ char *TYPE_string_(void *type) {
     "None[art.Bridge]",
     "None[art.DataContent]",
     "RTS.Base_Types.Boolean_Payload",
-    "RTS.Base_Types.Character_Payload",
-    "RTS.Base_Types.Float_32_Payload",
-    "RTS.Base_Types.Float_64_Payload",
-    "RTS.Base_Types.Float_Payload",
-    "RTS.Base_Types.Integer_16_Payload",
-    "RTS.Base_Types.Integer_32_Payload",
-    "RTS.Base_Types.Integer_64_Payload",
-    "RTS.Base_Types.Integer_8_Payload",
-    "RTS.Base_Types.Integer_Payload",
-    "RTS.Base_Types.String_Payload",
-    "RTS.Base_Types.Unsigned_16_Payload",
-    "RTS.Base_Types.Unsigned_32_Payload",
-    "RTS.Base_Types.Unsigned_64_Payload",
-    "RTS.Base_Types.Unsigned_8_Payload",
     "RTS.Instrumentation.InstrumentationMockThread_i_Initialization_Api",
     "RTS.Instrumentation.InstrumentationMockThread_i_Operational_Api",
     "RTS.Instrumentation.InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_Bridge",

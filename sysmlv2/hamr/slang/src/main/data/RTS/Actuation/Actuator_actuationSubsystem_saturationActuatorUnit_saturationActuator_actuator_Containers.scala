@@ -11,28 +11,28 @@ import RTS.util.Container
 // containers for the pre and post state values of ports and state variables
 
 @sig trait Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container extends Container {
-  def api_ports_input: B
-  def api_ports_manualActuatorInput: B
+  def api_input: B
+  def api_manualActuatorInput: B
 }
 
 // container for incoming ports
 @datatype class Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P (
-  val api_ports_input: B,
-  val api_ports_manualActuatorInput: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container
+  val api_input: B,
+  val api_manualActuatorInput: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container
 
 // container for incoming ports and state variables
 @datatype class Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS (
-  val api_ports_input: B,
-  val api_ports_manualActuatorInput: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container
+  val api_input: B,
+  val api_manualActuatorInput: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container
 
 @sig trait Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container extends Container {
-  def api_ports_output: B
+  def api_output: B
 }
 
 // container for outgoing ports
 @datatype class Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P (
-  val api_ports_output: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container
+  val api_output: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container
 
 // container for outgoing ports and state variables
 @datatype class Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS (
-  val api_ports_output: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container
+  val api_output: B) extends Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container

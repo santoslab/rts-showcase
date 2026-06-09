@@ -19,7 +19,7 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
       Ensures(
         // BEGIN INITIALIZES ENSURES
         // guarantee initOutputDataPort
-        //   The Initialize Entry Point must initialize all component 
+        //   The Initialize Entry Point must initialize all component
         //   local state and all output data ports.
         api.output == F
         // END INITIALIZES ENSURES
@@ -40,7 +40,16 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
       Ensures(
         // BEGIN COMPUTE ENSURES timeTriggered
         // guarantee actuatorOutput
-        api.output == (api.input | api.manualActuatorInput)
+        api.output == (api.input | api.manualActuatorInput),
+        // case input_only
+        //   Only input true
+        (api.input & !(api.manualActuatorInput)) ___>: (api.output),
+        // case manual_only
+        //   Only manual input true
+        (!(api.input) & api.manualActuatorInput) ___>: (api.output),
+        // case both_false
+        //   Both inputs false
+        (!(api.input) & !(api.manualActuatorInput)) ___>: (!(api.output))
         // END COMPUTE ENSURES timeTriggered
       )
     )

@@ -26,7 +26,7 @@ void RTS_Instrumentation_InstrumentationMockThread_i_Api_string_(STACK_FRAME Str
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(445);
+  sfUpdateLoc(447);
   {
     art_Art_logInfo(SF RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -35,7 +35,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logInfo_
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logDebug_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(449);
+  sfUpdateLoc(451);
   {
     art_Art_logDebug(SF RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -44,7 +44,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logDebug
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logError_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logError", 0);
 
-  sfUpdateLoc(453);
+  sfUpdateLoc(455);
   {
     art_Art_logError(SF RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -53,7 +53,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_logError
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logInfo_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(445);
+  sfUpdateLoc(447);
   {
     art_Art_logInfo(SF RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -62,7 +62,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logInfo_(ST
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logDebug_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(449);
+  sfUpdateLoc(451);
   {
     art_Art_logDebug(SF RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -71,7 +71,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logDebug_(S
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logError_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "logError", 0);
 
-  sfUpdateLoc(453);
+  sfUpdateLoc(455);
   {
     art_Art_logError(SF RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_id_(this), (String) msg);
   }
@@ -80,7 +80,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_logError_(S
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_temperatureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel1", 0);
 
-  sfUpdateLoc(50);
+  sfUpdateLoc(52);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -91,7 +91,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_temperatureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel1", 0);
 
-  sfUpdateLoc(50);
+  sfUpdateLoc(52);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -102,7 +102,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_temperatureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel2", 0);
 
-  sfUpdateLoc(67);
+  sfUpdateLoc(69);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -113,7 +113,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_temperatureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel2", 0);
 
-  sfUpdateLoc(67);
+  sfUpdateLoc(69);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -124,7 +124,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_temperatureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel3", 0);
 
-  sfUpdateLoc(84);
+  sfUpdateLoc(86);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -135,7 +135,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_temperatureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel3", 0);
 
-  sfUpdateLoc(84);
+  sfUpdateLoc(86);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -146,7 +146,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_temperatureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel4", 0);
 
-  sfUpdateLoc(101);
+  sfUpdateLoc(103);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -157,7 +157,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_temperatureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_temperatureLogic_channel4", 0);
 
-  sfUpdateLoc(101);
+  sfUpdateLoc(103);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -168,7 +168,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_pressureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel1", 0);
 
-  sfUpdateLoc(118);
+  sfUpdateLoc(120);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -179,7 +179,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_pressureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel1", 0);
 
-  sfUpdateLoc(118);
+  sfUpdateLoc(120);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -190,7 +190,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_pressureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel2", 0);
 
-  sfUpdateLoc(135);
+  sfUpdateLoc(137);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -201,7 +201,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_pressureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel2", 0);
 
-  sfUpdateLoc(135);
+  sfUpdateLoc(137);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -212,7 +212,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_pressureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel3", 0);
 
-  sfUpdateLoc(152);
+  sfUpdateLoc(154);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -223,7 +223,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_pressureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel3", 0);
 
-  sfUpdateLoc(152);
+  sfUpdateLoc(154);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -234,7 +234,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_pressureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel4", 0);
 
-  sfUpdateLoc(169);
+  sfUpdateLoc(171);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -245,7 +245,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_pressureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_pressureLogic_channel4", 0);
 
-  sfUpdateLoc(169);
+  sfUpdateLoc(171);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -256,7 +256,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_saturationLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel1", 0);
 
-  sfUpdateLoc(186);
+  sfUpdateLoc(188);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -267,7 +267,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_saturationLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel1", 0);
 
-  sfUpdateLoc(186);
+  sfUpdateLoc(188);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -278,7 +278,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_saturationLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel2", 0);
 
-  sfUpdateLoc(203);
+  sfUpdateLoc(205);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -289,7 +289,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_saturationLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel2", 0);
 
-  sfUpdateLoc(203);
+  sfUpdateLoc(205);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -300,7 +300,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_saturationLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel3", 0);
 
-  sfUpdateLoc(220);
+  sfUpdateLoc(222);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -311,7 +311,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_saturationLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel3", 0);
 
-  sfUpdateLoc(220);
+  sfUpdateLoc(222);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -322,7 +322,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit1_saturationLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel4", 0);
 
-  sfUpdateLoc(237);
+  sfUpdateLoc(239);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -333,7 +333,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_saturationLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit1_saturationLogic_channel4", 0);
 
-  sfUpdateLoc(237);
+  sfUpdateLoc(239);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -344,7 +344,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit1_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_temperatureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel1", 0);
 
-  sfUpdateLoc(254);
+  sfUpdateLoc(256);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -355,7 +355,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_temperatureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel1", 0);
 
-  sfUpdateLoc(254);
+  sfUpdateLoc(256);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -366,7 +366,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_temperatureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel2", 0);
 
-  sfUpdateLoc(271);
+  sfUpdateLoc(273);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -377,7 +377,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_temperatureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel2", 0);
 
-  sfUpdateLoc(271);
+  sfUpdateLoc(273);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -388,7 +388,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_temperatureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel3", 0);
 
-  sfUpdateLoc(288);
+  sfUpdateLoc(290);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -399,7 +399,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_temperatureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel3", 0);
 
-  sfUpdateLoc(288);
+  sfUpdateLoc(290);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -410,7 +410,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_temperatureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel4", 0);
 
-  sfUpdateLoc(305);
+  sfUpdateLoc(307);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -421,7 +421,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_temperatureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_temperatureLogic_channel4", 0);
 
-  sfUpdateLoc(305);
+  sfUpdateLoc(307);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -432,7 +432,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_t
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_pressureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel1", 0);
 
-  sfUpdateLoc(322);
+  sfUpdateLoc(324);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -443,7 +443,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_pressureLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel1", 0);
 
-  sfUpdateLoc(322);
+  sfUpdateLoc(324);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -454,7 +454,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_pressureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel2", 0);
 
-  sfUpdateLoc(339);
+  sfUpdateLoc(341);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -465,7 +465,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_pressureLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel2", 0);
 
-  sfUpdateLoc(339);
+  sfUpdateLoc(341);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -476,7 +476,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_pressureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel3", 0);
 
-  sfUpdateLoc(356);
+  sfUpdateLoc(358);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -487,7 +487,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_pressureLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel3", 0);
 
-  sfUpdateLoc(356);
+  sfUpdateLoc(358);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -498,7 +498,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_pressureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel4", 0);
 
-  sfUpdateLoc(373);
+  sfUpdateLoc(375);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -509,7 +509,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_pressureLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_pressureLogic_channel4", 0);
 
-  sfUpdateLoc(373);
+  sfUpdateLoc(375);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -520,7 +520,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_p
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_saturationLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel1", 0);
 
-  sfUpdateLoc(390);
+  sfUpdateLoc(392);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -531,7 +531,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_saturationLogic_channel1_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel1", 0);
 
-  sfUpdateLoc(390);
+  sfUpdateLoc(392);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -542,7 +542,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_saturationLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel2", 0);
 
-  sfUpdateLoc(407);
+  sfUpdateLoc(409);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -553,7 +553,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_saturationLogic_channel2_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel2", 0);
 
-  sfUpdateLoc(407);
+  sfUpdateLoc(409);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -564,7 +564,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_saturationLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel3", 0);
 
-  sfUpdateLoc(424);
+  sfUpdateLoc(426);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -575,7 +575,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_saturationLogic_channel3_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel3", 0);
 
-  sfUpdateLoc(424);
+  sfUpdateLoc(426);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -586,7 +586,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_s
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit2_saturationLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel4", 0);
 
-  sfUpdateLoc(441);
+  sfUpdateLoc(443);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -597,7 +597,7 @@ Unit RTS_Instrumentation_InstrumentationMockThread_i_Initialization_Api_put_unit
 Unit RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api_put_unit2_saturationLogic_channel4_(STACK_FRAME RTS_Instrumentation_InstrumentationMockThread_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "InstrumentationMockThread_i_Api.scala", "RTS.Instrumentation.InstrumentationMockThread_i_Api", "put_unit2_saturationLogic_channel4", 0);
 
-  sfUpdateLoc(441);
+  sfUpdateLoc(443);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);

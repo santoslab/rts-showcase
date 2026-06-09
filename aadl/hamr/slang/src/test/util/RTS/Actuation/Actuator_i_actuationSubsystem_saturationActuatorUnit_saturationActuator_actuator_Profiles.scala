@@ -25,6 +25,9 @@ import RTS.RandomLib
 @msig trait Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait extends Profile {
   def api_input: RandomLib // random lib for generating Base_Types.Boolean
   def api_manualActuatorInput: RandomLib // random lib for generating Base_Types.Boolean
+
+  def update_api_input(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait
+  def update_api_manualActuatorInput(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait
 }
 
 @record class Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P(
@@ -38,12 +41,23 @@ import RTS.RandomLib
       api_input = api_input.nextB(),
       api_manualActuatorInput = api_manualActuatorInput.nextB()))
   }
+
+  override def update_api_input(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait = {
+    return this(api_input = v)
+  }
+
+  override def update_api_manualActuatorInput(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait = {
+    return this(api_manualActuatorInput = v)
+  }
 }
 
 // Profile with generators for state variables and incoming ports
 @msig trait Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS_Trait extends Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_P_Trait {
   def api_input: RandomLib // random lib for generating Base_Types.Boolean
   def api_manualActuatorInput: RandomLib // random lib for generating Base_Types.Boolean
+
+  def update_api_input(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS_Trait
+  def update_api_manualActuatorInput(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS_Trait
 }
 
 @record class Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS(
@@ -56,5 +70,13 @@ import RTS.RandomLib
     return (Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS (
       api_input = api_input.nextB(),
       api_manualActuatorInput = api_manualActuatorInput.nextB()))
+  }
+
+  override def update_api_input(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS_Trait = {
+    return this(api_input = v)
+  }
+
+  override def update_api_manualActuatorInput(v: RandomLib): Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Profile_PS_Trait = {
+    return this(api_manualActuatorInput = v)
   }
 }

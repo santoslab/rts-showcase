@@ -1,29 +1,27 @@
 package EventControl {
 	
-	import AADL_Properties::*;
-	import AADL_Definitions::*;
-	
+	private import HAMR::*;
+
 	part def EventControlMockProcess :> Process {
-		part eventControlMockThread : EventControlMockThread : Thread;
+		part eventControlMockThread : EventControlMockThread;
 		
-		port ports {
-			out manualActuatorInput1: Data: Base_Types::Boolean;
-			out manualActuatorInput2: Data: Base_Types::Boolean;
-		}
+		out port manualActuatorInput1 : DataPort { out :>> type : Base_Types::Boolean; }
+		out port manualActuatorInput2 : DataPort { out :>> type : Base_Types::Boolean; }
 		
-		connection mAI1 connect eventControlMockThread.ports.manualActuatorInput1 to ports.manualActuatorInput1;
-		connection mAI2 connect eventControlMockThread.ports.manualActuatorInput2 to ports.manualActuatorInput2;
+		connection mAI1 : PortConnection connect eventControlMockThread.manualActuatorInput1 to manualActuatorInput1;
+		connection mAI2 : PortConnection connect eventControlMockThread.manualActuatorInput2 to manualActuatorInput2;
 	}
 	
 	part def EventControlMockThread :> Thread {
-		port ports {
-			out manualActuatorInput1: Data: Base_Types::Boolean;
-			out manualActuatorInput2: Data: Base_Types::Boolean;
-		}
-		@Properties {
-			Dispatch_Protocol = Periodic;
-			Period = 1000;
-		}
+		out port manualActuatorInput1 : DataPort { out :>> type : Base_Types::Boolean; }
+		out port manualActuatorInput2 : DataPort { out :>> type : Base_Types::Boolean; }
+		
+		attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Periodic;
+		attribute :>> Period = 1000 [ms];
+		//@Properties {
+		//	Dispatch_Protocol = Periodic;
+		//	Period = 1000;
+		//}
 	}
 	
 }

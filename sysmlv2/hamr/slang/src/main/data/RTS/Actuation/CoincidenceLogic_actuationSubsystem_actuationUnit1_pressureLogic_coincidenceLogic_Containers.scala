@@ -11,34 +11,34 @@ import RTS.util.Container
 // containers for the pre and post state values of ports and state variables
 
 @sig trait CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container extends Container {
-  def api_ports_channel1: B
-  def api_ports_channel2: B
-  def api_ports_channel3: B
-  def api_ports_channel4: B
+  def api_channel1: B
+  def api_channel2: B
+  def api_channel3: B
+  def api_channel4: B
 }
 
 // container for incoming ports
 @datatype class CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P (
-  val api_ports_channel1: B,
-  val api_ports_channel2: B,
-  val api_ports_channel3: B,
-  val api_ports_channel4: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container
+  val api_channel1: B,
+  val api_channel2: B,
+  val api_channel3: B,
+  val api_channel4: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container
 
 // container for incoming ports and state variables
 @datatype class CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS (
-  val api_ports_channel1: B,
-  val api_ports_channel2: B,
-  val api_ports_channel3: B,
-  val api_ports_channel4: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container
+  val api_channel1: B,
+  val api_channel2: B,
+  val api_channel3: B,
+  val api_channel4: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container
 
 @sig trait CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container extends Container {
-  def api_ports_actuate: B
+  def api_actuate: B
 }
 
 // container for outgoing ports
 @datatype class CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P (
-  val api_ports_actuate: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container
+  val api_actuate: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container
 
 // container for outgoing ports and state variables
 @datatype class CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS (
-  val api_ports_actuate: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container
+  val api_actuate: B) extends CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container

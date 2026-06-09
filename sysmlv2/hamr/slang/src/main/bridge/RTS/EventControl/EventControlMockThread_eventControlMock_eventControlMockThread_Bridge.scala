@@ -15,15 +15,15 @@ import RTS.EventControl.{EventControlMockThread_eventControlMock_eventControlMoc
   val dispatchProtocol: DispatchPropertyProtocol,
   val dispatchTriggers: Option[ISZ[Art.PortId]],
 
-  ports_manualActuatorInput1: Port[Base_Types.Boolean],
-  ports_manualActuatorInput2: Port[Base_Types.Boolean]
+  manualActuatorInput1: Port[Base_Types.Boolean],
+  manualActuatorInput2: Port[Base_Types.Boolean]
   ) extends Bridge {
 
   val ports : Bridge.Ports = Bridge.Ports(
     dataIns = ISZ[art.UPort](),
 
-    dataOuts = ISZ[art.UPort](ports_manualActuatorInput1,
-                              ports_manualActuatorInput2),
+    dataOuts = ISZ[art.UPort](manualActuatorInput1,
+                              manualActuatorInput2),
 
     eventIns = ISZ[art.UPort](),
 
@@ -33,8 +33,8 @@ import RTS.EventControl.{EventControlMockThread_eventControlMock_eventControlMoc
   val initialization_api : EventControlMockThread_Initialization_Api = {
     val api = EventControlMockThread_Initialization_Api(
       id,
-      ports_manualActuatorInput1.id,
-      ports_manualActuatorInput2.id
+      manualActuatorInput1.id,
+      manualActuatorInput2.id
     )
     EventControlMockThread_eventControlMock_eventControlMockThread_Bridge.c_initialization_api = Some(api)
     api
@@ -43,8 +43,8 @@ import RTS.EventControl.{EventControlMockThread_eventControlMock_eventControlMoc
   val operational_api : EventControlMockThread_Operational_Api = {
     val api = EventControlMockThread_Operational_Api(
       id,
-      ports_manualActuatorInput1.id,
-      ports_manualActuatorInput2.id
+      manualActuatorInput1.id,
+      manualActuatorInput2.id
     )
     EventControlMockThread_eventControlMock_eventControlMockThread_Bridge.c_operational_api = Some(api)
     api
@@ -54,8 +54,8 @@ import RTS.EventControl.{EventControlMockThread_eventControlMock_eventControlMoc
     EventControlMockThread_eventControlMock_eventControlMockThread_Bridge.EntryPoints(
       id,
 
-      ports_manualActuatorInput1.id,
-      ports_manualActuatorInput2.id,
+      manualActuatorInput1.id,
+      manualActuatorInput2.id,
 
       dispatchTriggers,
 
@@ -70,8 +70,8 @@ object EventControlMockThread_eventControlMock_eventControlMockThread_Bridge {
 
   @datatype class EntryPoints(
     EventControlMockThread_eventControlMock_eventControlMockThread_BridgeId : Art.BridgeId,
-    ports_manualActuatorInput1_Id : Art.PortId,
-    ports_manualActuatorInput2_Id : Art.PortId,
+    manualActuatorInput1_Id : Art.PortId,
+    manualActuatorInput2_Id : Art.PortId,
     dispatchTriggers : Option[ISZ[Art.PortId]],
     initialization_api: EventControlMockThread_Initialization_Api,
     operational_api: EventControlMockThread_Operational_Api) extends Bridge.EntryPoints {
@@ -80,8 +80,8 @@ object EventControlMockThread_eventControlMock_eventControlMockThread_Bridge {
 
     val eventInPortIds: ISZ[Art.PortId] = IS()
 
-    val dataOutPortIds: ISZ[Art.PortId] = IS(ports_manualActuatorInput1_Id,
-                                             ports_manualActuatorInput2_Id)
+    val dataOutPortIds: ISZ[Art.PortId] = IS(manualActuatorInput1_Id,
+                                             manualActuatorInput2_Id)
 
     val eventOutPortIds: ISZ[Art.PortId] = IS()
 

@@ -10,41 +10,41 @@ import RTS._
 @msig trait EventControlMockThread_eventControlMock_eventControlMockThread_TestApi {
 
   def BeforeEntrypoint(): Unit = {
-    Art.initTest(Arch.rts_eventControlMock_eventControlMockThread)
+    Art.initTest(Arch.RTS_Instance_eventControlMock_eventControlMockThread)
   }
 
   def AfterEntrypoint(): Unit = {
-    Art.finalizeTest(Arch.rts_eventControlMock_eventControlMockThread)
+    Art.finalizeTest(Arch.RTS_Instance_eventControlMock_eventControlMockThread)
   }
 
   def testCompute(): Unit = {
     Art.manuallyClearOutput()
-    Art.testCompute(Arch.rts_eventControlMock_eventControlMockThread)
+    Art.testCompute(Arch.RTS_Instance_eventControlMock_eventControlMockThread)
   }
 
   def testInitialise(): Unit = {
     Art.manuallyClearOutput()
-    Art.testInitialise(Arch.rts_eventControlMock_eventControlMockThread)
+    Art.testInitialise(Arch.RTS_Instance_eventControlMock_eventControlMockThread)
   }
 
   /** helper function to check EventControlMockThread_eventControlMock_eventControlMockThread's
    * output ports.  Use named arguments to check subsets of the output ports.
-   * @param ports_manualActuatorInput1 method that will be called with the value of the outgoing data
-   *        port 'ports_manualActuatorInput1'.
-   * @param ports_manualActuatorInput2 method that will be called with the value of the outgoing data
-   *        port 'ports_manualActuatorInput2'.
+   * @param manualActuatorInput1 method that will be called with the value of the outgoing data
+   *        port 'manualActuatorInput1'.
+   * @param manualActuatorInput2 method that will be called with the value of the outgoing data
+   *        port 'manualActuatorInput2'.
    */
-  def check_concrete_output(ports_manualActuatorInput1: Base_Types.Boolean => B,
-                            ports_manualActuatorInput2: Base_Types.Boolean => B): Unit = {
+  def check_concrete_output(manualActuatorInput1: Base_Types.Boolean => B,
+                            manualActuatorInput2: Base_Types.Boolean => B): Unit = {
     var testFailures: ISZ[ST] = ISZ()
 
-    val ports_manualActuatorInput1Value: Base_Types.Boolean = get_ports_manualActuatorInput1().get
-    if(!ports_manualActuatorInput1(ports_manualActuatorInput1Value)) {
-      testFailures = testFailures :+ st"'ports_manualActuatorInput1' did not match expected: value of the outgoing data port is ${ports_manualActuatorInput1Value}"
+    val manualActuatorInput1Value: Base_Types.Boolean = get_manualActuatorInput1().get
+    if(!manualActuatorInput1(manualActuatorInput1Value)) {
+      testFailures = testFailures :+ st"'manualActuatorInput1' did not match expected: value of the outgoing data port is ${manualActuatorInput1Value}"
     }
-    val ports_manualActuatorInput2Value: Base_Types.Boolean = get_ports_manualActuatorInput2().get
-    if(!ports_manualActuatorInput2(ports_manualActuatorInput2Value)) {
-      testFailures = testFailures :+ st"'ports_manualActuatorInput2' did not match expected: value of the outgoing data port is ${ports_manualActuatorInput2Value}"
+    val manualActuatorInput2Value: Base_Types.Boolean = get_manualActuatorInput2().get
+    if(!manualActuatorInput2(manualActuatorInput2Value)) {
+      testFailures = testFailures :+ st"'manualActuatorInput2' did not match expected: value of the outgoing data port is ${manualActuatorInput2Value}"
     }
 
     assert(testFailures.isEmpty, st"${(testFailures, "\n")}".render)
@@ -52,33 +52,33 @@ import RTS._
 
 
   // getter for out DataPort
-  def get_ports_manualActuatorInput1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_manualActuatorInput1_payload() match {
+  def get_manualActuatorInput1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_manualActuatorInput1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_manualActuatorInput1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port manualActuatorInput1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_manualActuatorInput1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_eventControlMock_eventControlMockThread.initialization_api.ports_manualActuatorInput1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_manualActuatorInput1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_eventControlMock_eventControlMockThread.initialization_api.manualActuatorInput1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_manualActuatorInput2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_manualActuatorInput2_payload() match {
+  def get_manualActuatorInput2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_manualActuatorInput2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_manualActuatorInput2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port manualActuatorInput2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_manualActuatorInput2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_eventControlMock_eventControlMockThread.initialization_api.ports_manualActuatorInput2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_manualActuatorInput2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_eventControlMock_eventControlMockThread.initialization_api.manualActuatorInput2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
 }

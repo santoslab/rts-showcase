@@ -1,4 +1,4 @@
-// #Sireum
+// #Sireum #Logika
 
 package RTS.Actuation
 
@@ -9,20 +9,39 @@ import RTS._
 object OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic {
 
   def initialise(api: OrLogic_Initialization_Api): Unit = {
+    Contract(Modifies(api))
     // The Initialize Entry Point must initialize all component local state and all output data ports.
     // -- initialize output data port
-    api.put_ports_actuate(F)
+    api.put_actuate(F)
   }
 
   def timeTriggered(api: OrLogic_Operational_Api): Unit = {
+    Contract(
+      Modifies(api),
+      Ensures(
+        // BEGIN COMPUTE ENSURES timeTriggered
+        // guarantee orOutput
+        api.actuate == (api.channel1 | api.channel2),
+        // case ch1_only
+        //   Only channel 1 true
+        (api.channel1 & !(api.channel2)) ___>: (api.actuate),
+        // case ch2_only
+        //   Only channel 2 true
+        (!(api.channel1) & api.channel2) ___>: (api.actuate),
+        // case both_false
+        //   Both channels false
+        (!(api.channel1) & !(api.channel2)) ___>: (!(api.actuate))
+        // END COMPUTE ENSURES timeTriggered
+      )
+    )
     // get values off of input ports.
     // For input data ports, the HAMR assumption is (currently unchecked,
     // but follows from the fact that all output data ports must be initialized
     // by the initialize entry point) that extracting a value from the
     // option type on the incoming channel always succeeds (the port never
     // has a value of None().
-    val channel1: Base_Types.Boolean = api.get_ports_channel1().get
-    val channel2: Base_Types.Boolean = api.get_ports_channel2().get
+    val channel1: Base_Types.Boolean = api.get_channel1().get
+    val channel2: Base_Types.Boolean = api.get_channel2().get
 
     // from actuationUnit.cry (line 53 -
     //   TempPressureTripOut ts = (ts @ (0:[1])) || (ts @ (1:[1]))
@@ -36,7 +55,7 @@ object OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureAc
     val result: Base_Types.Boolean = channel1 | channel2
 
     // put calculated value on output data port
-    api.put_ports_actuate(result)
+    api.put_actuate(result)
   }
 
   def activate(api: OrLogic_Operational_Api): Unit = { }

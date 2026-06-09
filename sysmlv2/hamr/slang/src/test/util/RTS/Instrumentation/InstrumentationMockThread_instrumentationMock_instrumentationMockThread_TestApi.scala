@@ -10,195 +10,195 @@ import RTS._
 @msig trait InstrumentationMockThread_instrumentationMock_instrumentationMockThread_TestApi {
 
   def BeforeEntrypoint(): Unit = {
-    Art.initTest(Arch.rts_instrumentationMock_instrumentationMockThread)
+    Art.initTest(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread)
   }
 
   def AfterEntrypoint(): Unit = {
-    Art.finalizeTest(Arch.rts_instrumentationMock_instrumentationMockThread)
+    Art.finalizeTest(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread)
   }
 
   def testCompute(): Unit = {
     Art.manuallyClearOutput()
-    Art.testCompute(Arch.rts_instrumentationMock_instrumentationMockThread)
+    Art.testCompute(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread)
   }
 
   def testInitialise(): Unit = {
     Art.manuallyClearOutput()
-    Art.testInitialise(Arch.rts_instrumentationMock_instrumentationMockThread)
+    Art.testInitialise(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread)
   }
 
   /** helper function to check InstrumentationMockThread_instrumentationMock_instrumentationMockThread's
    * output ports.  Use named arguments to check subsets of the output ports.
-   * @param ports_unit1_temperatureLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_temperatureLogic_channel1'.
-   * @param ports_unit1_temperatureLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_temperatureLogic_channel2'.
-   * @param ports_unit1_temperatureLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_temperatureLogic_channel3'.
-   * @param ports_unit1_temperatureLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_temperatureLogic_channel4'.
-   * @param ports_unit1_pressureLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_pressureLogic_channel1'.
-   * @param ports_unit1_pressureLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_pressureLogic_channel2'.
-   * @param ports_unit1_pressureLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_pressureLogic_channel3'.
-   * @param ports_unit1_pressureLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_pressureLogic_channel4'.
-   * @param ports_unit1_saturationLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_saturationLogic_channel1'.
-   * @param ports_unit1_saturationLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_saturationLogic_channel2'.
-   * @param ports_unit1_saturationLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_saturationLogic_channel3'.
-   * @param ports_unit1_saturationLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit1_saturationLogic_channel4'.
-   * @param ports_unit2_temperatureLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_temperatureLogic_channel1'.
-   * @param ports_unit2_temperatureLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_temperatureLogic_channel2'.
-   * @param ports_unit2_temperatureLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_temperatureLogic_channel3'.
-   * @param ports_unit2_temperatureLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_temperatureLogic_channel4'.
-   * @param ports_unit2_pressureLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_pressureLogic_channel1'.
-   * @param ports_unit2_pressureLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_pressureLogic_channel2'.
-   * @param ports_unit2_pressureLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_pressureLogic_channel3'.
-   * @param ports_unit2_pressureLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_pressureLogic_channel4'.
-   * @param ports_unit2_saturationLogic_channel1 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_saturationLogic_channel1'.
-   * @param ports_unit2_saturationLogic_channel2 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_saturationLogic_channel2'.
-   * @param ports_unit2_saturationLogic_channel3 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_saturationLogic_channel3'.
-   * @param ports_unit2_saturationLogic_channel4 method that will be called with the value of the outgoing data
-   *        port 'ports_unit2_saturationLogic_channel4'.
+   * @param unit1_temperatureLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit1_temperatureLogic_channel1'.
+   * @param unit1_temperatureLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit1_temperatureLogic_channel2'.
+   * @param unit1_temperatureLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit1_temperatureLogic_channel3'.
+   * @param unit1_temperatureLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit1_temperatureLogic_channel4'.
+   * @param unit1_pressureLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit1_pressureLogic_channel1'.
+   * @param unit1_pressureLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit1_pressureLogic_channel2'.
+   * @param unit1_pressureLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit1_pressureLogic_channel3'.
+   * @param unit1_pressureLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit1_pressureLogic_channel4'.
+   * @param unit1_saturationLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit1_saturationLogic_channel1'.
+   * @param unit1_saturationLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit1_saturationLogic_channel2'.
+   * @param unit1_saturationLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit1_saturationLogic_channel3'.
+   * @param unit1_saturationLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit1_saturationLogic_channel4'.
+   * @param unit2_temperatureLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit2_temperatureLogic_channel1'.
+   * @param unit2_temperatureLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit2_temperatureLogic_channel2'.
+   * @param unit2_temperatureLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit2_temperatureLogic_channel3'.
+   * @param unit2_temperatureLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit2_temperatureLogic_channel4'.
+   * @param unit2_pressureLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit2_pressureLogic_channel1'.
+   * @param unit2_pressureLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit2_pressureLogic_channel2'.
+   * @param unit2_pressureLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit2_pressureLogic_channel3'.
+   * @param unit2_pressureLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit2_pressureLogic_channel4'.
+   * @param unit2_saturationLogic_channel1 method that will be called with the value of the outgoing data
+   *        port 'unit2_saturationLogic_channel1'.
+   * @param unit2_saturationLogic_channel2 method that will be called with the value of the outgoing data
+   *        port 'unit2_saturationLogic_channel2'.
+   * @param unit2_saturationLogic_channel3 method that will be called with the value of the outgoing data
+   *        port 'unit2_saturationLogic_channel3'.
+   * @param unit2_saturationLogic_channel4 method that will be called with the value of the outgoing data
+   *        port 'unit2_saturationLogic_channel4'.
    */
-  def check_concrete_output(ports_unit1_temperatureLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit1_temperatureLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit1_temperatureLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit1_temperatureLogic_channel4: Base_Types.Boolean => B,
-                            ports_unit1_pressureLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit1_pressureLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit1_pressureLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit1_pressureLogic_channel4: Base_Types.Boolean => B,
-                            ports_unit1_saturationLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit1_saturationLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit1_saturationLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit1_saturationLogic_channel4: Base_Types.Boolean => B,
-                            ports_unit2_temperatureLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit2_temperatureLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit2_temperatureLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit2_temperatureLogic_channel4: Base_Types.Boolean => B,
-                            ports_unit2_pressureLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit2_pressureLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit2_pressureLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit2_pressureLogic_channel4: Base_Types.Boolean => B,
-                            ports_unit2_saturationLogic_channel1: Base_Types.Boolean => B,
-                            ports_unit2_saturationLogic_channel2: Base_Types.Boolean => B,
-                            ports_unit2_saturationLogic_channel3: Base_Types.Boolean => B,
-                            ports_unit2_saturationLogic_channel4: Base_Types.Boolean => B): Unit = {
+  def check_concrete_output(unit1_temperatureLogic_channel1: Base_Types.Boolean => B,
+                            unit1_temperatureLogic_channel2: Base_Types.Boolean => B,
+                            unit1_temperatureLogic_channel3: Base_Types.Boolean => B,
+                            unit1_temperatureLogic_channel4: Base_Types.Boolean => B,
+                            unit1_pressureLogic_channel1: Base_Types.Boolean => B,
+                            unit1_pressureLogic_channel2: Base_Types.Boolean => B,
+                            unit1_pressureLogic_channel3: Base_Types.Boolean => B,
+                            unit1_pressureLogic_channel4: Base_Types.Boolean => B,
+                            unit1_saturationLogic_channel1: Base_Types.Boolean => B,
+                            unit1_saturationLogic_channel2: Base_Types.Boolean => B,
+                            unit1_saturationLogic_channel3: Base_Types.Boolean => B,
+                            unit1_saturationLogic_channel4: Base_Types.Boolean => B,
+                            unit2_temperatureLogic_channel1: Base_Types.Boolean => B,
+                            unit2_temperatureLogic_channel2: Base_Types.Boolean => B,
+                            unit2_temperatureLogic_channel3: Base_Types.Boolean => B,
+                            unit2_temperatureLogic_channel4: Base_Types.Boolean => B,
+                            unit2_pressureLogic_channel1: Base_Types.Boolean => B,
+                            unit2_pressureLogic_channel2: Base_Types.Boolean => B,
+                            unit2_pressureLogic_channel3: Base_Types.Boolean => B,
+                            unit2_pressureLogic_channel4: Base_Types.Boolean => B,
+                            unit2_saturationLogic_channel1: Base_Types.Boolean => B,
+                            unit2_saturationLogic_channel2: Base_Types.Boolean => B,
+                            unit2_saturationLogic_channel3: Base_Types.Boolean => B,
+                            unit2_saturationLogic_channel4: Base_Types.Boolean => B): Unit = {
     var testFailures: ISZ[ST] = ISZ()
 
-    val ports_unit1_temperatureLogic_channel1Value: Base_Types.Boolean = get_ports_unit1_temperatureLogic_channel1().get
-    if(!ports_unit1_temperatureLogic_channel1(ports_unit1_temperatureLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_temperatureLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit1_temperatureLogic_channel1Value}"
+    val unit1_temperatureLogic_channel1Value: Base_Types.Boolean = get_unit1_temperatureLogic_channel1().get
+    if(!unit1_temperatureLogic_channel1(unit1_temperatureLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit1_temperatureLogic_channel1' did not match expected: value of the outgoing data port is ${unit1_temperatureLogic_channel1Value}"
     }
-    val ports_unit1_temperatureLogic_channel2Value: Base_Types.Boolean = get_ports_unit1_temperatureLogic_channel2().get
-    if(!ports_unit1_temperatureLogic_channel2(ports_unit1_temperatureLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_temperatureLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit1_temperatureLogic_channel2Value}"
+    val unit1_temperatureLogic_channel2Value: Base_Types.Boolean = get_unit1_temperatureLogic_channel2().get
+    if(!unit1_temperatureLogic_channel2(unit1_temperatureLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit1_temperatureLogic_channel2' did not match expected: value of the outgoing data port is ${unit1_temperatureLogic_channel2Value}"
     }
-    val ports_unit1_temperatureLogic_channel3Value: Base_Types.Boolean = get_ports_unit1_temperatureLogic_channel3().get
-    if(!ports_unit1_temperatureLogic_channel3(ports_unit1_temperatureLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_temperatureLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit1_temperatureLogic_channel3Value}"
+    val unit1_temperatureLogic_channel3Value: Base_Types.Boolean = get_unit1_temperatureLogic_channel3().get
+    if(!unit1_temperatureLogic_channel3(unit1_temperatureLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit1_temperatureLogic_channel3' did not match expected: value of the outgoing data port is ${unit1_temperatureLogic_channel3Value}"
     }
-    val ports_unit1_temperatureLogic_channel4Value: Base_Types.Boolean = get_ports_unit1_temperatureLogic_channel4().get
-    if(!ports_unit1_temperatureLogic_channel4(ports_unit1_temperatureLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_temperatureLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit1_temperatureLogic_channel4Value}"
+    val unit1_temperatureLogic_channel4Value: Base_Types.Boolean = get_unit1_temperatureLogic_channel4().get
+    if(!unit1_temperatureLogic_channel4(unit1_temperatureLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit1_temperatureLogic_channel4' did not match expected: value of the outgoing data port is ${unit1_temperatureLogic_channel4Value}"
     }
-    val ports_unit1_pressureLogic_channel1Value: Base_Types.Boolean = get_ports_unit1_pressureLogic_channel1().get
-    if(!ports_unit1_pressureLogic_channel1(ports_unit1_pressureLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_pressureLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit1_pressureLogic_channel1Value}"
+    val unit1_pressureLogic_channel1Value: Base_Types.Boolean = get_unit1_pressureLogic_channel1().get
+    if(!unit1_pressureLogic_channel1(unit1_pressureLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit1_pressureLogic_channel1' did not match expected: value of the outgoing data port is ${unit1_pressureLogic_channel1Value}"
     }
-    val ports_unit1_pressureLogic_channel2Value: Base_Types.Boolean = get_ports_unit1_pressureLogic_channel2().get
-    if(!ports_unit1_pressureLogic_channel2(ports_unit1_pressureLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_pressureLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit1_pressureLogic_channel2Value}"
+    val unit1_pressureLogic_channel2Value: Base_Types.Boolean = get_unit1_pressureLogic_channel2().get
+    if(!unit1_pressureLogic_channel2(unit1_pressureLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit1_pressureLogic_channel2' did not match expected: value of the outgoing data port is ${unit1_pressureLogic_channel2Value}"
     }
-    val ports_unit1_pressureLogic_channel3Value: Base_Types.Boolean = get_ports_unit1_pressureLogic_channel3().get
-    if(!ports_unit1_pressureLogic_channel3(ports_unit1_pressureLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_pressureLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit1_pressureLogic_channel3Value}"
+    val unit1_pressureLogic_channel3Value: Base_Types.Boolean = get_unit1_pressureLogic_channel3().get
+    if(!unit1_pressureLogic_channel3(unit1_pressureLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit1_pressureLogic_channel3' did not match expected: value of the outgoing data port is ${unit1_pressureLogic_channel3Value}"
     }
-    val ports_unit1_pressureLogic_channel4Value: Base_Types.Boolean = get_ports_unit1_pressureLogic_channel4().get
-    if(!ports_unit1_pressureLogic_channel4(ports_unit1_pressureLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_pressureLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit1_pressureLogic_channel4Value}"
+    val unit1_pressureLogic_channel4Value: Base_Types.Boolean = get_unit1_pressureLogic_channel4().get
+    if(!unit1_pressureLogic_channel4(unit1_pressureLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit1_pressureLogic_channel4' did not match expected: value of the outgoing data port is ${unit1_pressureLogic_channel4Value}"
     }
-    val ports_unit1_saturationLogic_channel1Value: Base_Types.Boolean = get_ports_unit1_saturationLogic_channel1().get
-    if(!ports_unit1_saturationLogic_channel1(ports_unit1_saturationLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_saturationLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit1_saturationLogic_channel1Value}"
+    val unit1_saturationLogic_channel1Value: Base_Types.Boolean = get_unit1_saturationLogic_channel1().get
+    if(!unit1_saturationLogic_channel1(unit1_saturationLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit1_saturationLogic_channel1' did not match expected: value of the outgoing data port is ${unit1_saturationLogic_channel1Value}"
     }
-    val ports_unit1_saturationLogic_channel2Value: Base_Types.Boolean = get_ports_unit1_saturationLogic_channel2().get
-    if(!ports_unit1_saturationLogic_channel2(ports_unit1_saturationLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_saturationLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit1_saturationLogic_channel2Value}"
+    val unit1_saturationLogic_channel2Value: Base_Types.Boolean = get_unit1_saturationLogic_channel2().get
+    if(!unit1_saturationLogic_channel2(unit1_saturationLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit1_saturationLogic_channel2' did not match expected: value of the outgoing data port is ${unit1_saturationLogic_channel2Value}"
     }
-    val ports_unit1_saturationLogic_channel3Value: Base_Types.Boolean = get_ports_unit1_saturationLogic_channel3().get
-    if(!ports_unit1_saturationLogic_channel3(ports_unit1_saturationLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_saturationLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit1_saturationLogic_channel3Value}"
+    val unit1_saturationLogic_channel3Value: Base_Types.Boolean = get_unit1_saturationLogic_channel3().get
+    if(!unit1_saturationLogic_channel3(unit1_saturationLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit1_saturationLogic_channel3' did not match expected: value of the outgoing data port is ${unit1_saturationLogic_channel3Value}"
     }
-    val ports_unit1_saturationLogic_channel4Value: Base_Types.Boolean = get_ports_unit1_saturationLogic_channel4().get
-    if(!ports_unit1_saturationLogic_channel4(ports_unit1_saturationLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit1_saturationLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit1_saturationLogic_channel4Value}"
+    val unit1_saturationLogic_channel4Value: Base_Types.Boolean = get_unit1_saturationLogic_channel4().get
+    if(!unit1_saturationLogic_channel4(unit1_saturationLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit1_saturationLogic_channel4' did not match expected: value of the outgoing data port is ${unit1_saturationLogic_channel4Value}"
     }
-    val ports_unit2_temperatureLogic_channel1Value: Base_Types.Boolean = get_ports_unit2_temperatureLogic_channel1().get
-    if(!ports_unit2_temperatureLogic_channel1(ports_unit2_temperatureLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_temperatureLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit2_temperatureLogic_channel1Value}"
+    val unit2_temperatureLogic_channel1Value: Base_Types.Boolean = get_unit2_temperatureLogic_channel1().get
+    if(!unit2_temperatureLogic_channel1(unit2_temperatureLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit2_temperatureLogic_channel1' did not match expected: value of the outgoing data port is ${unit2_temperatureLogic_channel1Value}"
     }
-    val ports_unit2_temperatureLogic_channel2Value: Base_Types.Boolean = get_ports_unit2_temperatureLogic_channel2().get
-    if(!ports_unit2_temperatureLogic_channel2(ports_unit2_temperatureLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_temperatureLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit2_temperatureLogic_channel2Value}"
+    val unit2_temperatureLogic_channel2Value: Base_Types.Boolean = get_unit2_temperatureLogic_channel2().get
+    if(!unit2_temperatureLogic_channel2(unit2_temperatureLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit2_temperatureLogic_channel2' did not match expected: value of the outgoing data port is ${unit2_temperatureLogic_channel2Value}"
     }
-    val ports_unit2_temperatureLogic_channel3Value: Base_Types.Boolean = get_ports_unit2_temperatureLogic_channel3().get
-    if(!ports_unit2_temperatureLogic_channel3(ports_unit2_temperatureLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_temperatureLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit2_temperatureLogic_channel3Value}"
+    val unit2_temperatureLogic_channel3Value: Base_Types.Boolean = get_unit2_temperatureLogic_channel3().get
+    if(!unit2_temperatureLogic_channel3(unit2_temperatureLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit2_temperatureLogic_channel3' did not match expected: value of the outgoing data port is ${unit2_temperatureLogic_channel3Value}"
     }
-    val ports_unit2_temperatureLogic_channel4Value: Base_Types.Boolean = get_ports_unit2_temperatureLogic_channel4().get
-    if(!ports_unit2_temperatureLogic_channel4(ports_unit2_temperatureLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_temperatureLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit2_temperatureLogic_channel4Value}"
+    val unit2_temperatureLogic_channel4Value: Base_Types.Boolean = get_unit2_temperatureLogic_channel4().get
+    if(!unit2_temperatureLogic_channel4(unit2_temperatureLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit2_temperatureLogic_channel4' did not match expected: value of the outgoing data port is ${unit2_temperatureLogic_channel4Value}"
     }
-    val ports_unit2_pressureLogic_channel1Value: Base_Types.Boolean = get_ports_unit2_pressureLogic_channel1().get
-    if(!ports_unit2_pressureLogic_channel1(ports_unit2_pressureLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_pressureLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit2_pressureLogic_channel1Value}"
+    val unit2_pressureLogic_channel1Value: Base_Types.Boolean = get_unit2_pressureLogic_channel1().get
+    if(!unit2_pressureLogic_channel1(unit2_pressureLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit2_pressureLogic_channel1' did not match expected: value of the outgoing data port is ${unit2_pressureLogic_channel1Value}"
     }
-    val ports_unit2_pressureLogic_channel2Value: Base_Types.Boolean = get_ports_unit2_pressureLogic_channel2().get
-    if(!ports_unit2_pressureLogic_channel2(ports_unit2_pressureLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_pressureLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit2_pressureLogic_channel2Value}"
+    val unit2_pressureLogic_channel2Value: Base_Types.Boolean = get_unit2_pressureLogic_channel2().get
+    if(!unit2_pressureLogic_channel2(unit2_pressureLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit2_pressureLogic_channel2' did not match expected: value of the outgoing data port is ${unit2_pressureLogic_channel2Value}"
     }
-    val ports_unit2_pressureLogic_channel3Value: Base_Types.Boolean = get_ports_unit2_pressureLogic_channel3().get
-    if(!ports_unit2_pressureLogic_channel3(ports_unit2_pressureLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_pressureLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit2_pressureLogic_channel3Value}"
+    val unit2_pressureLogic_channel3Value: Base_Types.Boolean = get_unit2_pressureLogic_channel3().get
+    if(!unit2_pressureLogic_channel3(unit2_pressureLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit2_pressureLogic_channel3' did not match expected: value of the outgoing data port is ${unit2_pressureLogic_channel3Value}"
     }
-    val ports_unit2_pressureLogic_channel4Value: Base_Types.Boolean = get_ports_unit2_pressureLogic_channel4().get
-    if(!ports_unit2_pressureLogic_channel4(ports_unit2_pressureLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_pressureLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit2_pressureLogic_channel4Value}"
+    val unit2_pressureLogic_channel4Value: Base_Types.Boolean = get_unit2_pressureLogic_channel4().get
+    if(!unit2_pressureLogic_channel4(unit2_pressureLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit2_pressureLogic_channel4' did not match expected: value of the outgoing data port is ${unit2_pressureLogic_channel4Value}"
     }
-    val ports_unit2_saturationLogic_channel1Value: Base_Types.Boolean = get_ports_unit2_saturationLogic_channel1().get
-    if(!ports_unit2_saturationLogic_channel1(ports_unit2_saturationLogic_channel1Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_saturationLogic_channel1' did not match expected: value of the outgoing data port is ${ports_unit2_saturationLogic_channel1Value}"
+    val unit2_saturationLogic_channel1Value: Base_Types.Boolean = get_unit2_saturationLogic_channel1().get
+    if(!unit2_saturationLogic_channel1(unit2_saturationLogic_channel1Value)) {
+      testFailures = testFailures :+ st"'unit2_saturationLogic_channel1' did not match expected: value of the outgoing data port is ${unit2_saturationLogic_channel1Value}"
     }
-    val ports_unit2_saturationLogic_channel2Value: Base_Types.Boolean = get_ports_unit2_saturationLogic_channel2().get
-    if(!ports_unit2_saturationLogic_channel2(ports_unit2_saturationLogic_channel2Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_saturationLogic_channel2' did not match expected: value of the outgoing data port is ${ports_unit2_saturationLogic_channel2Value}"
+    val unit2_saturationLogic_channel2Value: Base_Types.Boolean = get_unit2_saturationLogic_channel2().get
+    if(!unit2_saturationLogic_channel2(unit2_saturationLogic_channel2Value)) {
+      testFailures = testFailures :+ st"'unit2_saturationLogic_channel2' did not match expected: value of the outgoing data port is ${unit2_saturationLogic_channel2Value}"
     }
-    val ports_unit2_saturationLogic_channel3Value: Base_Types.Boolean = get_ports_unit2_saturationLogic_channel3().get
-    if(!ports_unit2_saturationLogic_channel3(ports_unit2_saturationLogic_channel3Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_saturationLogic_channel3' did not match expected: value of the outgoing data port is ${ports_unit2_saturationLogic_channel3Value}"
+    val unit2_saturationLogic_channel3Value: Base_Types.Boolean = get_unit2_saturationLogic_channel3().get
+    if(!unit2_saturationLogic_channel3(unit2_saturationLogic_channel3Value)) {
+      testFailures = testFailures :+ st"'unit2_saturationLogic_channel3' did not match expected: value of the outgoing data port is ${unit2_saturationLogic_channel3Value}"
     }
-    val ports_unit2_saturationLogic_channel4Value: Base_Types.Boolean = get_ports_unit2_saturationLogic_channel4().get
-    if(!ports_unit2_saturationLogic_channel4(ports_unit2_saturationLogic_channel4Value)) {
-      testFailures = testFailures :+ st"'ports_unit2_saturationLogic_channel4' did not match expected: value of the outgoing data port is ${ports_unit2_saturationLogic_channel4Value}"
+    val unit2_saturationLogic_channel4Value: Base_Types.Boolean = get_unit2_saturationLogic_channel4().get
+    if(!unit2_saturationLogic_channel4(unit2_saturationLogic_channel4Value)) {
+      testFailures = testFailures :+ st"'unit2_saturationLogic_channel4' did not match expected: value of the outgoing data port is ${unit2_saturationLogic_channel4Value}"
     }
 
     assert(testFailures.isEmpty, st"${(testFailures, "\n")}".render)
@@ -206,363 +206,363 @@ import RTS._
 
 
   // getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_temperatureLogic_channel1_payload() match {
+  def get_unit1_temperatureLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_temperatureLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_temperatureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_temperatureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_temperatureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_temperatureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_temperatureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_temperatureLogic_channel2_payload() match {
+  def get_unit1_temperatureLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_temperatureLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_temperatureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_temperatureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_temperatureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_temperatureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_temperatureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_temperatureLogic_channel3_payload() match {
+  def get_unit1_temperatureLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_temperatureLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_temperatureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_temperatureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_temperatureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_temperatureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_temperatureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_temperatureLogic_channel4_payload() match {
+  def get_unit1_temperatureLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_temperatureLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_temperatureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_temperatureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_temperatureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_temperatureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_temperatureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_temperatureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_pressureLogic_channel1_payload() match {
+  def get_unit1_pressureLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_pressureLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_pressureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_pressureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_pressureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_pressureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_pressureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_pressureLogic_channel2_payload() match {
+  def get_unit1_pressureLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_pressureLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_pressureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_pressureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_pressureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_pressureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_pressureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_pressureLogic_channel3_payload() match {
+  def get_unit1_pressureLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_pressureLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_pressureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_pressureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_pressureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_pressureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_pressureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_pressureLogic_channel4_payload() match {
+  def get_unit1_pressureLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_pressureLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_pressureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_pressureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_pressureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_pressureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_pressureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_pressureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_saturationLogic_channel1_payload() match {
+  def get_unit1_saturationLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_saturationLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_saturationLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_saturationLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_saturationLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_saturationLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_saturationLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_saturationLogic_channel2_payload() match {
+  def get_unit1_saturationLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_saturationLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_saturationLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_saturationLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_saturationLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_saturationLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_saturationLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_saturationLogic_channel3_payload() match {
+  def get_unit1_saturationLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_saturationLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_saturationLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_saturationLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_saturationLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_saturationLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_saturationLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit1_saturationLogic_channel4_payload() match {
+  def get_unit1_saturationLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit1_saturationLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit1_saturationLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit1_saturationLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit1_saturationLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit1_saturationLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit1_saturationLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit1_saturationLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_temperatureLogic_channel1_payload() match {
+  def get_unit2_temperatureLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_temperatureLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_temperatureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_temperatureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_temperatureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_temperatureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_temperatureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_temperatureLogic_channel2_payload() match {
+  def get_unit2_temperatureLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_temperatureLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_temperatureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_temperatureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_temperatureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_temperatureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_temperatureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_temperatureLogic_channel3_payload() match {
+  def get_unit2_temperatureLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_temperatureLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_temperatureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_temperatureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_temperatureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_temperatureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_temperatureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_temperatureLogic_channel4_payload() match {
+  def get_unit2_temperatureLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_temperatureLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_temperatureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_temperatureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_temperatureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_temperatureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_temperatureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_temperatureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_pressureLogic_channel1_payload() match {
+  def get_unit2_pressureLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_pressureLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_pressureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_pressureLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_pressureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_pressureLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_pressureLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_pressureLogic_channel2_payload() match {
+  def get_unit2_pressureLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_pressureLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_pressureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_pressureLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_pressureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_pressureLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_pressureLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_pressureLogic_channel3_payload() match {
+  def get_unit2_pressureLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_pressureLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_pressureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_pressureLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_pressureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_pressureLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_pressureLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_pressureLogic_channel4_payload() match {
+  def get_unit2_pressureLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_pressureLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_pressureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_pressureLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_pressureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_pressureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_pressureLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_pressureLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel1(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_saturationLogic_channel1_payload() match {
+  def get_unit2_saturationLogic_channel1(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_saturationLogic_channel1_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_saturationLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_saturationLogic_channel1.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_saturationLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_saturationLogic_channel1_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_saturationLogic_channel1_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel2(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_saturationLogic_channel2_payload() match {
+  def get_unit2_saturationLogic_channel2(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_saturationLogic_channel2_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_saturationLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_saturationLogic_channel2.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_saturationLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_saturationLogic_channel2_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_saturationLogic_channel2_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel3(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_saturationLogic_channel3_payload() match {
+  def get_unit2_saturationLogic_channel3(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_saturationLogic_channel3_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_saturationLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_saturationLogic_channel3.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_saturationLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_saturationLogic_channel3_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_saturationLogic_channel3_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
   // getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel4(): Option[Base_Types.Boolean] = {
-    val value: Option[Base_Types.Boolean] = get_ports_unit2_saturationLogic_channel4_payload() match {
+  def get_unit2_saturationLogic_channel4(): Option[Base_Types.Boolean] = {
+    val value: Option[Base_Types.Boolean] = get_unit2_saturationLogic_channel4_payload() match {
       case Some(Base_Types.Boolean_Payload(v)) => Some(v)
-      case Some(v) => halt(s"Unexpected payload on port ports_unit2_saturationLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
+      case Some(v) => halt(s"Unexpected payload on port unit2_saturationLogic_channel4.  Expecting 'Base_Types.Boolean_Payload' but received ${v}")
       case _ => None[Base_Types.Boolean]()
     }
     return value
   }
 
   // payload getter for out DataPort
-  def get_ports_unit2_saturationLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
-    return Art.observeOutInfrastructurePort(Arch.rts_instrumentationMock_instrumentationMockThread.initialization_api.ports_unit2_saturationLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
+  def get_unit2_saturationLogic_channel4_payload(): Option[Base_Types.Boolean_Payload] = {
+    return Art.observeOutInfrastructurePort(Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.initialization_api.unit2_saturationLogic_channel4_Id).asInstanceOf[Option[Base_Types.Boolean_Payload]]
   }
 
 }

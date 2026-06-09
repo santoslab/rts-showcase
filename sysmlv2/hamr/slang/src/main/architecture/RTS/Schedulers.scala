@@ -22,83 +22,83 @@ object Schedulers {
 
   val threadNickNames: Map[String, Art.BridgeId] = Map(
     ISZ(
-      Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id,
-      Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.name ~> Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id,
-      Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.name ~> Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id,
-      Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.name ~> Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id,
-      Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.name ~> Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id,
-      Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name ~> Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id,
-      Arch.rts_instrumentationMock_instrumentationMockThread.name ~> Arch.rts_instrumentationMock_instrumentationMockThread.id,
-      Arch.rts_eventControlMock_eventControlMockThread.name ~> Arch.rts_eventControlMock_eventControlMockThread.id,
-      Arch.rts_actuatorsMock_actuatorsMockThread.name ~> Arch.rts_actuatorsMock_actuatorsMockThread.id)
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.name ~> Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.name ~> Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.name ~> Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id,
+      Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.name ~> Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id,
+      Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.name ~> Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id,
+      Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.name ~> Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.id,
+      Arch.RTS_Instance_eventControlMock_eventControlMockThread.name ~> Arch.RTS_Instance_eventControlMock_eventControlMockThread.id,
+      Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.name ~> Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.id)
   )
 
   val revThreadNickNames: Map[Art.BridgeId, String] = Map.empty[Art.BridgeId, String] ++ (for (e <- threadNickNames.entries) yield e._2 ~> e._1)
 
 
-  val rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_instrumentationMock_instrumentationMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_instrumentationMock_instrumentationMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_eventControlMock_eventControlMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_eventControlMock_eventControlMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
-  val rts_actuatorsMock_actuatorsMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
+  val RTS_Instance_actuatorsMock_actuatorsMockThread_timingProperties: ThreadTimingProperties = ThreadTimingProperties(
     computeExecutionTime = None(),
     domain = None())
 
@@ -154,21 +154,21 @@ object Schedulers {
   )))
 
   val defaultDomainToBridgeIdMap: ISZ[Art.BridgeId] = ISZ(
-    /* domain 0 */ Arch.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id,
-    /* domain 1 */ Arch.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id,
-    /* domain 2 */ Arch.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id,
-    /* domain 3 */ Arch.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id,
-    /* domain 4 */ Arch.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id,
-    /* domain 5 */ Arch.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id,
-    /* domain 6 */ Arch.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id,
-    /* domain 7 */ Arch.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id,
-    /* domain 8 */ Arch.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id,
-    /* domain 9 */ Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id,
-    /* domain 10 */ Arch.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id,
-    /* domain 11 */ Arch.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id,
-    /* domain 12 */ Arch.rts_instrumentationMock_instrumentationMockThread.id,
-    /* domain 13 */ Arch.rts_eventControlMock_eventControlMockThread.id,
-    /* domain 14 */ Arch.rts_actuatorsMock_actuatorsMockThread.id
+    /* domain 0 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic.id,
+    /* domain 1 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic.id,
+    /* domain 2 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic.id,
+    /* domain 3 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic.id,
+    /* domain 4 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic.id,
+    /* domain 5 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic.id,
+    /* domain 6 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic.id,
+    /* domain 7 */ Arch.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.id,
+    /* domain 8 */ Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic.id,
+    /* domain 9 */ Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id,
+    /* domain 10 */ Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.id,
+    /* domain 11 */ Arch.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.id,
+    /* domain 12 */ Arch.RTS_Instance_instrumentationMock_instrumentationMockThread.id,
+    /* domain 13 */ Arch.RTS_Instance_eventControlMock_eventControlMockThread.id,
+    /* domain 14 */ Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.id
   )
 
   def getStaticSchedulerH(userProvided: MOption[(DScheduleSpec, ISZ[Art.BridgeId], Map[String, Art.BridgeId], CommandProvider)]): StaticScheduler = {

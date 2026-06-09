@@ -12,7 +12,7 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripO
 Unit RTS_Actuation_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_timeTriggered(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api api) {
   DeclNewStackFrame(caller, "OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic.scala", "RTS.Actuation.OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic", "timeTriggered", 0);
 
-  sfUpdateLoc(47);
+  sfUpdateLoc(56);
   B channel1;
   {
     DeclNewOption_8F4D4C(t_0);
@@ -21,7 +21,7 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripO
     channel1 = t_1;
   }
 
-  sfUpdateLoc(48);
+  sfUpdateLoc(57);
   B channel2;
   {
     DeclNewOption_8F4D4C(t_2);
@@ -30,13 +30,13 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripO
     channel2 = t_3;
   }
 
-  sfUpdateLoc(59);
+  sfUpdateLoc(68);
   B result;
   {
     result = B__or(channel1, channel2);
   }
 
-  sfUpdateLoc(62);
+  sfUpdateLoc(71);
   {
     RTS_Actuation_OrLogic_i_Operational_Api_put_actuate_(SF api, result);
   }

@@ -16,7 +16,9 @@ exit /B %errorlevel%
 ::!#*/
 // #Sireum
 
-// Example Sireum Proyek build definitions -- the contents of this file will not be overwritten
+// This file will not be overwritten if HAMR codegen is rerun
+
+// Example Sireum Proyek build definitions
 //
 // To install Sireum (Proyek and IVE) see https://sireum.org/getting-started/
 //

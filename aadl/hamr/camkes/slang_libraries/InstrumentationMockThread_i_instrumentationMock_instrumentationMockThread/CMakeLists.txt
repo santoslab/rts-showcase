@@ -6,7 +6,7 @@ if(APPLE)
       OUTPUT_STRIP_TRAILING_WHITESPACE)
   endif()
 else()
-  cmake_minimum_required(VERSION 3.5.1)
+  cmake_minimum_required(VERSION 3.10)
 endif(APPLE)
 
 project(InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread)
@@ -97,11 +97,11 @@ endif(WITH_LOC)
 
 
 add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread STATIC
-        runtime/stackframe.c
         runtime/misc.c
-        runtime/type.h
         runtime/type.c
+        runtime/type.h
         runtime/misc.h
+        runtime/stackframe.c
         runtime/stackframe.h
         runtime/lib.h
         runtime/ztype.h
@@ -116,48 +116,6 @@ add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockT
         library/RTS/Base_Types/type-RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.c
         library/RTS/Instrumentation/type-RTS_Instrumentation_InstrumentationMockThread_i_Api.h
         library/RTS/Instrumentation/RTS_Instrumentation_InstrumentationMockThread_i_Api.h
         library/RTS/Instrumentation/RTS_Instrumentation_InstrumentationMockThread_i_Api.c
@@ -280,18 +238,6 @@ add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockT
         library/org/sireum/type-org_sireum_Option_A836EB.h
         library/org/sireum/org_sireum_Option_A836EB.h
         library/org/sireum/org_sireum_Option_A836EB.c
-        library/org/sireum/type-org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.c
-        library/org/sireum/type-org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.c
-        library/org/sireum/type-org_sireum_S64.h
-        library/org/sireum/org_sireum_S64.h
-        library/org/sireum/org_sireum_S64.c
-        library/org/sireum/type-org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.c
         library/org/sireum/type-org_sireum_Some.h
         library/org/sireum/org_sireum_Some.h
         library/org/sireum/org_sireum_Some.c
@@ -310,18 +256,6 @@ add_library(InstrumentationMockThread_i_instrumentationMock_instrumentationMockT
         library/org/sireum/type-org_sireum_Tuple2_04A4F6.h
         library/org/sireum/org_sireum_Tuple2_04A4F6.h
         library/org/sireum/org_sireum_Tuple2_04A4F6.c
-        library/org/sireum/type-org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.c
-        library/org/sireum/type-org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.c
-        library/org/sireum/type-org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.c
-        library/org/sireum/type-org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.c
         ext/ext.c
         ext/ext.h
         ext/InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_adapter.h
@@ -343,6 +277,8 @@ target_include_directories(InstrumentationMockThread_i_instrumentationMock_instr
         PUBLIC PUBLIC library/org/sireum
         PUBLIC PUBLIC ext)
 
+
+# This file will not be overwritten if HAMR codegen is rerun
 
 add_definitions(-DCAMKES)
 

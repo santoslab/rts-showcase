@@ -15,16 +15,16 @@ import RTS.Actuation.{Actuator_actuationSubsystem_saturationActuatorUnit_saturat
   val dispatchProtocol: DispatchPropertyProtocol,
   val dispatchTriggers: Option[ISZ[Art.PortId]],
 
-  ports_input: Port[Base_Types.Boolean],
-  ports_manualActuatorInput: Port[Base_Types.Boolean],
-  ports_output: Port[Base_Types.Boolean]
+  input: Port[Base_Types.Boolean],
+  manualActuatorInput: Port[Base_Types.Boolean],
+  output: Port[Base_Types.Boolean]
   ) extends Bridge {
 
   val ports : Bridge.Ports = Bridge.Ports(
-    dataIns = ISZ[art.UPort](ports_input,
-                             ports_manualActuatorInput),
+    dataIns = ISZ[art.UPort](input,
+                             manualActuatorInput),
 
-    dataOuts = ISZ[art.UPort](ports_output),
+    dataOuts = ISZ[art.UPort](output),
 
     eventIns = ISZ[art.UPort](),
 
@@ -34,9 +34,9 @@ import RTS.Actuation.{Actuator_actuationSubsystem_saturationActuatorUnit_saturat
   val initialization_api : Actuator_Initialization_Api = {
     val api = Actuator_Initialization_Api(
       id,
-      ports_input.id,
-      ports_manualActuatorInput.id,
-      ports_output.id
+      input.id,
+      manualActuatorInput.id,
+      output.id
     )
     Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.c_initialization_api = Some(api)
     api
@@ -45,9 +45,9 @@ import RTS.Actuation.{Actuator_actuationSubsystem_saturationActuatorUnit_saturat
   val operational_api : Actuator_Operational_Api = {
     val api = Actuator_Operational_Api(
       id,
-      ports_input.id,
-      ports_manualActuatorInput.id,
-      ports_output.id
+      input.id,
+      manualActuatorInput.id,
+      output.id
     )
     Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.c_operational_api = Some(api)
     api
@@ -57,9 +57,9 @@ import RTS.Actuation.{Actuator_actuationSubsystem_saturationActuatorUnit_saturat
     Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.EntryPoints(
       id,
 
-      ports_input.id,
-      ports_manualActuatorInput.id,
-      ports_output.id,
+      input.id,
+      manualActuatorInput.id,
+      output.id,
 
       dispatchTriggers,
 
@@ -74,19 +74,19 @@ object Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_act
 
   @datatype class EntryPoints(
     Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_BridgeId : Art.BridgeId,
-    ports_input_Id : Art.PortId,
-    ports_manualActuatorInput_Id : Art.PortId,
-    ports_output_Id : Art.PortId,
+    input_Id : Art.PortId,
+    manualActuatorInput_Id : Art.PortId,
+    output_Id : Art.PortId,
     dispatchTriggers : Option[ISZ[Art.PortId]],
     initialization_api: Actuator_Initialization_Api,
     operational_api: Actuator_Operational_Api) extends Bridge.EntryPoints {
 
-    val dataInPortIds: ISZ[Art.PortId] = IS(ports_input_Id,
-                                            ports_manualActuatorInput_Id)
+    val dataInPortIds: ISZ[Art.PortId] = IS(input_Id,
+                                            manualActuatorInput_Id)
 
     val eventInPortIds: ISZ[Art.PortId] = IS()
 
-    val dataOutPortIds: ISZ[Art.PortId] = IS(ports_output_Id)
+    val dataOutPortIds: ISZ[Art.PortId] = IS(output_Id)
 
     val eventOutPortIds: ISZ[Art.PortId] = IS()
 

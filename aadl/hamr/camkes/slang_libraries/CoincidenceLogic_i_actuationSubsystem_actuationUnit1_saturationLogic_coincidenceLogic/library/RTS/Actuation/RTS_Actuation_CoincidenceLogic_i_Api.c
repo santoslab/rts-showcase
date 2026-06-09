@@ -26,7 +26,7 @@ void RTS_Actuation_CoincidenceLogic_i_Api_string_(STACK_FRAME String result, RTS
 Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(35);
+  sfUpdateLoc(37);
   {
     art_Art_logInfo(SF RTS_Actuation_CoincidenceLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -35,7 +35,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logInfo_(STACK_FRAME RT
 Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logDebug_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(39);
+  sfUpdateLoc(41);
   {
     art_Art_logDebug(SF RTS_Actuation_CoincidenceLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -44,7 +44,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logDebug_(STACK_FRAME R
 Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logError_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logError", 0);
 
-  sfUpdateLoc(43);
+  sfUpdateLoc(45);
   {
     art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -53,7 +53,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_logError_(STACK_FRAME R
 Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logInfo_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(35);
+  sfUpdateLoc(37);
   {
     art_Art_logInfo(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -62,7 +62,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logInfo_(STACK_FRAME RTS_A
 Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logDebug_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(39);
+  sfUpdateLoc(41);
   {
     art_Art_logDebug(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -71,7 +71,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logDebug_(STACK_FRAME RTS_
 Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logError_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "logError", 0);
 
-  sfUpdateLoc(43);
+  sfUpdateLoc(45);
   {
     art_Art_logError(SF RTS_Actuation_CoincidenceLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -80,7 +80,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_logError_(STACK_FRAME RTS_
 Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_put_actuate_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "put_actuate", 0);
 
-  sfUpdateLoc(31);
+  sfUpdateLoc(33);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -91,7 +91,7 @@ Unit RTS_Actuation_CoincidenceLogic_i_Initialization_Api_put_actuate_(STACK_FRAM
 Unit RTS_Actuation_CoincidenceLogic_i_Operational_Api_put_actuate_(STACK_FRAME RTS_Actuation_CoincidenceLogic_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "CoincidenceLogic_i_Api.scala", "RTS.Actuation.CoincidenceLogic_i_Api", "put_actuate", 0);
 
-  sfUpdateLoc(31);
+  sfUpdateLoc(33);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);

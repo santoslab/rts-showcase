@@ -15,20 +15,6 @@ extern "C" {
 #include <type-RTS_Actuation_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_seL4Nix.h>
 #include <type-RTS_Base_Types.h>
 #include <type-RTS_Base_Types_Boolean_Payload.h>
-#include <type-RTS_Base_Types_Character_Payload.h>
-#include <type-RTS_Base_Types_Float_32_Payload.h>
-#include <type-RTS_Base_Types_Float_64_Payload.h>
-#include <type-RTS_Base_Types_Float_Payload.h>
-#include <type-RTS_Base_Types_Integer_16_Payload.h>
-#include <type-RTS_Base_Types_Integer_32_Payload.h>
-#include <type-RTS_Base_Types_Integer_64_Payload.h>
-#include <type-RTS_Base_Types_Integer_8_Payload.h>
-#include <type-RTS_Base_Types_Integer_Payload.h>
-#include <type-RTS_Base_Types_String_Payload.h>
-#include <type-RTS_Base_Types_Unsigned_16_Payload.h>
-#include <type-RTS_Base_Types_Unsigned_32_Payload.h>
-#include <type-RTS_Base_Types_Unsigned_64_Payload.h>
-#include <type-RTS_Base_Types_Unsigned_8_Payload.h>
 #include <type-RTS_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_orLogic_seL4App.h>
 #include <type-RTS_TranspilerToucher.h>
 #include <type-art_Art.h>
@@ -64,19 +50,11 @@ extern "C" {
 #include <type-org_sireum_Option_8E9F45.h>
 #include <type-org_sireum_Option_8F4D4C.h>
 #include <type-org_sireum_Option_E142FF.h>
-#include <type-org_sireum_S16.h>
-#include <type-org_sireum_S32.h>
-#include <type-org_sireum_S64.h>
-#include <type-org_sireum_S8.h>
 #include <type-org_sireum_Some.h>
 #include <type-org_sireum_Some_6FC748.h>
 #include <type-org_sireum_Some_824C23.h>
 #include <type-org_sireum_Some_D29615.h>
 #include <type-org_sireum_Some_DB59FB.h>
-#include <type-org_sireum_U16.h>
-#include <type-org_sireum_U32.h>
-#include <type-org_sireum_U64.h>
-#include <type-org_sireum_U8.h>
 
 #if defined(static_assert)
 #define STATIC_ASSERT static_assert

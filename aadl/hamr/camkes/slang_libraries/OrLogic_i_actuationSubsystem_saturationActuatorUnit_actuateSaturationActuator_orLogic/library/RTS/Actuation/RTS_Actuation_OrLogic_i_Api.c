@@ -26,7 +26,7 @@ void RTS_Actuation_OrLogic_i_Api_string_(STACK_FRAME String result, RTS_Actuatio
 Unit RTS_Actuation_OrLogic_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Actuation_OrLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(33);
+  sfUpdateLoc(35);
   {
     art_Art_logInfo(SF RTS_Actuation_OrLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -35,7 +35,7 @@ Unit RTS_Actuation_OrLogic_i_Initialization_Api_logInfo_(STACK_FRAME RTS_Actuati
 Unit RTS_Actuation_OrLogic_i_Initialization_Api_logDebug_(STACK_FRAME RTS_Actuation_OrLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(37);
+  sfUpdateLoc(39);
   {
     art_Art_logDebug(SF RTS_Actuation_OrLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -44,7 +44,7 @@ Unit RTS_Actuation_OrLogic_i_Initialization_Api_logDebug_(STACK_FRAME RTS_Actuat
 Unit RTS_Actuation_OrLogic_i_Initialization_Api_logError_(STACK_FRAME RTS_Actuation_OrLogic_i_Initialization_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logError", 0);
 
-  sfUpdateLoc(41);
+  sfUpdateLoc(43);
   {
     art_Art_logError(SF RTS_Actuation_OrLogic_i_Initialization_Api_id_(this), (String) msg);
   }
@@ -53,7 +53,7 @@ Unit RTS_Actuation_OrLogic_i_Initialization_Api_logError_(STACK_FRAME RTS_Actuat
 Unit RTS_Actuation_OrLogic_i_Operational_Api_logInfo_(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logInfo", 0);
 
-  sfUpdateLoc(33);
+  sfUpdateLoc(35);
   {
     art_Art_logInfo(SF RTS_Actuation_OrLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -62,7 +62,7 @@ Unit RTS_Actuation_OrLogic_i_Operational_Api_logInfo_(STACK_FRAME RTS_Actuation_
 Unit RTS_Actuation_OrLogic_i_Operational_Api_logDebug_(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logDebug", 0);
 
-  sfUpdateLoc(37);
+  sfUpdateLoc(39);
   {
     art_Art_logDebug(SF RTS_Actuation_OrLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -71,7 +71,7 @@ Unit RTS_Actuation_OrLogic_i_Operational_Api_logDebug_(STACK_FRAME RTS_Actuation
 Unit RTS_Actuation_OrLogic_i_Operational_Api_logError_(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api this, String msg) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "logError", 0);
 
-  sfUpdateLoc(41);
+  sfUpdateLoc(43);
   {
     art_Art_logError(SF RTS_Actuation_OrLogic_i_Operational_Api_id_(this), (String) msg);
   }
@@ -80,7 +80,7 @@ Unit RTS_Actuation_OrLogic_i_Operational_Api_logError_(STACK_FRAME RTS_Actuation
 Unit RTS_Actuation_OrLogic_i_Initialization_Api_put_actuate_(STACK_FRAME RTS_Actuation_OrLogic_i_Initialization_Api this, B value) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "put_actuate", 0);
 
-  sfUpdateLoc(29);
+  sfUpdateLoc(31);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);
@@ -91,7 +91,7 @@ Unit RTS_Actuation_OrLogic_i_Initialization_Api_put_actuate_(STACK_FRAME RTS_Act
 Unit RTS_Actuation_OrLogic_i_Operational_Api_put_actuate_(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api this, B value) {
   DeclNewStackFrame(caller, "OrLogic_i_Api.scala", "RTS.Actuation.OrLogic_i_Api", "put_actuate", 0);
 
-  sfUpdateLoc(29);
+  sfUpdateLoc(31);
   {
     DeclNewRTS_Base_Types_Boolean_Payload(t_0);
     RTS_Base_Types_Boolean_Payload_apply(SF &t_0, value);

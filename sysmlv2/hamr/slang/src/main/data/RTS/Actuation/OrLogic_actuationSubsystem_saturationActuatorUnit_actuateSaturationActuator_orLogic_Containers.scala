@@ -11,28 +11,28 @@ import RTS.util.Container
 // containers for the pre and post state values of ports and state variables
 
 @sig trait OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container extends Container {
-  def api_ports_channel1: B
-  def api_ports_channel2: B
+  def api_channel1: B
+  def api_channel2: B
 }
 
 // container for incoming ports
 @datatype class OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P (
-  val api_ports_channel1: B,
-  val api_ports_channel2: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container
+  val api_channel1: B,
+  val api_channel2: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container
 
 // container for incoming ports and state variables
 @datatype class OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS (
-  val api_ports_channel1: B,
-  val api_ports_channel2: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container
+  val api_channel1: B,
+  val api_channel2: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container
 
 @sig trait OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container extends Container {
-  def api_ports_actuate: B
+  def api_actuate: B
 }
 
 // container for outgoing ports
 @datatype class OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P (
-  val api_ports_actuate: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container
+  val api_actuate: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container
 
 // container for outgoing ports and state variables
 @datatype class OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS (
-  val api_ports_actuate: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container
+  val api_actuate: B) extends OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container

@@ -14,8 +14,8 @@ object EventControlMockThread_eventControlMock_eventControlMockThread {
     val v = F
 
     // AADL computational model requires that we provide an initial value output ports
-    api.put_ports_manualActuatorInput1(v)
-    api.put_ports_manualActuatorInput2(v)
+    api.put_manualActuatorInput1(v)
+    api.put_manualActuatorInput2(v)
   }
 
   val frames: ISZ[(Base_Types.Boolean, Base_Types.Boolean)] =
@@ -57,8 +57,8 @@ object EventControlMockThread_eventControlMock_eventControlMockThread {
 
     val manualActuatorInputs = frames(frame)
     api.logInfo(s"  Event Control test vector: ${manualActuatorInputs}")
-    api.put_ports_manualActuatorInput1(manualActuatorInputs._1)
-    api.put_ports_manualActuatorInput2(manualActuatorInputs._2)
+    api.put_manualActuatorInput1(manualActuatorInputs._1)
+    api.put_manualActuatorInput2(manualActuatorInputs._2)
   }
 
   def activate(api: EventControlMockThread_Operational_Api): Unit = { }

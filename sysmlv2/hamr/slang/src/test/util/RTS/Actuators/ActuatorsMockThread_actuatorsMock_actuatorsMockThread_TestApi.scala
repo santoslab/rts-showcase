@@ -10,42 +10,42 @@ import RTS._
 @msig trait ActuatorsMockThread_actuatorsMock_actuatorsMockThread_TestApi {
 
   def BeforeEntrypoint(): Unit = {
-    Art.initTest(Arch.rts_actuatorsMock_actuatorsMockThread)
+    Art.initTest(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread)
   }
 
   def AfterEntrypoint(): Unit = {
-    Art.finalizeTest(Arch.rts_actuatorsMock_actuatorsMockThread)
+    Art.finalizeTest(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread)
   }
 
   def testCompute(): Unit = {
     Art.manuallyClearOutput()
-    Art.testCompute(Arch.rts_actuatorsMock_actuatorsMockThread)
+    Art.testCompute(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread)
   }
 
   def testInitialise(): Unit = {
     Art.manuallyClearOutput()
-    Art.testInitialise(Arch.rts_actuatorsMock_actuatorsMockThread)
+    Art.testInitialise(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread)
   }
 
   /** helper function to set the values of all input ports.
-   * @param ports_tempPressureActuate payload for data port ports_tempPressureActuate
-   * @param ports_saturationActuate payload for data port ports_saturationActuate
+   * @param tempPressureActuate payload for data port tempPressureActuate
+   * @param saturationActuate payload for data port saturationActuate
    */
-  def put_concrete_inputs(ports_tempPressureActuate : Base_Types.Boolean,
-                          ports_saturationActuate : Base_Types.Boolean): Unit = {
-    put_ports_tempPressureActuate(ports_tempPressureActuate)
-    put_ports_saturationActuate(ports_saturationActuate)
+  def put_concrete_inputs(tempPressureActuate : Base_Types.Boolean,
+                          saturationActuate : Base_Types.Boolean): Unit = {
+    put_tempPressureActuate(tempPressureActuate)
+    put_saturationActuate(saturationActuate)
   }
 
 
   // setter for in DataPort
-  def put_ports_tempPressureActuate(value : Base_Types.Boolean): Unit = {
-    Art.insertInInfrastructurePort(Arch.rts_actuatorsMock_actuatorsMockThread.operational_api.ports_tempPressureActuate_Id, Base_Types.Boolean_Payload(value))
+  def put_tempPressureActuate(value : Base_Types.Boolean): Unit = {
+    Art.insertInInfrastructurePort(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.operational_api.tempPressureActuate_Id, Base_Types.Boolean_Payload(value))
   }
 
   // setter for in DataPort
-  def put_ports_saturationActuate(value : Base_Types.Boolean): Unit = {
-    Art.insertInInfrastructurePort(Arch.rts_actuatorsMock_actuatorsMockThread.operational_api.ports_saturationActuate_Id, Base_Types.Boolean_Payload(value))
+  def put_saturationActuate(value : Base_Types.Boolean): Unit = {
+    Art.insertInInfrastructurePort(Arch.RTS_Instance_actuatorsMock_actuatorsMockThread.operational_api.saturationActuate_Id, Base_Types.Boolean_Payload(value))
   }
 
 }

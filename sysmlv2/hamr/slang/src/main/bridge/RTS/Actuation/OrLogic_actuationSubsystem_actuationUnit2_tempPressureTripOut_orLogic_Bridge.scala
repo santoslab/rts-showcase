@@ -15,16 +15,16 @@ import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit2_tempPressureTrip
   val dispatchProtocol: DispatchPropertyProtocol,
   val dispatchTriggers: Option[ISZ[Art.PortId]],
 
-  ports_channel1: Port[Base_Types.Boolean],
-  ports_channel2: Port[Base_Types.Boolean],
-  ports_actuate: Port[Base_Types.Boolean]
+  channel1: Port[Base_Types.Boolean],
+  channel2: Port[Base_Types.Boolean],
+  actuate: Port[Base_Types.Boolean]
   ) extends Bridge {
 
   val ports : Bridge.Ports = Bridge.Ports(
-    dataIns = ISZ[art.UPort](ports_channel1,
-                             ports_channel2),
+    dataIns = ISZ[art.UPort](channel1,
+                             channel2),
 
-    dataOuts = ISZ[art.UPort](ports_actuate),
+    dataOuts = ISZ[art.UPort](actuate),
 
     eventIns = ISZ[art.UPort](),
 
@@ -34,9 +34,9 @@ import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit2_tempPressureTrip
   val initialization_api : OrLogic_Initialization_Api = {
     val api = OrLogic_Initialization_Api(
       id,
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_actuate.id
+      channel1.id,
+      channel2.id,
+      actuate.id
     )
     OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_Bridge.c_initialization_api = Some(api)
     api
@@ -45,9 +45,9 @@ import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit2_tempPressureTrip
   val operational_api : OrLogic_Operational_Api = {
     val api = OrLogic_Operational_Api(
       id,
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_actuate.id
+      channel1.id,
+      channel2.id,
+      actuate.id
     )
     OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_Bridge.c_operational_api = Some(api)
     api
@@ -57,9 +57,9 @@ import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit2_tempPressureTrip
     OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_Bridge.EntryPoints(
       id,
 
-      ports_channel1.id,
-      ports_channel2.id,
-      ports_actuate.id,
+      channel1.id,
+      channel2.id,
+      actuate.id,
 
       dispatchTriggers,
 
@@ -74,19 +74,19 @@ object OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_Bri
 
   @datatype class EntryPoints(
     OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_BridgeId : Art.BridgeId,
-    ports_channel1_Id : Art.PortId,
-    ports_channel2_Id : Art.PortId,
-    ports_actuate_Id : Art.PortId,
+    channel1_Id : Art.PortId,
+    channel2_Id : Art.PortId,
+    actuate_Id : Art.PortId,
     dispatchTriggers : Option[ISZ[Art.PortId]],
     initialization_api: OrLogic_Initialization_Api,
     operational_api: OrLogic_Operational_Api) extends Bridge.EntryPoints {
 
-    val dataInPortIds: ISZ[Art.PortId] = IS(ports_channel1_Id,
-                                            ports_channel2_Id)
+    val dataInPortIds: ISZ[Art.PortId] = IS(channel1_Id,
+                                            channel2_Id)
 
     val eventInPortIds: ISZ[Art.PortId] = IS()
 
-    val dataOutPortIds: ISZ[Art.PortId] = IS(ports_actuate_Id)
+    val dataOutPortIds: ISZ[Art.PortId] = IS(actuate_Id)
 
     val eventOutPortIds: ISZ[Art.PortId] = IS()
 

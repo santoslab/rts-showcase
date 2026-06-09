@@ -24,26 +24,26 @@ val sireum = Os.path(Os.env("SIREUM_HOME").get) / "bin" / (if (Os.isWin) "sireum
 
 // create SlangCheck artifacts for the Slang types used in the project
 
-val files: ISZ[String] = ISZ("../src/main/data/RTS/Base_Types.scala",
-                             "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Containers.scala",
+val files: ISZ[String] = ISZ("../src/main/art/art/DataContent.scala",
+                             "../src/main/data/RTS/Actuation/Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Containers.scala",
+                             "../src/main/data/RTS/Actuation/Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_Containers.scala",
                              "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_Containers.scala",
                              "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_Containers.scala",
-                             "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_Containers.scala",
-                             "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_Containers.scala",
+                             "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_Containers.scala",
                              "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Containers.scala",
                              "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_Containers.scala",
+                             "../src/main/data/RTS/Actuation/CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_Containers.scala",
+                             "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_Containers.scala",
                              "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_Containers.scala",
-                             "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_Containers.scala",
-                             "../src/main/data/RTS/Actuation/Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_Containers.scala",
                              "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_Containers.scala",
-                             "../src/main/data/RTS/Actuation/Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Containers.scala",
-                             "../src/main/data/RTS/Instrumentation/InstrumentationMockThread_instrumentationMock_instrumentationMockThread_Containers.scala",
-                             "../src/main/data/RTS/EventControl/EventControlMockThread_eventControlMock_eventControlMockThread_Containers.scala",
+                             "../src/main/data/RTS/Actuation/OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_Containers.scala",
                              "../src/main/data/RTS/Actuators/ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Containers.scala",
-                             "../src/main/util/RTS/runtimemonitor/ObservationKind.scala",
+                             "../src/main/data/RTS/Aux_Types.scala",
+                             "../src/main/data/RTS/Base_Types.scala",
+                             "../src/main/data/RTS/EventControl/EventControlMockThread_eventControlMock_eventControlMockThread_Containers.scala",
+                             "../src/main/data/RTS/Instrumentation/InstrumentationMockThread_instrumentationMock_instrumentationMockThread_Containers.scala",
                              "../src/main/data/RTS/util/Container.scala",
-                             "../src/main/art/art/DataContent.scala",
-                             "../src/main/data/RTS/Aux_Types.scala")
+                             "../src/main/util/RTS/runtimemonitor/ObservationKind.scala")
 
 val toolargs: String = st"${(files, " ")}".render
 

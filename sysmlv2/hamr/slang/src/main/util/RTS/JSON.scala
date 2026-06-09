@@ -134,20 +134,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -161,14 +161,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -182,20 +182,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -209,14 +209,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -230,20 +230,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -257,14 +257,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -278,16 +278,16 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
@@ -301,14 +301,14 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -322,20 +322,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -349,14 +349,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -370,20 +370,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -397,14 +397,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -418,20 +418,20 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2)),
-        ("api_ports_channel3", printB(o.api_ports_channel3)),
-        ("api_ports_channel4", printB(o.api_ports_channel4))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2)),
+        ("api_channel3", printB(o.api_channel3)),
+        ("api_channel4", printB(o.api_channel4))
       ))
     }
 
@@ -445,14 +445,14 @@ object JSON {
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(o: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -466,16 +466,16 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
@@ -489,14 +489,14 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -510,16 +510,16 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
@@ -533,14 +533,14 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -554,16 +554,16 @@ object JSON {
     @pure def printActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P""""),
-        ("api_ports_input", printB(o.api_ports_input)),
-        ("api_ports_manualActuatorInput", printB(o.api_ports_manualActuatorInput))
+        ("api_input", printB(o.api_input)),
+        ("api_manualActuatorInput", printB(o.api_manualActuatorInput))
       ))
     }
 
     @pure def printActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS""""),
-        ("api_ports_input", printB(o.api_ports_input)),
-        ("api_ports_manualActuatorInput", printB(o.api_ports_manualActuatorInput))
+        ("api_input", printB(o.api_input)),
+        ("api_manualActuatorInput", printB(o.api_manualActuatorInput))
       ))
     }
 
@@ -577,14 +577,14 @@ object JSON {
     @pure def printActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P""""),
-        ("api_ports_output", printB(o.api_ports_output))
+        ("api_output", printB(o.api_output))
       ))
     }
 
     @pure def printActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(o: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS""""),
-        ("api_ports_output", printB(o.api_ports_output))
+        ("api_output", printB(o.api_output))
       ))
     }
 
@@ -598,16 +598,16 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS""""),
-        ("api_ports_channel1", printB(o.api_ports_channel1)),
-        ("api_ports_channel2", printB(o.api_ports_channel2))
+        ("api_channel1", printB(o.api_channel1)),
+        ("api_channel2", printB(o.api_channel2))
       ))
     }
 
@@ -621,14 +621,14 @@ object JSON {
     @pure def printActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
     @pure def printActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(o: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS""""),
-        ("api_ports_actuate", printB(o.api_ports_actuate))
+        ("api_actuate", printB(o.api_actuate))
       ))
     }
 
@@ -642,16 +642,16 @@ object JSON {
     @pure def printActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P""""),
-        ("api_ports_input", printB(o.api_ports_input)),
-        ("api_ports_manualActuatorInput", printB(o.api_ports_manualActuatorInput))
+        ("api_input", printB(o.api_input)),
+        ("api_manualActuatorInput", printB(o.api_manualActuatorInput))
       ))
     }
 
     @pure def printActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS""""),
-        ("api_ports_input", printB(o.api_ports_input)),
-        ("api_ports_manualActuatorInput", printB(o.api_ports_manualActuatorInput))
+        ("api_input", printB(o.api_input)),
+        ("api_manualActuatorInput", printB(o.api_manualActuatorInput))
       ))
     }
 
@@ -665,14 +665,14 @@ object JSON {
     @pure def printActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P""""),
-        ("api_ports_output", printB(o.api_ports_output))
+        ("api_output", printB(o.api_output))
       ))
     }
 
     @pure def printActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(o: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS""""),
-        ("api_ports_output", printB(o.api_ports_output))
+        ("api_output", printB(o.api_output))
       ))
     }
 
@@ -705,60 +705,60 @@ object JSON {
     @pure def printInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(o: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P""""),
-        ("api_ports_unit1_pressureLogic_channel1", printB(o.api_ports_unit1_pressureLogic_channel1)),
-        ("api_ports_unit1_pressureLogic_channel2", printB(o.api_ports_unit1_pressureLogic_channel2)),
-        ("api_ports_unit1_pressureLogic_channel3", printB(o.api_ports_unit1_pressureLogic_channel3)),
-        ("api_ports_unit1_pressureLogic_channel4", printB(o.api_ports_unit1_pressureLogic_channel4)),
-        ("api_ports_unit1_saturationLogic_channel1", printB(o.api_ports_unit1_saturationLogic_channel1)),
-        ("api_ports_unit1_saturationLogic_channel2", printB(o.api_ports_unit1_saturationLogic_channel2)),
-        ("api_ports_unit1_saturationLogic_channel3", printB(o.api_ports_unit1_saturationLogic_channel3)),
-        ("api_ports_unit1_saturationLogic_channel4", printB(o.api_ports_unit1_saturationLogic_channel4)),
-        ("api_ports_unit1_temperatureLogic_channel1", printB(o.api_ports_unit1_temperatureLogic_channel1)),
-        ("api_ports_unit1_temperatureLogic_channel2", printB(o.api_ports_unit1_temperatureLogic_channel2)),
-        ("api_ports_unit1_temperatureLogic_channel3", printB(o.api_ports_unit1_temperatureLogic_channel3)),
-        ("api_ports_unit1_temperatureLogic_channel4", printB(o.api_ports_unit1_temperatureLogic_channel4)),
-        ("api_ports_unit2_pressureLogic_channel1", printB(o.api_ports_unit2_pressureLogic_channel1)),
-        ("api_ports_unit2_pressureLogic_channel2", printB(o.api_ports_unit2_pressureLogic_channel2)),
-        ("api_ports_unit2_pressureLogic_channel3", printB(o.api_ports_unit2_pressureLogic_channel3)),
-        ("api_ports_unit2_pressureLogic_channel4", printB(o.api_ports_unit2_pressureLogic_channel4)),
-        ("api_ports_unit2_saturationLogic_channel1", printB(o.api_ports_unit2_saturationLogic_channel1)),
-        ("api_ports_unit2_saturationLogic_channel2", printB(o.api_ports_unit2_saturationLogic_channel2)),
-        ("api_ports_unit2_saturationLogic_channel3", printB(o.api_ports_unit2_saturationLogic_channel3)),
-        ("api_ports_unit2_saturationLogic_channel4", printB(o.api_ports_unit2_saturationLogic_channel4)),
-        ("api_ports_unit2_temperatureLogic_channel1", printB(o.api_ports_unit2_temperatureLogic_channel1)),
-        ("api_ports_unit2_temperatureLogic_channel2", printB(o.api_ports_unit2_temperatureLogic_channel2)),
-        ("api_ports_unit2_temperatureLogic_channel3", printB(o.api_ports_unit2_temperatureLogic_channel3)),
-        ("api_ports_unit2_temperatureLogic_channel4", printB(o.api_ports_unit2_temperatureLogic_channel4))
+        ("api_unit1_pressureLogic_channel1", printB(o.api_unit1_pressureLogic_channel1)),
+        ("api_unit1_pressureLogic_channel2", printB(o.api_unit1_pressureLogic_channel2)),
+        ("api_unit1_pressureLogic_channel3", printB(o.api_unit1_pressureLogic_channel3)),
+        ("api_unit1_pressureLogic_channel4", printB(o.api_unit1_pressureLogic_channel4)),
+        ("api_unit1_saturationLogic_channel1", printB(o.api_unit1_saturationLogic_channel1)),
+        ("api_unit1_saturationLogic_channel2", printB(o.api_unit1_saturationLogic_channel2)),
+        ("api_unit1_saturationLogic_channel3", printB(o.api_unit1_saturationLogic_channel3)),
+        ("api_unit1_saturationLogic_channel4", printB(o.api_unit1_saturationLogic_channel4)),
+        ("api_unit1_temperatureLogic_channel1", printB(o.api_unit1_temperatureLogic_channel1)),
+        ("api_unit1_temperatureLogic_channel2", printB(o.api_unit1_temperatureLogic_channel2)),
+        ("api_unit1_temperatureLogic_channel3", printB(o.api_unit1_temperatureLogic_channel3)),
+        ("api_unit1_temperatureLogic_channel4", printB(o.api_unit1_temperatureLogic_channel4)),
+        ("api_unit2_pressureLogic_channel1", printB(o.api_unit2_pressureLogic_channel1)),
+        ("api_unit2_pressureLogic_channel2", printB(o.api_unit2_pressureLogic_channel2)),
+        ("api_unit2_pressureLogic_channel3", printB(o.api_unit2_pressureLogic_channel3)),
+        ("api_unit2_pressureLogic_channel4", printB(o.api_unit2_pressureLogic_channel4)),
+        ("api_unit2_saturationLogic_channel1", printB(o.api_unit2_saturationLogic_channel1)),
+        ("api_unit2_saturationLogic_channel2", printB(o.api_unit2_saturationLogic_channel2)),
+        ("api_unit2_saturationLogic_channel3", printB(o.api_unit2_saturationLogic_channel3)),
+        ("api_unit2_saturationLogic_channel4", printB(o.api_unit2_saturationLogic_channel4)),
+        ("api_unit2_temperatureLogic_channel1", printB(o.api_unit2_temperatureLogic_channel1)),
+        ("api_unit2_temperatureLogic_channel2", printB(o.api_unit2_temperatureLogic_channel2)),
+        ("api_unit2_temperatureLogic_channel3", printB(o.api_unit2_temperatureLogic_channel3)),
+        ("api_unit2_temperatureLogic_channel4", printB(o.api_unit2_temperatureLogic_channel4))
       ))
     }
 
     @pure def printInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(o: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS""""),
-        ("api_ports_unit1_pressureLogic_channel1", printB(o.api_ports_unit1_pressureLogic_channel1)),
-        ("api_ports_unit1_pressureLogic_channel2", printB(o.api_ports_unit1_pressureLogic_channel2)),
-        ("api_ports_unit1_pressureLogic_channel3", printB(o.api_ports_unit1_pressureLogic_channel3)),
-        ("api_ports_unit1_pressureLogic_channel4", printB(o.api_ports_unit1_pressureLogic_channel4)),
-        ("api_ports_unit1_saturationLogic_channel1", printB(o.api_ports_unit1_saturationLogic_channel1)),
-        ("api_ports_unit1_saturationLogic_channel2", printB(o.api_ports_unit1_saturationLogic_channel2)),
-        ("api_ports_unit1_saturationLogic_channel3", printB(o.api_ports_unit1_saturationLogic_channel3)),
-        ("api_ports_unit1_saturationLogic_channel4", printB(o.api_ports_unit1_saturationLogic_channel4)),
-        ("api_ports_unit1_temperatureLogic_channel1", printB(o.api_ports_unit1_temperatureLogic_channel1)),
-        ("api_ports_unit1_temperatureLogic_channel2", printB(o.api_ports_unit1_temperatureLogic_channel2)),
-        ("api_ports_unit1_temperatureLogic_channel3", printB(o.api_ports_unit1_temperatureLogic_channel3)),
-        ("api_ports_unit1_temperatureLogic_channel4", printB(o.api_ports_unit1_temperatureLogic_channel4)),
-        ("api_ports_unit2_pressureLogic_channel1", printB(o.api_ports_unit2_pressureLogic_channel1)),
-        ("api_ports_unit2_pressureLogic_channel2", printB(o.api_ports_unit2_pressureLogic_channel2)),
-        ("api_ports_unit2_pressureLogic_channel3", printB(o.api_ports_unit2_pressureLogic_channel3)),
-        ("api_ports_unit2_pressureLogic_channel4", printB(o.api_ports_unit2_pressureLogic_channel4)),
-        ("api_ports_unit2_saturationLogic_channel1", printB(o.api_ports_unit2_saturationLogic_channel1)),
-        ("api_ports_unit2_saturationLogic_channel2", printB(o.api_ports_unit2_saturationLogic_channel2)),
-        ("api_ports_unit2_saturationLogic_channel3", printB(o.api_ports_unit2_saturationLogic_channel3)),
-        ("api_ports_unit2_saturationLogic_channel4", printB(o.api_ports_unit2_saturationLogic_channel4)),
-        ("api_ports_unit2_temperatureLogic_channel1", printB(o.api_ports_unit2_temperatureLogic_channel1)),
-        ("api_ports_unit2_temperatureLogic_channel2", printB(o.api_ports_unit2_temperatureLogic_channel2)),
-        ("api_ports_unit2_temperatureLogic_channel3", printB(o.api_ports_unit2_temperatureLogic_channel3)),
-        ("api_ports_unit2_temperatureLogic_channel4", printB(o.api_ports_unit2_temperatureLogic_channel4))
+        ("api_unit1_pressureLogic_channel1", printB(o.api_unit1_pressureLogic_channel1)),
+        ("api_unit1_pressureLogic_channel2", printB(o.api_unit1_pressureLogic_channel2)),
+        ("api_unit1_pressureLogic_channel3", printB(o.api_unit1_pressureLogic_channel3)),
+        ("api_unit1_pressureLogic_channel4", printB(o.api_unit1_pressureLogic_channel4)),
+        ("api_unit1_saturationLogic_channel1", printB(o.api_unit1_saturationLogic_channel1)),
+        ("api_unit1_saturationLogic_channel2", printB(o.api_unit1_saturationLogic_channel2)),
+        ("api_unit1_saturationLogic_channel3", printB(o.api_unit1_saturationLogic_channel3)),
+        ("api_unit1_saturationLogic_channel4", printB(o.api_unit1_saturationLogic_channel4)),
+        ("api_unit1_temperatureLogic_channel1", printB(o.api_unit1_temperatureLogic_channel1)),
+        ("api_unit1_temperatureLogic_channel2", printB(o.api_unit1_temperatureLogic_channel2)),
+        ("api_unit1_temperatureLogic_channel3", printB(o.api_unit1_temperatureLogic_channel3)),
+        ("api_unit1_temperatureLogic_channel4", printB(o.api_unit1_temperatureLogic_channel4)),
+        ("api_unit2_pressureLogic_channel1", printB(o.api_unit2_pressureLogic_channel1)),
+        ("api_unit2_pressureLogic_channel2", printB(o.api_unit2_pressureLogic_channel2)),
+        ("api_unit2_pressureLogic_channel3", printB(o.api_unit2_pressureLogic_channel3)),
+        ("api_unit2_pressureLogic_channel4", printB(o.api_unit2_pressureLogic_channel4)),
+        ("api_unit2_saturationLogic_channel1", printB(o.api_unit2_saturationLogic_channel1)),
+        ("api_unit2_saturationLogic_channel2", printB(o.api_unit2_saturationLogic_channel2)),
+        ("api_unit2_saturationLogic_channel3", printB(o.api_unit2_saturationLogic_channel3)),
+        ("api_unit2_saturationLogic_channel4", printB(o.api_unit2_saturationLogic_channel4)),
+        ("api_unit2_temperatureLogic_channel1", printB(o.api_unit2_temperatureLogic_channel1)),
+        ("api_unit2_temperatureLogic_channel2", printB(o.api_unit2_temperatureLogic_channel2)),
+        ("api_unit2_temperatureLogic_channel3", printB(o.api_unit2_temperatureLogic_channel3)),
+        ("api_unit2_temperatureLogic_channel4", printB(o.api_unit2_temperatureLogic_channel4))
       ))
     }
 
@@ -791,16 +791,16 @@ object JSON {
     @pure def printEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(o: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P""""),
-        ("api_ports_manualActuatorInput1", printB(o.api_ports_manualActuatorInput1)),
-        ("api_ports_manualActuatorInput2", printB(o.api_ports_manualActuatorInput2))
+        ("api_manualActuatorInput1", printB(o.api_manualActuatorInput1)),
+        ("api_manualActuatorInput2", printB(o.api_manualActuatorInput2))
       ))
     }
 
     @pure def printEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(o: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS""""),
-        ("api_ports_manualActuatorInput1", printB(o.api_ports_manualActuatorInput1)),
-        ("api_ports_manualActuatorInput2", printB(o.api_ports_manualActuatorInput2))
+        ("api_manualActuatorInput1", printB(o.api_manualActuatorInput1)),
+        ("api_manualActuatorInput2", printB(o.api_manualActuatorInput2))
       ))
     }
 
@@ -814,16 +814,16 @@ object JSON {
     @pure def printActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P): ST = {
       return printObject(ISZ(
         ("type", st""""Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P""""),
-        ("api_ports_saturationActuate", printB(o.api_ports_saturationActuate)),
-        ("api_ports_tempPressureActuate", printB(o.api_ports_tempPressureActuate))
+        ("api_saturationActuate", printB(o.api_saturationActuate)),
+        ("api_tempPressureActuate", printB(o.api_tempPressureActuate))
       ))
     }
 
     @pure def printActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(o: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS): ST = {
       return printObject(ISZ(
         ("type", st""""Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS""""),
-        ("api_ports_saturationActuate", printB(o.api_ports_saturationActuate)),
-        ("api_ports_tempPressureActuate", printB(o.api_ports_tempPressureActuate))
+        ("api_saturationActuate", printB(o.api_saturationActuate)),
+        ("api_tempPressureActuate", printB(o.api_tempPressureActuate))
       ))
     }
 
@@ -848,51 +848,51 @@ object JSON {
 
     @pure def printruntimemonitorObservationKindType(o: runtimemonitor.ObservationKind.Type): ST = {
       val value: String = o match {
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit => "rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute => "rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute => "rts_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit => "rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute => "rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute => "rts_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit => "rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute => "rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute => "rts_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit => "rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute => "rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute => "rts_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit => "rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute => "rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute => "rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit => "rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute => "rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute => "rts_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit => "rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute => "rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute => "rts_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute"
-        case runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postInit => "rts_instrumentationMock_instrumentationMockThread_postInit"
-        case runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_preCompute => "rts_instrumentationMock_instrumentationMockThread_preCompute"
-        case runtimemonitor.ObservationKind.rts_instrumentationMock_instrumentationMockThread_postCompute => "rts_instrumentationMock_instrumentationMockThread_postCompute"
-        case runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postInit => "rts_eventControlMock_eventControlMockThread_postInit"
-        case runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_preCompute => "rts_eventControlMock_eventControlMockThread_preCompute"
-        case runtimemonitor.ObservationKind.rts_eventControlMock_eventControlMockThread_postCompute => "rts_eventControlMock_eventControlMockThread_postCompute"
-        case runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postInit => "rts_actuatorsMock_actuatorsMockThread_postInit"
-        case runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_preCompute => "rts_actuatorsMock_actuatorsMockThread_preCompute"
-        case runtimemonitor.ObservationKind.rts_actuatorsMock_actuatorsMockThread_postCompute => "rts_actuatorsMock_actuatorsMockThread_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit => "RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute => "RTS_Instance_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute => "RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute => "RTS_Instance_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postInit => "RTS_Instance_instrumentationMock_instrumentationMockThread_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_preCompute => "RTS_Instance_instrumentationMock_instrumentationMockThread_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_instrumentationMock_instrumentationMockThread_postCompute => "RTS_Instance_instrumentationMock_instrumentationMockThread_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postInit => "RTS_Instance_eventControlMock_eventControlMockThread_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_preCompute => "RTS_Instance_eventControlMock_eventControlMockThread_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_eventControlMock_eventControlMockThread_postCompute => "RTS_Instance_eventControlMock_eventControlMockThread_postCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postInit => "RTS_Instance_actuatorsMock_actuatorsMockThread_postInit"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_preCompute => "RTS_Instance_actuatorsMock_actuatorsMockThread_preCompute"
+        case runtimemonitor.ObservationKind.RTS_Instance_actuatorsMock_actuatorsMockThread_postCompute => "RTS_Instance_actuatorsMock_actuatorsMockThread_postCompute"
       }
       return printObject(ISZ(
         ("type", printString("runtimemonitor.ObservationKind")),
@@ -1328,19 +1328,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1352,19 +1352,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container = {
@@ -1385,10 +1385,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1400,10 +1400,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container = {
@@ -1424,19 +1424,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1448,19 +1448,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container = {
@@ -1481,10 +1481,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1496,10 +1496,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container = {
@@ -1520,19 +1520,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1544,19 +1544,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container = {
@@ -1577,10 +1577,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1592,10 +1592,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container = {
@@ -1616,13 +1616,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS = {
@@ -1634,13 +1634,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container = {
@@ -1661,10 +1661,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS = {
@@ -1676,10 +1676,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container = {
@@ -1700,19 +1700,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1724,19 +1724,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container = {
@@ -1757,10 +1757,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1772,10 +1772,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container = {
@@ -1796,19 +1796,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1820,19 +1820,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container = {
@@ -1853,10 +1853,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1868,10 +1868,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container = {
@@ -1892,19 +1892,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS = {
@@ -1916,19 +1916,19 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel3")
-      val api_ports_channel3 = parser.parseB()
+      parser.parseObjectKey("api_channel3")
+      val api_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel4")
-      val api_ports_channel4 = parser.parseB()
+      parser.parseObjectKey("api_channel4")
+      val api_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container = {
@@ -1949,10 +1949,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS = {
@@ -1964,10 +1964,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container = {
@@ -1988,13 +1988,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS = {
@@ -2006,13 +2006,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container = {
@@ -2033,10 +2033,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS = {
@@ -2048,10 +2048,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container = {
@@ -2072,13 +2072,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS = {
@@ -2090,13 +2090,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container = {
@@ -2117,10 +2117,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS = {
@@ -2132,10 +2132,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container = {
@@ -2156,13 +2156,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_input")
-      val api_ports_input = parser.parseB()
+      parser.parseObjectKey("api_input")
+      val api_input = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput")
-      val api_ports_manualActuatorInput = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput")
+      val api_manualActuatorInput = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
     }
 
     def parseActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS = {
@@ -2174,13 +2174,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_input")
-      val api_ports_input = parser.parseB()
+      parser.parseObjectKey("api_input")
+      val api_input = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput")
-      val api_ports_manualActuatorInput = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput")
+      val api_manualActuatorInput = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
     }
 
     def parseActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container = {
@@ -2201,10 +2201,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_output")
-      val api_ports_output = parser.parseB()
+      parser.parseObjectKey("api_output")
+      val api_output = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_ports_output)
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_output)
     }
 
     def parseActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS = {
@@ -2216,10 +2216,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_output")
-      val api_ports_output = parser.parseB()
+      parser.parseObjectKey("api_output")
+      val api_output = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_ports_output)
+      return Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_output)
     }
 
     def parseActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container = {
@@ -2240,13 +2240,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS = {
@@ -2258,13 +2258,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_channel1")
-      val api_ports_channel1 = parser.parseB()
+      parser.parseObjectKey("api_channel1")
+      val api_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_channel2")
-      val api_ports_channel2 = parser.parseB()
+      parser.parseObjectKey("api_channel2")
+      val api_channel2 = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
     }
 
     def parseActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container = {
@@ -2285,10 +2285,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_actuate)
     }
 
     def parseActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS = {
@@ -2300,10 +2300,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_actuate")
-      val api_ports_actuate = parser.parseB()
+      parser.parseObjectKey("api_actuate")
+      val api_actuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+      return Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_actuate)
     }
 
     def parseActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container = {
@@ -2324,13 +2324,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_input")
-      val api_ports_input = parser.parseB()
+      parser.parseObjectKey("api_input")
+      val api_input = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput")
-      val api_ports_manualActuatorInput = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput")
+      val api_manualActuatorInput = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
     }
 
     def parseActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS = {
@@ -2342,13 +2342,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_input")
-      val api_ports_input = parser.parseB()
+      parser.parseObjectKey("api_input")
+      val api_input = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput")
-      val api_ports_manualActuatorInput = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput")
+      val api_manualActuatorInput = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
     }
 
     def parseActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container = {
@@ -2369,10 +2369,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_output")
-      val api_ports_output = parser.parseB()
+      parser.parseObjectKey("api_output")
+      val api_output = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_ports_output)
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_output)
     }
 
     def parseActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = {
@@ -2384,10 +2384,10 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_output")
-      val api_ports_output = parser.parseB()
+      parser.parseObjectKey("api_output")
+      val api_output = parser.parseB()
       parser.parseObjectNext()
-      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_ports_output)
+      return Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_output)
     }
 
     def parseInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container = {
@@ -2441,79 +2441,79 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel1")
-      val api_ports_unit1_pressureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel1")
+      val api_unit1_pressureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel2")
-      val api_ports_unit1_pressureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel2")
+      val api_unit1_pressureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel3")
-      val api_ports_unit1_pressureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel3")
+      val api_unit1_pressureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel4")
-      val api_ports_unit1_pressureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel4")
+      val api_unit1_pressureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel1")
-      val api_ports_unit1_saturationLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel1")
+      val api_unit1_saturationLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel2")
-      val api_ports_unit1_saturationLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel2")
+      val api_unit1_saturationLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel3")
-      val api_ports_unit1_saturationLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel3")
+      val api_unit1_saturationLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel4")
-      val api_ports_unit1_saturationLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel4")
+      val api_unit1_saturationLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel1")
-      val api_ports_unit1_temperatureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel1")
+      val api_unit1_temperatureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel2")
-      val api_ports_unit1_temperatureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel2")
+      val api_unit1_temperatureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel3")
-      val api_ports_unit1_temperatureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel3")
+      val api_unit1_temperatureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel4")
-      val api_ports_unit1_temperatureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel4")
+      val api_unit1_temperatureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel1")
-      val api_ports_unit2_pressureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel1")
+      val api_unit2_pressureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel2")
-      val api_ports_unit2_pressureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel2")
+      val api_unit2_pressureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel3")
-      val api_ports_unit2_pressureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel3")
+      val api_unit2_pressureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel4")
-      val api_ports_unit2_pressureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel4")
+      val api_unit2_pressureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel1")
-      val api_ports_unit2_saturationLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel1")
+      val api_unit2_saturationLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel2")
-      val api_ports_unit2_saturationLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel2")
+      val api_unit2_saturationLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel3")
-      val api_ports_unit2_saturationLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel3")
+      val api_unit2_saturationLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel4")
-      val api_ports_unit2_saturationLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel4")
+      val api_unit2_saturationLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel1")
-      val api_ports_unit2_temperatureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel1")
+      val api_unit2_temperatureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel2")
-      val api_ports_unit2_temperatureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel2")
+      val api_unit2_temperatureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel3")
-      val api_ports_unit2_temperatureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel3")
+      val api_unit2_temperatureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel4")
-      val api_ports_unit2_temperatureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel4")
+      val api_unit2_temperatureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
     }
 
     def parseInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS = {
@@ -2525,79 +2525,79 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel1")
-      val api_ports_unit1_pressureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel1")
+      val api_unit1_pressureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel2")
-      val api_ports_unit1_pressureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel2")
+      val api_unit1_pressureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel3")
-      val api_ports_unit1_pressureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel3")
+      val api_unit1_pressureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_pressureLogic_channel4")
-      val api_ports_unit1_pressureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_pressureLogic_channel4")
+      val api_unit1_pressureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel1")
-      val api_ports_unit1_saturationLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel1")
+      val api_unit1_saturationLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel2")
-      val api_ports_unit1_saturationLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel2")
+      val api_unit1_saturationLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel3")
-      val api_ports_unit1_saturationLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel3")
+      val api_unit1_saturationLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_saturationLogic_channel4")
-      val api_ports_unit1_saturationLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_saturationLogic_channel4")
+      val api_unit1_saturationLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel1")
-      val api_ports_unit1_temperatureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel1")
+      val api_unit1_temperatureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel2")
-      val api_ports_unit1_temperatureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel2")
+      val api_unit1_temperatureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel3")
-      val api_ports_unit1_temperatureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel3")
+      val api_unit1_temperatureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit1_temperatureLogic_channel4")
-      val api_ports_unit1_temperatureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit1_temperatureLogic_channel4")
+      val api_unit1_temperatureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel1")
-      val api_ports_unit2_pressureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel1")
+      val api_unit2_pressureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel2")
-      val api_ports_unit2_pressureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel2")
+      val api_unit2_pressureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel3")
-      val api_ports_unit2_pressureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel3")
+      val api_unit2_pressureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_pressureLogic_channel4")
-      val api_ports_unit2_pressureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_pressureLogic_channel4")
+      val api_unit2_pressureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel1")
-      val api_ports_unit2_saturationLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel1")
+      val api_unit2_saturationLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel2")
-      val api_ports_unit2_saturationLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel2")
+      val api_unit2_saturationLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel3")
-      val api_ports_unit2_saturationLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel3")
+      val api_unit2_saturationLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_saturationLogic_channel4")
-      val api_ports_unit2_saturationLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_saturationLogic_channel4")
+      val api_unit2_saturationLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel1")
-      val api_ports_unit2_temperatureLogic_channel1 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel1")
+      val api_unit2_temperatureLogic_channel1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel2")
-      val api_ports_unit2_temperatureLogic_channel2 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel2")
+      val api_unit2_temperatureLogic_channel2 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel3")
-      val api_ports_unit2_temperatureLogic_channel3 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel3")
+      val api_unit2_temperatureLogic_channel3 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_unit2_temperatureLogic_channel4")
-      val api_ports_unit2_temperatureLogic_channel4 = parser.parseB()
+      parser.parseObjectKey("api_unit2_temperatureLogic_channel4")
+      val api_unit2_temperatureLogic_channel4 = parser.parseB()
       parser.parseObjectNext()
-      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+      return Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
     }
 
     def parseEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container = {
@@ -2651,13 +2651,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P")
       }
-      parser.parseObjectKey("api_ports_manualActuatorInput1")
-      val api_ports_manualActuatorInput1 = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput1")
+      val api_manualActuatorInput1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput2")
-      val api_ports_manualActuatorInput2 = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput2")
+      val api_manualActuatorInput2 = parser.parseB()
       parser.parseObjectNext()
-      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_manualActuatorInput1, api_manualActuatorInput2)
     }
 
     def parseEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = {
@@ -2669,13 +2669,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_manualActuatorInput1")
-      val api_ports_manualActuatorInput1 = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput1")
+      val api_manualActuatorInput1 = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_manualActuatorInput2")
-      val api_ports_manualActuatorInput2 = parser.parseB()
+      parser.parseObjectKey("api_manualActuatorInput2")
+      val api_manualActuatorInput2 = parser.parseB()
       parser.parseObjectNext()
-      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+      return EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_manualActuatorInput1, api_manualActuatorInput2)
     }
 
     def parseActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container = {
@@ -2696,13 +2696,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P")
       }
-      parser.parseObjectKey("api_ports_saturationActuate")
-      val api_ports_saturationActuate = parser.parseB()
+      parser.parseObjectKey("api_saturationActuate")
+      val api_saturationActuate = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_tempPressureActuate")
-      val api_ports_tempPressureActuate = parser.parseB()
+      parser.parseObjectKey("api_tempPressureActuate")
+      val api_tempPressureActuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_ports_saturationActuate, api_ports_tempPressureActuate)
+      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_saturationActuate, api_tempPressureActuate)
     }
 
     def parseActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS = {
@@ -2714,13 +2714,13 @@ object JSON {
       if (!typeParsed) {
         parser.parseObjectType("Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS")
       }
-      parser.parseObjectKey("api_ports_saturationActuate")
-      val api_ports_saturationActuate = parser.parseB()
+      parser.parseObjectKey("api_saturationActuate")
+      val api_saturationActuate = parser.parseB()
       parser.parseObjectNext()
-      parser.parseObjectKey("api_ports_tempPressureActuate")
-      val api_ports_tempPressureActuate = parser.parseB()
+      parser.parseObjectKey("api_tempPressureActuate")
+      val api_tempPressureActuate = parser.parseB()
       parser.parseObjectNext()
-      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_ports_saturationActuate, api_ports_tempPressureActuate)
+      return Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_saturationActuate, api_tempPressureActuate)
     }
 
     def parseActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container = {

@@ -5,7 +5,7 @@ package RTS
 import org.sireum._
 import art.scheduling.Scheduler
 
-// This file will not be overwritten so is safe to edit
+// This file will not be overwritten if HAMR codegen is rerun
 
 object Demo extends App {
 

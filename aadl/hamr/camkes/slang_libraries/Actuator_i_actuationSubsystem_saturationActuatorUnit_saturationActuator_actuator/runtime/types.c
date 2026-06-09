@@ -20,20 +20,6 @@ size_t sizeOf(Type t) {
     case TRTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge: return sizeof(struct RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge); // RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge
     case TRTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge_EntryPoints: return sizeof(struct RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge_EntryPoints); // RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.EntryPoints
     case TRTS_Base_Types_Boolean_Payload: return sizeof(struct RTS_Base_Types_Boolean_Payload); // RTS.Base_Types.Boolean_Payload
-    case TRTS_Base_Types_Character_Payload: return sizeof(struct RTS_Base_Types_Character_Payload); // RTS.Base_Types.Character_Payload
-    case TRTS_Base_Types_Float_32_Payload: return sizeof(struct RTS_Base_Types_Float_32_Payload); // RTS.Base_Types.Float_32_Payload
-    case TRTS_Base_Types_Float_64_Payload: return sizeof(struct RTS_Base_Types_Float_64_Payload); // RTS.Base_Types.Float_64_Payload
-    case TRTS_Base_Types_Float_Payload: return sizeof(struct RTS_Base_Types_Float_Payload); // RTS.Base_Types.Float_Payload
-    case TRTS_Base_Types_Integer_16_Payload: return sizeof(struct RTS_Base_Types_Integer_16_Payload); // RTS.Base_Types.Integer_16_Payload
-    case TRTS_Base_Types_Integer_32_Payload: return sizeof(struct RTS_Base_Types_Integer_32_Payload); // RTS.Base_Types.Integer_32_Payload
-    case TRTS_Base_Types_Integer_64_Payload: return sizeof(struct RTS_Base_Types_Integer_64_Payload); // RTS.Base_Types.Integer_64_Payload
-    case TRTS_Base_Types_Integer_8_Payload: return sizeof(struct RTS_Base_Types_Integer_8_Payload); // RTS.Base_Types.Integer_8_Payload
-    case TRTS_Base_Types_Integer_Payload: return sizeof(struct RTS_Base_Types_Integer_Payload); // RTS.Base_Types.Integer_Payload
-    case TRTS_Base_Types_String_Payload: return sizeof(struct RTS_Base_Types_String_Payload); // RTS.Base_Types.String_Payload
-    case TRTS_Base_Types_Unsigned_16_Payload: return sizeof(struct RTS_Base_Types_Unsigned_16_Payload); // RTS.Base_Types.Unsigned_16_Payload
-    case TRTS_Base_Types_Unsigned_32_Payload: return sizeof(struct RTS_Base_Types_Unsigned_32_Payload); // RTS.Base_Types.Unsigned_32_Payload
-    case TRTS_Base_Types_Unsigned_64_Payload: return sizeof(struct RTS_Base_Types_Unsigned_64_Payload); // RTS.Base_Types.Unsigned_64_Payload
-    case TRTS_Base_Types_Unsigned_8_Payload: return sizeof(struct RTS_Base_Types_Unsigned_8_Payload); // RTS.Base_Types.Unsigned_8_Payload
     case TSome_DB59FB: return sizeof(struct Some_DB59FB); // Some[B]
     case TSome_E8C0F3: return sizeof(struct Some_E8C0F3); // Some[RTS.Actuation.Actuator_i_Initialization_Api]
     case TSome_42319A: return sizeof(struct Some_42319A); // Some[RTS.Actuation.Actuator_i_Operational_Api]
@@ -77,20 +63,6 @@ char *TYPE_string_(void *type) {
     "RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge",
     "RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Bridge.EntryPoints",
     "RTS.Base_Types.Boolean_Payload",
-    "RTS.Base_Types.Character_Payload",
-    "RTS.Base_Types.Float_32_Payload",
-    "RTS.Base_Types.Float_64_Payload",
-    "RTS.Base_Types.Float_Payload",
-    "RTS.Base_Types.Integer_16_Payload",
-    "RTS.Base_Types.Integer_32_Payload",
-    "RTS.Base_Types.Integer_64_Payload",
-    "RTS.Base_Types.Integer_8_Payload",
-    "RTS.Base_Types.Integer_Payload",
-    "RTS.Base_Types.String_Payload",
-    "RTS.Base_Types.Unsigned_16_Payload",
-    "RTS.Base_Types.Unsigned_32_Payload",
-    "RTS.Base_Types.Unsigned_64_Payload",
-    "RTS.Base_Types.Unsigned_8_Payload",
     "Some[B]",
     "Some[RTS.Actuation.Actuator_i_Initialization_Api]",
     "Some[RTS.Actuation.Actuator_i_Operational_Api]",

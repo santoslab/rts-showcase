@@ -41,11 +41,61 @@ object CoincidenceLogic_i_actuationSubsystem_actuationUnit2_temperatureLogic_coi
         //   For specification redundancy, provide an alternate but equivalent specification
         //   of the concept 'at least two of the input channels are true.'
         api.actuate == (api.channel1 & api.channel2 |
-           api.channel1 & api.channel3 |
-           api.channel1 & api.channel4 |
-           api.channel2 & api.channel3 |
-           api.channel2 & api.channel4 |
-           api.channel3 & api.channel4)
+          api.channel1 & api.channel3 |
+          api.channel1 & api.channel4 |
+          api.channel2 & api.channel3 |
+          api.channel2 & api.channel4 |
+          api.channel3 & api.channel4),
+        // case pair_ch1_ch2
+        //   Channels 1 and 2 true, others false
+        (api.channel1 & api.channel2 &
+          !(api.channel3) &
+          !(api.channel4)) ___>: (api.actuate),
+        // case pair_ch1_ch3
+        //   Channels 1 and 3 true, others false
+        (api.channel1 & !(api.channel2) &
+          api.channel3 &
+          !(api.channel4)) ___>: (api.actuate),
+        // case pair_ch1_ch4
+        //   Channels 1 and 4 true, others false
+        (api.channel1 & !(api.channel2) &
+          !(api.channel3) &
+          api.channel4) ___>: (api.actuate),
+        // case pair_ch2_ch3
+        //   Channels 2 and 3 true, others false
+        (!(api.channel1) & api.channel2 &
+          api.channel3 &
+          !(api.channel4)) ___>: (api.actuate),
+        // case pair_ch2_ch4
+        //   Channels 2 and 4 true, others false
+        (!(api.channel1) & api.channel2 &
+          !(api.channel3) &
+          api.channel4) ___>: (api.actuate),
+        // case pair_ch3_ch4
+        //   Channels 3 and 4 true, others false
+        (!(api.channel1) & !(api.channel2) &
+          api.channel3 &
+          api.channel4) ___>: (api.actuate),
+        // case solo_ch1
+        //   Only channel 1 true
+        (api.channel1 & !(api.channel2) &
+          !(api.channel3) &
+          !(api.channel4)) ___>: (!(api.actuate)),
+        // case solo_ch2
+        //   Only channel 2 true
+        (!(api.channel1) & api.channel2 &
+          !(api.channel3) &
+          !(api.channel4)) ___>: (!(api.actuate)),
+        // case solo_ch3
+        //   Only channel 3 true
+        (!(api.channel1) & !(api.channel2) &
+          api.channel3 &
+          !(api.channel4)) ___>: (!(api.actuate)),
+        // case solo_ch4
+        //   Only channel 4 true
+        (!(api.channel1) & !(api.channel2) &
+          !(api.channel3) &
+          api.channel4) ___>: (!(api.actuate))
         // END COMPUTE ENSURES timeTriggered
       )
     )

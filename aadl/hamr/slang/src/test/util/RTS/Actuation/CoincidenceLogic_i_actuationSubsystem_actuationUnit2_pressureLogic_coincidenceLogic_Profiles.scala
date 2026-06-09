@@ -27,6 +27,11 @@ import RTS.RandomLib
   def api_channel2: RandomLib // random lib for generating Base_Types.Boolean
   def api_channel3: RandomLib // random lib for generating Base_Types.Boolean
   def api_channel4: RandomLib // random lib for generating Base_Types.Boolean
+
+  def update_api_channel1(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait
+  def update_api_channel2(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait
+  def update_api_channel3(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait
+  def update_api_channel4(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait
 }
 
 @record class CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P(
@@ -44,6 +49,22 @@ import RTS.RandomLib
       api_channel3 = api_channel3.nextB(),
       api_channel4 = api_channel4.nextB()))
   }
+
+  override def update_api_channel1(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait = {
+    return this(api_channel1 = v)
+  }
+
+  override def update_api_channel2(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait = {
+    return this(api_channel2 = v)
+  }
+
+  override def update_api_channel3(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait = {
+    return this(api_channel3 = v)
+  }
+
+  override def update_api_channel4(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_P_Trait = {
+    return this(api_channel4 = v)
+  }
 }
 
 // Profile with generators for state variables and incoming ports
@@ -52,6 +73,11 @@ import RTS.RandomLib
   def api_channel2: RandomLib // random lib for generating Base_Types.Boolean
   def api_channel3: RandomLib // random lib for generating Base_Types.Boolean
   def api_channel4: RandomLib // random lib for generating Base_Types.Boolean
+
+  def update_api_channel1(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait
+  def update_api_channel2(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait
+  def update_api_channel3(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait
+  def update_api_channel4(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait
 }
 
 @record class CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS(
@@ -68,5 +94,21 @@ import RTS.RandomLib
       api_channel2 = api_channel2.nextB(),
       api_channel3 = api_channel3.nextB(),
       api_channel4 = api_channel4.nextB()))
+  }
+
+  override def update_api_channel1(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait = {
+    return this(api_channel1 = v)
+  }
+
+  override def update_api_channel2(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait = {
+    return this(api_channel2 = v)
+  }
+
+  override def update_api_channel3(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait = {
+    return this(api_channel3 = v)
+  }
+
+  override def update_api_channel4(v: RandomLib): CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_Profile_PS_Trait = {
+    return this(api_channel4 = v)
   }
 }

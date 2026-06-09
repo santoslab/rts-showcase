@@ -1,29 +1,28 @@
 package Actuators {
 	
-	import AADL_Properties::*;
-	import AADL_Definitions::*;
-	
+	private import HAMR::*;
+
 	part def ActuatorsMockProcess :> Process {
-		part actuatorsMockThread : ActuatorsMockThread : Thread;
+		part actuatorsMockThread : ActuatorsMockThread;
 		
-		port ports {
-			in tempPressureActuate: Data: Base_Types::Boolean;
-			in saturationActuate: Data: Base_Types::Boolean;
-		}
+        in port tempPressureActuate : DataPort { in :>> type : Base_Types::Boolean; }
+		in port saturationActuate : DataPort { in :>> type : Base_Types::Boolean; }
 		
-		connection tPA connect ports.tempPressureActuate to actuatorsMockThread.ports.tempPressureActuate;
-		connection sA connect ports.saturationActuate to actuatorsMockThread.ports.saturationActuate;
+		connection tPA : PortConnection connect tempPressureActuate to actuatorsMockThread.tempPressureActuate;
+		connection sA : PortConnection connect saturationActuate to actuatorsMockThread.saturationActuate;
 	}
 	
 	part def ActuatorsMockThread :> Thread {
-		port ports {
-			in tempPressureActuate: Data: Base_Types::Boolean;
-			in saturationActuate: Data: Base_Types::Boolean;
-		}
-		@Properties {
-			Dispatch_Protocol = Periodic;
-			Period = 1000;
-		}
+		in port tempPressureActuate : DataPort { in :>> type : Base_Types::Boolean; }
+		in port saturationActuate : DataPort { in :>> type : Base_Types::Boolean; }
+
+		attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Periodic;
+		attribute :>> Period = 1000 [ms];
+		
+		//@Properties {
+		//	Dispatch_Protocol = Periodic;
+		//	Period = 1000;
+		//}
 	}
 	
 }

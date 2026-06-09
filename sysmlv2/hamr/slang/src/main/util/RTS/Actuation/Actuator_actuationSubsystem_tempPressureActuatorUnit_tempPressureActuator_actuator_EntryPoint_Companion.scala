@@ -10,22 +10,22 @@ import RTS._
 
 object Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_EntryPoint_Companion {
 
-  var last_api_ports_output: Option[Base_Types.Boolean] = None()
+  var last_api_output: Option[Base_Types.Boolean] = None()
 
-  /** get the value of outgoing data port ports_output.  If a 'fresh' value wasn't sent
-    * during the last dispatch then return last_api_ports_output.get.
+  /** get the value of outgoing data port output.  If a 'fresh' value wasn't sent
+    * during the last dispatch then return last_api_output.get.
     * Note: this requires outgoing data ports to be initialized during the
     * initialization phase or prior to system testing.
     */
-  def get_api_ports_output: Base_Types.Boolean = {
-    Art.observeOutPortVariable(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.ports_output_Id) match {
+  def get_api_output: Base_Types.Boolean = {
+    Art.observeOutPortVariable(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.output_Id) match {
       case Some(Base_Types.Boolean_Payload(value)) =>
-        last_api_ports_output = Some(value)
+        last_api_output = Some(value)
         return value
-      case _ if last_api_ports_output.isEmpty =>
-        assert(F, "No value found on outgoing data port ports_output.\n                  Note: values placed during the initialization phase will persist across dispatches")
-        halt("No value found on outgoing data port ports_output.\n                  Note: values placed during the initialization phase will persist across dispatches")
-      case _ => return last_api_ports_output.get
+      case _ if last_api_output.isEmpty =>
+        assert(F, "No value found on outgoing data port output.\n                  Note: values placed during the initialization phase will persist across dispatches")
+        halt("No value found on outgoing data port output.\n                  Note: values placed during the initialization phase will persist across dispatches")
+      case _ => return last_api_output.get
     }
   }
   var preStateContainer_wL: Option[Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS] = None()
@@ -39,30 +39,30 @@ object Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator
     // block the component while its post-state values are retrieved
     val postStateContainer_wL =
       Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(
-        api_ports_output = get_api_ports_output)
+        api_output = get_api_output)
 
     // the rest can now be performed via a different thread
-    RTS.runtimemonitor.RuntimeMonitor.observeInitialisePostState(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit, postStateContainer_wL)
+    RTS.runtimemonitor.RuntimeMonitor.observeInitialisePostState(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postInit, postStateContainer_wL)
   }
 
   def pre_compute(): Unit = {
     // block the component while its pre-state values are retrieved
     preStateContainer_wL = Some(
       Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(
-        api_ports_input = Art.observeInPortVariable(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.ports_input_Id).get.asInstanceOf[Base_Types.Boolean_Payload].value, 
-        api_ports_manualActuatorInput = Art.observeInPortVariable(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.ports_manualActuatorInput_Id).get.asInstanceOf[Base_Types.Boolean_Payload].value))
+        api_input = Art.observeInPortVariable(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.input_Id).get.asInstanceOf[Base_Types.Boolean_Payload].value, 
+        api_manualActuatorInput = Art.observeInPortVariable(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.operational_api.manualActuatorInput_Id).get.asInstanceOf[Base_Types.Boolean_Payload].value))
 
     // the rest can now be performed via a different thread
-    RTS.runtimemonitor.RuntimeMonitor.observeComputePreState(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute, preStateContainer_wL.asInstanceOf[Option[art.DataContent]])
+    RTS.runtimemonitor.RuntimeMonitor.observeComputePreState(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_preCompute, preStateContainer_wL.asInstanceOf[Option[art.DataContent]])
   }
 
   def post_compute(): Unit = {
     // block the component while its post-state values are retrieved
     val postStateContainer_wL =
       Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(
-        api_ports_output = get_api_ports_output)
+        api_output = get_api_output)
 
     // the rest can now be performed via a different thread
-    RTS.runtimemonitor.RuntimeMonitor.observeComputePrePostState(Arch.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.rts_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute, preStateContainer_wL.asInstanceOf[Option[art.DataContent]], postStateContainer_wL)
+    RTS.runtimemonitor.RuntimeMonitor.observeComputePrePostState(Arch.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator.id, RTS.runtimemonitor.ObservationKind.RTS_Instance_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_postCompute, preStateContainer_wL.asInstanceOf[Option[art.DataContent]], postStateContainer_wL)
   }
 }

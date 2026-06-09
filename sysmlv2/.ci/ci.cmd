@@ -46,7 +46,7 @@ if (result == 0) {
 }
 
 if (result == 0) {
-  result = run("Running codegen on previously generated AIR file derived from the sysmlv2 model", F, proc"$sireum slang run ${homeDir / "sysml" / "bin" / "run-hamr.cmd"} JVM")
+  result = run("Running codegen on the sysmlv2 model targetting JVM", F, proc"$sireum slang run ${homeDir / "sysml" / "bin" / "run-hamr.cmd"} --platform JVM")
 }
 
 if (result == 0) {
@@ -55,6 +55,10 @@ if (result == 0) {
 
 if (result == 0) {
   result = run("Running unit tests via proyek", F, proc"$sireum proyek test .".at(homeDir / "hamr" / "slang"))
+}
+
+if (result == 0) {
+  result = run("Running Logika proyek", F, proc"$sireum proyek logika --all .".at(homeDir / "hamr" / "slang"))
 }
 
 Os.exit(result)

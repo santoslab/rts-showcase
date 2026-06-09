@@ -22,16 +22,16 @@ import RTS.util.Container
   ) extends EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container
 
 @sig trait EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container extends Container {
-  def api_ports_manualActuatorInput1: B
-  def api_ports_manualActuatorInput2: B
+  def api_manualActuatorInput1: B
+  def api_manualActuatorInput2: B
 }
 
 // container for outgoing ports
 @datatype class EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P (
-  val api_ports_manualActuatorInput1: B,
-  val api_ports_manualActuatorInput2: B) extends EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container
+  val api_manualActuatorInput1: B,
+  val api_manualActuatorInput2: B) extends EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container
 
 // container for outgoing ports and state variables
 @datatype class EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS (
-  val api_ports_manualActuatorInput1: B,
-  val api_ports_manualActuatorInput2: B) extends EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container
+  val api_manualActuatorInput1: B,
+  val api_manualActuatorInput2: B) extends EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container

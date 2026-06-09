@@ -6,7 +6,7 @@ if(APPLE)
       OUTPUT_STRIP_TRAILING_WHITESPACE)
   endif()
 else()
-  cmake_minimum_required(VERSION 3.5.1)
+  cmake_minimum_required(VERSION 3.10)
 endif(APPLE)
 
 project(main)
@@ -97,12 +97,12 @@ endif(WITH_LOC)
 
 
 add_library(main STATIC
-        runtime/misc.c
         runtime/stackframe.c
-        runtime/misc.h
-        runtime/lib.h
-        runtime/stackframe.h
         runtime/type.h
+        runtime/lib.h
+        runtime/misc.c
+        runtime/misc.h
+        runtime/stackframe.h
         runtime/type.c
         runtime/ztype.h
         runtime/type-composite.h
@@ -272,48 +272,6 @@ add_library(main STATIC
         library/RTS/Base_Types/type-RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.h
         library/RTS/Base_Types/RTS_Base_Types_Boolean_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Character_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Float_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_8_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Integer_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_String_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_16_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_32_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_64_Payload.c
-        library/RTS/Base_Types/type-RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.h
-        library/RTS/Base_Types/RTS_Base_Types_Unsigned_8_Payload.c
         library/RTS/type-RTS_Cli.h
         library/RTS/RTS_Cli.h
         library/RTS/RTS_Cli.c
@@ -798,18 +756,9 @@ add_library(main STATIC
         library/org/sireum/type-org_sireum_Option_FEE1DB.h
         library/org/sireum/org_sireum_Option_FEE1DB.h
         library/org/sireum/org_sireum_Option_FEE1DB.c
-        library/org/sireum/type-org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.h
-        library/org/sireum/org_sireum_S16.c
-        library/org/sireum/type-org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.h
-        library/org/sireum/org_sireum_S32.c
         library/org/sireum/type-org_sireum_S64.h
         library/org/sireum/org_sireum_S64.h
         library/org/sireum/org_sireum_S64.c
-        library/org/sireum/type-org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.h
-        library/org/sireum/org_sireum_S8.c
         library/org/sireum/type-org_sireum_Some.h
         library/org/sireum/org_sireum_Some.h
         library/org/sireum/org_sireum_Some.c
@@ -915,18 +864,6 @@ add_library(main STATIC
         library/org/sireum/type-org_sireum_Tuple4_FA9F23.h
         library/org/sireum/org_sireum_Tuple4_FA9F23.h
         library/org/sireum/org_sireum_Tuple4_FA9F23.c
-        library/org/sireum/type-org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.h
-        library/org/sireum/org_sireum_U16.c
-        library/org/sireum/type-org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.h
-        library/org/sireum/org_sireum_U32.c
-        library/org/sireum/type-org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.h
-        library/org/sireum/org_sireum_U64.c
-        library/org/sireum/type-org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.h
-        library/org/sireum/org_sireum_U8.c
         library/org/sireum/conversions/type-org_sireum_conversions_Z.h
         library/org/sireum/conversions/org_sireum_conversions_Z.h
         library/org/sireum/conversions/org_sireum_conversions_Z.c

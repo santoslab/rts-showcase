@@ -1360,10 +1360,10 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(config: Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P): RandomLib
 
   def nextActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P = {
-    var api_ports_input: B = nextB()
-    var api_ports_manualActuatorInput: B = nextB()
+    var api_input: B = nextB()
+    var api_manualActuatorInput: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
 
     if(get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P.attempts) {
@@ -1373,9 +1373,9 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_input = nextB()
-        api_ports_manualActuatorInput = nextB()
-        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+        api_input = nextB()
+        api_manualActuatorInput = nextB()
+        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
      }
     } else {
      while(T) {
@@ -1385,9 +1385,9 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_input = nextB()
-       api_ports_manualActuatorInput = nextB()
-       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+       api_input = nextB()
+       api_manualActuatorInput = nextB()
+       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
      }
     }
 
@@ -1401,10 +1401,10 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(config: Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS): RandomLib
 
   def nextActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS = {
-    var api_ports_input: B = nextB()
-    var api_ports_manualActuatorInput: B = nextB()
+    var api_input: B = nextB()
+    var api_manualActuatorInput: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
 
     if(get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS.attempts) {
@@ -1414,9 +1414,9 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_input = nextB()
-        api_ports_manualActuatorInput = nextB()
-        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+        api_input = nextB()
+        api_manualActuatorInput = nextB()
+        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
      }
     } else {
      while(T) {
@@ -1426,9 +1426,9 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_input = nextB()
-       api_ports_manualActuatorInput = nextB()
-       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+       api_input = nextB()
+       api_manualActuatorInput = nextB()
+       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
      }
     }
 
@@ -1504,9 +1504,9 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(config: Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P): RandomLib
 
   def nextActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P = {
-    var api_ports_output: B = nextB()
+    var api_output: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_ports_output)
+    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_output)
 
     if(get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P.attempts) {
@@ -1516,8 +1516,8 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_output = nextB()
-        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_ports_output)
+        api_output = nextB()
+        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_output)
      }
     } else {
      while(T) {
@@ -1527,8 +1527,8 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_output = nextB()
-       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_ports_output)
+       api_output = nextB()
+       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_P(api_output)
      }
     }
 
@@ -1542,9 +1542,9 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(config: Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS): RandomLib
 
   def nextActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = {
-    var api_ports_output: B = nextB()
+    var api_output: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_ports_output)
+    var v: Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_output)
 
     if(get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS.attempts) {
@@ -1554,8 +1554,8 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_output = nextB()
-        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_ports_output)
+        api_output = nextB()
+        v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_output)
      }
     } else {
      while(T) {
@@ -1565,8 +1565,8 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_output = nextB()
-       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_ports_output)
+       api_output = nextB()
+       v = Actuation.Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_PostState_Container_PS(api_output)
      }
     }
 
@@ -1642,10 +1642,10 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(config: Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P): RandomLib
 
   def nextActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P = {
-    var api_ports_input: B = nextB()
-    var api_ports_manualActuatorInput: B = nextB()
+    var api_input: B = nextB()
+    var api_manualActuatorInput: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
 
     if(get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P.attempts) {
@@ -1655,9 +1655,9 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_input = nextB()
-        api_ports_manualActuatorInput = nextB()
-        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+        api_input = nextB()
+        api_manualActuatorInput = nextB()
+        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
      }
     } else {
      while(T) {
@@ -1667,9 +1667,9 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_input = nextB()
-       api_ports_manualActuatorInput = nextB()
-       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_ports_input, api_ports_manualActuatorInput)
+       api_input = nextB()
+       api_manualActuatorInput = nextB()
+       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_P(api_input, api_manualActuatorInput)
      }
     }
 
@@ -1683,10 +1683,10 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(config: Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS): RandomLib
 
   def nextActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS = {
-    var api_ports_input: B = nextB()
-    var api_ports_manualActuatorInput: B = nextB()
+    var api_input: B = nextB()
+    var api_manualActuatorInput: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
 
     if(get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS.attempts) {
@@ -1696,9 +1696,9 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_input = nextB()
-        api_ports_manualActuatorInput = nextB()
-        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+        api_input = nextB()
+        api_manualActuatorInput = nextB()
+        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
      }
     } else {
      while(T) {
@@ -1708,9 +1708,9 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_input = nextB()
-       api_ports_manualActuatorInput = nextB()
-       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_ports_input, api_ports_manualActuatorInput)
+       api_input = nextB()
+       api_manualActuatorInput = nextB()
+       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PreState_Container_PS(api_input, api_manualActuatorInput)
      }
     }
 
@@ -1786,9 +1786,9 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(config: Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P): RandomLib
 
   def nextActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P = {
-    var api_ports_output: B = nextB()
+    var api_output: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_ports_output)
+    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_output)
 
     if(get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P.attempts) {
@@ -1798,8 +1798,8 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_output = nextB()
-        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_ports_output)
+        api_output = nextB()
+        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_output)
      }
     } else {
      while(T) {
@@ -1809,8 +1809,8 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_output = nextB()
-       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_ports_output)
+       api_output = nextB()
+       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_P(api_output)
      }
     }
 
@@ -1824,9 +1824,9 @@ Aux_Types.scala
   def set_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(config: Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS): RandomLib
 
   def nextActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(): Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS = {
-    var api_ports_output: B = nextB()
+    var api_output: B = nextB()
 
-    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_ports_output)
+    var v: Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_output)
 
     if(get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS.attempts) {
@@ -1836,8 +1836,8 @@ Aux_Types.scala
         if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_output = nextB()
-        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_ports_output)
+        api_output = nextB()
+        v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_output)
      }
     } else {
      while(T) {
@@ -1847,8 +1847,8 @@ Aux_Types.scala
        if (get_Config_ActuationActuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_output = nextB()
-       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_ports_output)
+       api_output = nextB()
+       v = Actuation.Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_PostState_Container_PS(api_output)
      }
     }
 
@@ -1924,12 +1924,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -1939,11 +1939,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -1953,11 +1953,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -1971,12 +1971,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -1986,11 +1986,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2000,11 +2000,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2080,9 +2080,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -2092,8 +2092,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -2103,8 +2103,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -2118,9 +2118,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -2130,8 +2130,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -2141,8 +2141,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -2218,12 +2218,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -2233,11 +2233,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2247,11 +2247,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2265,12 +2265,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -2280,11 +2280,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2294,11 +2294,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2374,9 +2374,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -2386,8 +2386,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -2397,8 +2397,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -2412,9 +2412,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -2424,8 +2424,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -2435,8 +2435,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -2512,12 +2512,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -2527,11 +2527,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2541,11 +2541,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2559,12 +2559,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -2574,11 +2574,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2588,11 +2588,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2668,9 +2668,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -2680,8 +2680,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -2691,8 +2691,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -2706,9 +2706,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -2718,8 +2718,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -2729,8 +2729,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -2806,12 +2806,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -2821,11 +2821,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2835,11 +2835,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2853,12 +2853,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -2868,11 +2868,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -2882,11 +2882,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -2962,9 +2962,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -2974,8 +2974,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -2985,8 +2985,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -3000,9 +3000,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -3012,8 +3012,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -3023,8 +3023,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -3100,12 +3100,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -3115,11 +3115,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -3129,11 +3129,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -3147,12 +3147,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -3162,11 +3162,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -3176,11 +3176,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -3256,9 +3256,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -3268,8 +3268,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -3279,8 +3279,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -3294,9 +3294,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -3306,8 +3306,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -3317,8 +3317,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -3394,12 +3394,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P.attempts) {
@@ -3409,11 +3409,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -3423,11 +3423,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_P(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -3441,12 +3441,12 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
-    var api_ports_channel3: B = nextB()
-    var api_ports_channel4: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
+    var api_channel3: B = nextB()
+    var api_channel4: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS.attempts) {
@@ -3456,11 +3456,11 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        api_ports_channel3 = nextB()
-        api_ports_channel4 = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        api_channel3 = nextB()
+        api_channel4 = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     } else {
      while(T) {
@@ -3470,11 +3470,11 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       api_ports_channel3 = nextB()
-       api_ports_channel4 = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2, api_ports_channel3, api_ports_channel4)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       api_channel3 = nextB()
+       api_channel4 = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PreState_Container_PS(api_channel1, api_channel2, api_channel3, api_channel4)
      }
     }
 
@@ -3550,9 +3550,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P.attempts) {
@@ -3562,8 +3562,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -3573,8 +3573,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -3588,9 +3588,9 @@ Aux_Types.scala
   def set_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(config: Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS): RandomLib
 
   def nextActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(): Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS.attempts) {
@@ -3600,8 +3600,8 @@ Aux_Types.scala
         if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -3611,8 +3611,8 @@ Aux_Types.scala
        if (get_Config_ActuationCoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -3688,10 +3688,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P.attempts) {
@@ -3701,9 +3701,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -3713,9 +3713,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     }
 
@@ -3729,10 +3729,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS.attempts) {
@@ -3742,9 +3742,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -3754,9 +3754,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     }
 
@@ -3832,9 +3832,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P.attempts) {
@@ -3844,8 +3844,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -3855,8 +3855,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -3870,9 +3870,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS.attempts) {
@@ -3882,8 +3882,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -3893,8 +3893,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -3970,10 +3970,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P.attempts) {
@@ -3983,9 +3983,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -3995,9 +3995,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     }
 
@@ -4011,10 +4011,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS.attempts) {
@@ -4024,9 +4024,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -4036,9 +4036,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     }
 
@@ -4114,9 +4114,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P.attempts) {
@@ -4126,8 +4126,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -4137,8 +4137,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -4152,9 +4152,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS.attempts) {
@@ -4164,8 +4164,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -4175,8 +4175,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -4252,10 +4252,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P.attempts) {
@@ -4265,9 +4265,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -4277,9 +4277,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     }
 
@@ -4293,10 +4293,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS.attempts) {
@@ -4306,9 +4306,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -4318,9 +4318,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     }
 
@@ -4396,9 +4396,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P.attempts) {
@@ -4408,8 +4408,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -4419,8 +4419,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -4434,9 +4434,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS.attempts) {
@@ -4446,8 +4446,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -4457,8 +4457,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -4534,10 +4534,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P.attempts) {
@@ -4547,9 +4547,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -4559,9 +4559,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_P(api_channel1, api_channel2)
      }
     }
 
@@ -4575,10 +4575,10 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS = {
-    var api_ports_channel1: B = nextB()
-    var api_ports_channel2: B = nextB()
+    var api_channel1: B = nextB()
+    var api_channel2: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS.attempts) {
@@ -4588,9 +4588,9 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_channel1 = nextB()
-        api_ports_channel2 = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+        api_channel1 = nextB()
+        api_channel2 = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     } else {
      while(T) {
@@ -4600,9 +4600,9 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_channel1 = nextB()
-       api_ports_channel2 = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_ports_channel1, api_ports_channel2)
+       api_channel1 = nextB()
+       api_channel2 = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PreState_Container_PS(api_channel1, api_channel2)
      }
     }
 
@@ -4678,9 +4678,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(config: Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P.attempts) {
@@ -4690,8 +4690,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_actuate)
      }
     } else {
      while(T) {
@@ -4701,8 +4701,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_P(api_actuate)
      }
     }
 
@@ -4716,9 +4716,9 @@ Aux_Types.scala
   def set_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(config: Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS): RandomLib
 
   def nextActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(): Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS = {
-    var api_ports_actuate: B = nextB()
+    var api_actuate: B = nextB()
 
-    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+    var v: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_actuate)
 
     if(get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS.attempts) {
@@ -4728,8 +4728,8 @@ Aux_Types.scala
         if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_actuate = nextB()
-        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+        api_actuate = nextB()
+        v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_actuate)
      }
     } else {
      while(T) {
@@ -4739,8 +4739,8 @@ Aux_Types.scala
        if (get_Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_actuate = nextB()
-       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_ports_actuate)
+       api_actuate = nextB()
+       v = Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(api_actuate)
      }
     }
 
@@ -4816,10 +4816,10 @@ Aux_Types.scala
   def set_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(config: Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P): RandomLib
 
   def nextActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P = {
-    var api_ports_saturationActuate: B = nextB()
-    var api_ports_tempPressureActuate: B = nextB()
+    var api_saturationActuate: B = nextB()
+    var api_tempPressureActuate: B = nextB()
 
-    var v: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_ports_saturationActuate, api_ports_tempPressureActuate)
+    var v: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_saturationActuate, api_tempPressureActuate)
 
     if(get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P.attempts) {
@@ -4829,9 +4829,9 @@ Aux_Types.scala
         if (get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_saturationActuate = nextB()
-        api_ports_tempPressureActuate = nextB()
-        v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_ports_saturationActuate, api_ports_tempPressureActuate)
+        api_saturationActuate = nextB()
+        api_tempPressureActuate = nextB()
+        v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_saturationActuate, api_tempPressureActuate)
      }
     } else {
      while(T) {
@@ -4841,9 +4841,9 @@ Aux_Types.scala
        if (get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_saturationActuate = nextB()
-       api_ports_tempPressureActuate = nextB()
-       v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_ports_saturationActuate, api_ports_tempPressureActuate)
+       api_saturationActuate = nextB()
+       api_tempPressureActuate = nextB()
+       v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(api_saturationActuate, api_tempPressureActuate)
      }
     }
 
@@ -4857,10 +4857,10 @@ Aux_Types.scala
   def set_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(config: Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS): RandomLib
 
   def nextActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(): Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS = {
-    var api_ports_saturationActuate: B = nextB()
-    var api_ports_tempPressureActuate: B = nextB()
+    var api_saturationActuate: B = nextB()
+    var api_tempPressureActuate: B = nextB()
 
-    var v: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_ports_saturationActuate, api_ports_tempPressureActuate)
+    var v: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_saturationActuate, api_tempPressureActuate)
 
     if(get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS.attempts) {
@@ -4870,9 +4870,9 @@ Aux_Types.scala
         if (get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_saturationActuate = nextB()
-        api_ports_tempPressureActuate = nextB()
-        v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_ports_saturationActuate, api_ports_tempPressureActuate)
+        api_saturationActuate = nextB()
+        api_tempPressureActuate = nextB()
+        v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_saturationActuate, api_tempPressureActuate)
      }
     } else {
      while(T) {
@@ -4882,9 +4882,9 @@ Aux_Types.scala
        if (get_Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_saturationActuate = nextB()
-       api_ports_tempPressureActuate = nextB()
-       v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_ports_saturationActuate, api_ports_tempPressureActuate)
+       api_saturationActuate = nextB()
+       api_tempPressureActuate = nextB()
+       v = Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(api_saturationActuate, api_tempPressureActuate)
      }
     }
 
@@ -5880,10 +5880,10 @@ Aux_Types.scala
   def set_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(config: Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P): RandomLib
 
   def nextEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P = {
-    var api_ports_manualActuatorInput1: B = nextB()
-    var api_ports_manualActuatorInput2: B = nextB()
+    var api_manualActuatorInput1: B = nextB()
+    var api_manualActuatorInput2: B = nextB()
 
-    var v: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+    var v: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_manualActuatorInput1, api_manualActuatorInput2)
 
     if(get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P.attempts) {
@@ -5893,9 +5893,9 @@ Aux_Types.scala
         if (get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_manualActuatorInput1 = nextB()
-        api_ports_manualActuatorInput2 = nextB()
-        v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+        api_manualActuatorInput1 = nextB()
+        api_manualActuatorInput2 = nextB()
+        v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_manualActuatorInput1, api_manualActuatorInput2)
      }
     } else {
      while(T) {
@@ -5905,9 +5905,9 @@ Aux_Types.scala
        if (get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_manualActuatorInput1 = nextB()
-       api_ports_manualActuatorInput2 = nextB()
-       v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+       api_manualActuatorInput1 = nextB()
+       api_manualActuatorInput2 = nextB()
+       v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(api_manualActuatorInput1, api_manualActuatorInput2)
      }
     }
 
@@ -5921,10 +5921,10 @@ Aux_Types.scala
   def set_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(config: Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS): RandomLib
 
   def nextEventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(): EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = {
-    var api_ports_manualActuatorInput1: B = nextB()
-    var api_ports_manualActuatorInput2: B = nextB()
+    var api_manualActuatorInput1: B = nextB()
+    var api_manualActuatorInput2: B = nextB()
 
-    var v: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+    var v: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_manualActuatorInput1, api_manualActuatorInput2)
 
     if(get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS.attempts) {
@@ -5934,9 +5934,9 @@ Aux_Types.scala
         if (get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_manualActuatorInput1 = nextB()
-        api_ports_manualActuatorInput2 = nextB()
-        v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+        api_manualActuatorInput1 = nextB()
+        api_manualActuatorInput2 = nextB()
+        v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_manualActuatorInput1, api_manualActuatorInput2)
      }
     } else {
      while(T) {
@@ -5946,9 +5946,9 @@ Aux_Types.scala
        if (get_Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_manualActuatorInput1 = nextB()
-       api_ports_manualActuatorInput2 = nextB()
-       v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_ports_manualActuatorInput1, api_ports_manualActuatorInput2)
+       api_manualActuatorInput1 = nextB()
+       api_manualActuatorInput2 = nextB()
+       v = EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(api_manualActuatorInput1, api_manualActuatorInput2)
      }
     }
 
@@ -6156,32 +6156,32 @@ Aux_Types.scala
   def set_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(config: Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P): RandomLib
 
   def nextInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P = {
-    var api_ports_unit1_pressureLogic_channel1: B = nextB()
-    var api_ports_unit1_pressureLogic_channel2: B = nextB()
-    var api_ports_unit1_pressureLogic_channel3: B = nextB()
-    var api_ports_unit1_pressureLogic_channel4: B = nextB()
-    var api_ports_unit1_saturationLogic_channel1: B = nextB()
-    var api_ports_unit1_saturationLogic_channel2: B = nextB()
-    var api_ports_unit1_saturationLogic_channel3: B = nextB()
-    var api_ports_unit1_saturationLogic_channel4: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel1: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel2: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel3: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel4: B = nextB()
-    var api_ports_unit2_pressureLogic_channel1: B = nextB()
-    var api_ports_unit2_pressureLogic_channel2: B = nextB()
-    var api_ports_unit2_pressureLogic_channel3: B = nextB()
-    var api_ports_unit2_pressureLogic_channel4: B = nextB()
-    var api_ports_unit2_saturationLogic_channel1: B = nextB()
-    var api_ports_unit2_saturationLogic_channel2: B = nextB()
-    var api_ports_unit2_saturationLogic_channel3: B = nextB()
-    var api_ports_unit2_saturationLogic_channel4: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel1: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel2: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel3: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel4: B = nextB()
+    var api_unit1_pressureLogic_channel1: B = nextB()
+    var api_unit1_pressureLogic_channel2: B = nextB()
+    var api_unit1_pressureLogic_channel3: B = nextB()
+    var api_unit1_pressureLogic_channel4: B = nextB()
+    var api_unit1_saturationLogic_channel1: B = nextB()
+    var api_unit1_saturationLogic_channel2: B = nextB()
+    var api_unit1_saturationLogic_channel3: B = nextB()
+    var api_unit1_saturationLogic_channel4: B = nextB()
+    var api_unit1_temperatureLogic_channel1: B = nextB()
+    var api_unit1_temperatureLogic_channel2: B = nextB()
+    var api_unit1_temperatureLogic_channel3: B = nextB()
+    var api_unit1_temperatureLogic_channel4: B = nextB()
+    var api_unit2_pressureLogic_channel1: B = nextB()
+    var api_unit2_pressureLogic_channel2: B = nextB()
+    var api_unit2_pressureLogic_channel3: B = nextB()
+    var api_unit2_pressureLogic_channel4: B = nextB()
+    var api_unit2_saturationLogic_channel1: B = nextB()
+    var api_unit2_saturationLogic_channel2: B = nextB()
+    var api_unit2_saturationLogic_channel3: B = nextB()
+    var api_unit2_saturationLogic_channel4: B = nextB()
+    var api_unit2_temperatureLogic_channel1: B = nextB()
+    var api_unit2_temperatureLogic_channel2: B = nextB()
+    var api_unit2_temperatureLogic_channel3: B = nextB()
+    var api_unit2_temperatureLogic_channel4: B = nextB()
 
-    var v: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+    var v: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
 
     if(get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P.attempts >= 0) {
      for(i <- 0 to get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P.attempts) {
@@ -6191,31 +6191,31 @@ Aux_Types.scala
         if (get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_unit1_pressureLogic_channel1 = nextB()
-        api_ports_unit1_pressureLogic_channel2 = nextB()
-        api_ports_unit1_pressureLogic_channel3 = nextB()
-        api_ports_unit1_pressureLogic_channel4 = nextB()
-        api_ports_unit1_saturationLogic_channel1 = nextB()
-        api_ports_unit1_saturationLogic_channel2 = nextB()
-        api_ports_unit1_saturationLogic_channel3 = nextB()
-        api_ports_unit1_saturationLogic_channel4 = nextB()
-        api_ports_unit1_temperatureLogic_channel1 = nextB()
-        api_ports_unit1_temperatureLogic_channel2 = nextB()
-        api_ports_unit1_temperatureLogic_channel3 = nextB()
-        api_ports_unit1_temperatureLogic_channel4 = nextB()
-        api_ports_unit2_pressureLogic_channel1 = nextB()
-        api_ports_unit2_pressureLogic_channel2 = nextB()
-        api_ports_unit2_pressureLogic_channel3 = nextB()
-        api_ports_unit2_pressureLogic_channel4 = nextB()
-        api_ports_unit2_saturationLogic_channel1 = nextB()
-        api_ports_unit2_saturationLogic_channel2 = nextB()
-        api_ports_unit2_saturationLogic_channel3 = nextB()
-        api_ports_unit2_saturationLogic_channel4 = nextB()
-        api_ports_unit2_temperatureLogic_channel1 = nextB()
-        api_ports_unit2_temperatureLogic_channel2 = nextB()
-        api_ports_unit2_temperatureLogic_channel3 = nextB()
-        api_ports_unit2_temperatureLogic_channel4 = nextB()
-        v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+        api_unit1_pressureLogic_channel1 = nextB()
+        api_unit1_pressureLogic_channel2 = nextB()
+        api_unit1_pressureLogic_channel3 = nextB()
+        api_unit1_pressureLogic_channel4 = nextB()
+        api_unit1_saturationLogic_channel1 = nextB()
+        api_unit1_saturationLogic_channel2 = nextB()
+        api_unit1_saturationLogic_channel3 = nextB()
+        api_unit1_saturationLogic_channel4 = nextB()
+        api_unit1_temperatureLogic_channel1 = nextB()
+        api_unit1_temperatureLogic_channel2 = nextB()
+        api_unit1_temperatureLogic_channel3 = nextB()
+        api_unit1_temperatureLogic_channel4 = nextB()
+        api_unit2_pressureLogic_channel1 = nextB()
+        api_unit2_pressureLogic_channel2 = nextB()
+        api_unit2_pressureLogic_channel3 = nextB()
+        api_unit2_pressureLogic_channel4 = nextB()
+        api_unit2_saturationLogic_channel1 = nextB()
+        api_unit2_saturationLogic_channel2 = nextB()
+        api_unit2_saturationLogic_channel3 = nextB()
+        api_unit2_saturationLogic_channel4 = nextB()
+        api_unit2_temperatureLogic_channel1 = nextB()
+        api_unit2_temperatureLogic_channel2 = nextB()
+        api_unit2_temperatureLogic_channel3 = nextB()
+        api_unit2_temperatureLogic_channel4 = nextB()
+        v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
      }
     } else {
      while(T) {
@@ -6225,31 +6225,31 @@ Aux_Types.scala
        if (get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_unit1_pressureLogic_channel1 = nextB()
-       api_ports_unit1_pressureLogic_channel2 = nextB()
-       api_ports_unit1_pressureLogic_channel3 = nextB()
-       api_ports_unit1_pressureLogic_channel4 = nextB()
-       api_ports_unit1_saturationLogic_channel1 = nextB()
-       api_ports_unit1_saturationLogic_channel2 = nextB()
-       api_ports_unit1_saturationLogic_channel3 = nextB()
-       api_ports_unit1_saturationLogic_channel4 = nextB()
-       api_ports_unit1_temperatureLogic_channel1 = nextB()
-       api_ports_unit1_temperatureLogic_channel2 = nextB()
-       api_ports_unit1_temperatureLogic_channel3 = nextB()
-       api_ports_unit1_temperatureLogic_channel4 = nextB()
-       api_ports_unit2_pressureLogic_channel1 = nextB()
-       api_ports_unit2_pressureLogic_channel2 = nextB()
-       api_ports_unit2_pressureLogic_channel3 = nextB()
-       api_ports_unit2_pressureLogic_channel4 = nextB()
-       api_ports_unit2_saturationLogic_channel1 = nextB()
-       api_ports_unit2_saturationLogic_channel2 = nextB()
-       api_ports_unit2_saturationLogic_channel3 = nextB()
-       api_ports_unit2_saturationLogic_channel4 = nextB()
-       api_ports_unit2_temperatureLogic_channel1 = nextB()
-       api_ports_unit2_temperatureLogic_channel2 = nextB()
-       api_ports_unit2_temperatureLogic_channel3 = nextB()
-       api_ports_unit2_temperatureLogic_channel4 = nextB()
-       v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+       api_unit1_pressureLogic_channel1 = nextB()
+       api_unit1_pressureLogic_channel2 = nextB()
+       api_unit1_pressureLogic_channel3 = nextB()
+       api_unit1_pressureLogic_channel4 = nextB()
+       api_unit1_saturationLogic_channel1 = nextB()
+       api_unit1_saturationLogic_channel2 = nextB()
+       api_unit1_saturationLogic_channel3 = nextB()
+       api_unit1_saturationLogic_channel4 = nextB()
+       api_unit1_temperatureLogic_channel1 = nextB()
+       api_unit1_temperatureLogic_channel2 = nextB()
+       api_unit1_temperatureLogic_channel3 = nextB()
+       api_unit1_temperatureLogic_channel4 = nextB()
+       api_unit2_pressureLogic_channel1 = nextB()
+       api_unit2_pressureLogic_channel2 = nextB()
+       api_unit2_pressureLogic_channel3 = nextB()
+       api_unit2_pressureLogic_channel4 = nextB()
+       api_unit2_saturationLogic_channel1 = nextB()
+       api_unit2_saturationLogic_channel2 = nextB()
+       api_unit2_saturationLogic_channel3 = nextB()
+       api_unit2_saturationLogic_channel4 = nextB()
+       api_unit2_temperatureLogic_channel1 = nextB()
+       api_unit2_temperatureLogic_channel2 = nextB()
+       api_unit2_temperatureLogic_channel3 = nextB()
+       api_unit2_temperatureLogic_channel4 = nextB()
+       v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
      }
     }
 
@@ -6263,32 +6263,32 @@ Aux_Types.scala
   def set_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(config: Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS): RandomLib
 
   def nextInstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(): Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS = {
-    var api_ports_unit1_pressureLogic_channel1: B = nextB()
-    var api_ports_unit1_pressureLogic_channel2: B = nextB()
-    var api_ports_unit1_pressureLogic_channel3: B = nextB()
-    var api_ports_unit1_pressureLogic_channel4: B = nextB()
-    var api_ports_unit1_saturationLogic_channel1: B = nextB()
-    var api_ports_unit1_saturationLogic_channel2: B = nextB()
-    var api_ports_unit1_saturationLogic_channel3: B = nextB()
-    var api_ports_unit1_saturationLogic_channel4: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel1: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel2: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel3: B = nextB()
-    var api_ports_unit1_temperatureLogic_channel4: B = nextB()
-    var api_ports_unit2_pressureLogic_channel1: B = nextB()
-    var api_ports_unit2_pressureLogic_channel2: B = nextB()
-    var api_ports_unit2_pressureLogic_channel3: B = nextB()
-    var api_ports_unit2_pressureLogic_channel4: B = nextB()
-    var api_ports_unit2_saturationLogic_channel1: B = nextB()
-    var api_ports_unit2_saturationLogic_channel2: B = nextB()
-    var api_ports_unit2_saturationLogic_channel3: B = nextB()
-    var api_ports_unit2_saturationLogic_channel4: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel1: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel2: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel3: B = nextB()
-    var api_ports_unit2_temperatureLogic_channel4: B = nextB()
+    var api_unit1_pressureLogic_channel1: B = nextB()
+    var api_unit1_pressureLogic_channel2: B = nextB()
+    var api_unit1_pressureLogic_channel3: B = nextB()
+    var api_unit1_pressureLogic_channel4: B = nextB()
+    var api_unit1_saturationLogic_channel1: B = nextB()
+    var api_unit1_saturationLogic_channel2: B = nextB()
+    var api_unit1_saturationLogic_channel3: B = nextB()
+    var api_unit1_saturationLogic_channel4: B = nextB()
+    var api_unit1_temperatureLogic_channel1: B = nextB()
+    var api_unit1_temperatureLogic_channel2: B = nextB()
+    var api_unit1_temperatureLogic_channel3: B = nextB()
+    var api_unit1_temperatureLogic_channel4: B = nextB()
+    var api_unit2_pressureLogic_channel1: B = nextB()
+    var api_unit2_pressureLogic_channel2: B = nextB()
+    var api_unit2_pressureLogic_channel3: B = nextB()
+    var api_unit2_pressureLogic_channel4: B = nextB()
+    var api_unit2_saturationLogic_channel1: B = nextB()
+    var api_unit2_saturationLogic_channel2: B = nextB()
+    var api_unit2_saturationLogic_channel3: B = nextB()
+    var api_unit2_saturationLogic_channel4: B = nextB()
+    var api_unit2_temperatureLogic_channel1: B = nextB()
+    var api_unit2_temperatureLogic_channel2: B = nextB()
+    var api_unit2_temperatureLogic_channel3: B = nextB()
+    var api_unit2_temperatureLogic_channel4: B = nextB()
 
-    var v: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+    var v: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
 
     if(get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS.attempts >= 0) {
      for(i <- 0 to get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS.attempts) {
@@ -6298,31 +6298,31 @@ Aux_Types.scala
         if (get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS.verbose) {
           println(s"Retrying for failing value: $v")
         }
-        api_ports_unit1_pressureLogic_channel1 = nextB()
-        api_ports_unit1_pressureLogic_channel2 = nextB()
-        api_ports_unit1_pressureLogic_channel3 = nextB()
-        api_ports_unit1_pressureLogic_channel4 = nextB()
-        api_ports_unit1_saturationLogic_channel1 = nextB()
-        api_ports_unit1_saturationLogic_channel2 = nextB()
-        api_ports_unit1_saturationLogic_channel3 = nextB()
-        api_ports_unit1_saturationLogic_channel4 = nextB()
-        api_ports_unit1_temperatureLogic_channel1 = nextB()
-        api_ports_unit1_temperatureLogic_channel2 = nextB()
-        api_ports_unit1_temperatureLogic_channel3 = nextB()
-        api_ports_unit1_temperatureLogic_channel4 = nextB()
-        api_ports_unit2_pressureLogic_channel1 = nextB()
-        api_ports_unit2_pressureLogic_channel2 = nextB()
-        api_ports_unit2_pressureLogic_channel3 = nextB()
-        api_ports_unit2_pressureLogic_channel4 = nextB()
-        api_ports_unit2_saturationLogic_channel1 = nextB()
-        api_ports_unit2_saturationLogic_channel2 = nextB()
-        api_ports_unit2_saturationLogic_channel3 = nextB()
-        api_ports_unit2_saturationLogic_channel4 = nextB()
-        api_ports_unit2_temperatureLogic_channel1 = nextB()
-        api_ports_unit2_temperatureLogic_channel2 = nextB()
-        api_ports_unit2_temperatureLogic_channel3 = nextB()
-        api_ports_unit2_temperatureLogic_channel4 = nextB()
-        v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+        api_unit1_pressureLogic_channel1 = nextB()
+        api_unit1_pressureLogic_channel2 = nextB()
+        api_unit1_pressureLogic_channel3 = nextB()
+        api_unit1_pressureLogic_channel4 = nextB()
+        api_unit1_saturationLogic_channel1 = nextB()
+        api_unit1_saturationLogic_channel2 = nextB()
+        api_unit1_saturationLogic_channel3 = nextB()
+        api_unit1_saturationLogic_channel4 = nextB()
+        api_unit1_temperatureLogic_channel1 = nextB()
+        api_unit1_temperatureLogic_channel2 = nextB()
+        api_unit1_temperatureLogic_channel3 = nextB()
+        api_unit1_temperatureLogic_channel4 = nextB()
+        api_unit2_pressureLogic_channel1 = nextB()
+        api_unit2_pressureLogic_channel2 = nextB()
+        api_unit2_pressureLogic_channel3 = nextB()
+        api_unit2_pressureLogic_channel4 = nextB()
+        api_unit2_saturationLogic_channel1 = nextB()
+        api_unit2_saturationLogic_channel2 = nextB()
+        api_unit2_saturationLogic_channel3 = nextB()
+        api_unit2_saturationLogic_channel4 = nextB()
+        api_unit2_temperatureLogic_channel1 = nextB()
+        api_unit2_temperatureLogic_channel2 = nextB()
+        api_unit2_temperatureLogic_channel3 = nextB()
+        api_unit2_temperatureLogic_channel4 = nextB()
+        v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
      }
     } else {
      while(T) {
@@ -6332,31 +6332,31 @@ Aux_Types.scala
        if (get_Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS.verbose) {
          println(s"Retrying for failing value: $v")
        }
-       api_ports_unit1_pressureLogic_channel1 = nextB()
-       api_ports_unit1_pressureLogic_channel2 = nextB()
-       api_ports_unit1_pressureLogic_channel3 = nextB()
-       api_ports_unit1_pressureLogic_channel4 = nextB()
-       api_ports_unit1_saturationLogic_channel1 = nextB()
-       api_ports_unit1_saturationLogic_channel2 = nextB()
-       api_ports_unit1_saturationLogic_channel3 = nextB()
-       api_ports_unit1_saturationLogic_channel4 = nextB()
-       api_ports_unit1_temperatureLogic_channel1 = nextB()
-       api_ports_unit1_temperatureLogic_channel2 = nextB()
-       api_ports_unit1_temperatureLogic_channel3 = nextB()
-       api_ports_unit1_temperatureLogic_channel4 = nextB()
-       api_ports_unit2_pressureLogic_channel1 = nextB()
-       api_ports_unit2_pressureLogic_channel2 = nextB()
-       api_ports_unit2_pressureLogic_channel3 = nextB()
-       api_ports_unit2_pressureLogic_channel4 = nextB()
-       api_ports_unit2_saturationLogic_channel1 = nextB()
-       api_ports_unit2_saturationLogic_channel2 = nextB()
-       api_ports_unit2_saturationLogic_channel3 = nextB()
-       api_ports_unit2_saturationLogic_channel4 = nextB()
-       api_ports_unit2_temperatureLogic_channel1 = nextB()
-       api_ports_unit2_temperatureLogic_channel2 = nextB()
-       api_ports_unit2_temperatureLogic_channel3 = nextB()
-       api_ports_unit2_temperatureLogic_channel4 = nextB()
-       v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_ports_unit1_pressureLogic_channel1, api_ports_unit1_pressureLogic_channel2, api_ports_unit1_pressureLogic_channel3, api_ports_unit1_pressureLogic_channel4, api_ports_unit1_saturationLogic_channel1, api_ports_unit1_saturationLogic_channel2, api_ports_unit1_saturationLogic_channel3, api_ports_unit1_saturationLogic_channel4, api_ports_unit1_temperatureLogic_channel1, api_ports_unit1_temperatureLogic_channel2, api_ports_unit1_temperatureLogic_channel3, api_ports_unit1_temperatureLogic_channel4, api_ports_unit2_pressureLogic_channel1, api_ports_unit2_pressureLogic_channel2, api_ports_unit2_pressureLogic_channel3, api_ports_unit2_pressureLogic_channel4, api_ports_unit2_saturationLogic_channel1, api_ports_unit2_saturationLogic_channel2, api_ports_unit2_saturationLogic_channel3, api_ports_unit2_saturationLogic_channel4, api_ports_unit2_temperatureLogic_channel1, api_ports_unit2_temperatureLogic_channel2, api_ports_unit2_temperatureLogic_channel3, api_ports_unit2_temperatureLogic_channel4)
+       api_unit1_pressureLogic_channel1 = nextB()
+       api_unit1_pressureLogic_channel2 = nextB()
+       api_unit1_pressureLogic_channel3 = nextB()
+       api_unit1_pressureLogic_channel4 = nextB()
+       api_unit1_saturationLogic_channel1 = nextB()
+       api_unit1_saturationLogic_channel2 = nextB()
+       api_unit1_saturationLogic_channel3 = nextB()
+       api_unit1_saturationLogic_channel4 = nextB()
+       api_unit1_temperatureLogic_channel1 = nextB()
+       api_unit1_temperatureLogic_channel2 = nextB()
+       api_unit1_temperatureLogic_channel3 = nextB()
+       api_unit1_temperatureLogic_channel4 = nextB()
+       api_unit2_pressureLogic_channel1 = nextB()
+       api_unit2_pressureLogic_channel2 = nextB()
+       api_unit2_pressureLogic_channel3 = nextB()
+       api_unit2_pressureLogic_channel4 = nextB()
+       api_unit2_saturationLogic_channel1 = nextB()
+       api_unit2_saturationLogic_channel2 = nextB()
+       api_unit2_saturationLogic_channel3 = nextB()
+       api_unit2_saturationLogic_channel4 = nextB()
+       api_unit2_temperatureLogic_channel1 = nextB()
+       api_unit2_temperatureLogic_channel2 = nextB()
+       api_unit2_temperatureLogic_channel3 = nextB()
+       api_unit2_temperatureLogic_channel4 = nextB()
+       v = Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(api_unit1_pressureLogic_channel1, api_unit1_pressureLogic_channel2, api_unit1_pressureLogic_channel3, api_unit1_pressureLogic_channel4, api_unit1_saturationLogic_channel1, api_unit1_saturationLogic_channel2, api_unit1_saturationLogic_channel3, api_unit1_saturationLogic_channel4, api_unit1_temperatureLogic_channel1, api_unit1_temperatureLogic_channel2, api_unit1_temperatureLogic_channel3, api_unit1_temperatureLogic_channel4, api_unit2_pressureLogic_channel1, api_unit2_pressureLogic_channel2, api_unit2_pressureLogic_channel3, api_unit2_pressureLogic_channel4, api_unit2_saturationLogic_channel1, api_unit2_saturationLogic_channel2, api_unit2_saturationLogic_channel3, api_unit2_saturationLogic_channel4, api_unit2_temperatureLogic_channel1, api_unit2_temperatureLogic_channel2, api_unit2_temperatureLogic_channel3, api_unit2_temperatureLogic_channel4)
      }
     }
 

@@ -18,37 +18,37 @@ object EventControlMockThread_eventControlMock_eventControlMockThread_SystemTest
 
 
   def fetchContainer(): RTS.EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS = {
-    if (runtimeMonitorStream.contains(Arch.rts_eventControlMock_eventControlMockThread.id)) {
-      val (_, postContainer_) = runtimeMonitorStream.get(Arch.rts_eventControlMock_eventControlMockThread.id).get
+    if (runtimeMonitorStream.contains(Arch.RTS_Instance_eventControlMock_eventControlMockThread.id)) {
+      val (_, postContainer_) = runtimeMonitorStream.get(Arch.RTS_Instance_eventControlMock_eventControlMockThread.id).get
       return postContainer_.asInstanceOf[RTS.EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS]
     }
     else {
-      assert(F, s"No post state recorded for ${Arch.rts_eventControlMock_eventControlMockThread.name}")
-      halt(s"No post state recorded for ${Arch.rts_eventControlMock_eventControlMockThread.name}")
+      assert(F, s"No post state recorded for ${Arch.RTS_Instance_eventControlMock_eventControlMockThread.name}")
+      halt(s"No post state recorded for ${Arch.RTS_Instance_eventControlMock_eventControlMockThread.name}")
     }
   }
 
-  def check_concrete_outputs(api_ports_manualActuatorInput1: Base_Types.Boolean,
-                             api_ports_manualActuatorInput2: Base_Types.Boolean): Unit = {
+  def check_concrete_outputs(api_manualActuatorInput1: Base_Types.Boolean,
+                             api_manualActuatorInput2: Base_Types.Boolean): Unit = {
     var failureReasons: ISZ[ST] = ISZ()
 
-    val actual_ports_manualActuatorInput1 = get_api_ports_manualActuatorInput1()
-    if (api_ports_manualActuatorInput1 != actual_ports_manualActuatorInput1) {
-      failureReasons = failureReasons :+ st"'ports_manualActuatorInput1' did not match expected.  Expected: $api_ports_manualActuatorInput1, Actual: $actual_ports_manualActuatorInput1"
+    val actual_manualActuatorInput1 = get_api_manualActuatorInput1()
+    if (api_manualActuatorInput1 != actual_manualActuatorInput1) {
+      failureReasons = failureReasons :+ st"'manualActuatorInput1' did not match expected.  Expected: $api_manualActuatorInput1, Actual: $actual_manualActuatorInput1"
     }
-    val actual_ports_manualActuatorInput2 = get_api_ports_manualActuatorInput2()
-    if (api_ports_manualActuatorInput2 != actual_ports_manualActuatorInput2) {
-      failureReasons = failureReasons :+ st"'ports_manualActuatorInput2' did not match expected.  Expected: $api_ports_manualActuatorInput2, Actual: $actual_ports_manualActuatorInput2"
+    val actual_manualActuatorInput2 = get_api_manualActuatorInput2()
+    if (api_manualActuatorInput2 != actual_manualActuatorInput2) {
+      failureReasons = failureReasons :+ st"'manualActuatorInput2' did not match expected.  Expected: $api_manualActuatorInput2, Actual: $actual_manualActuatorInput2"
     }
 
     assert(failureReasons.isEmpty, st"${(failureReasons, "\n")}".render)
   }
 
-  def get_api_ports_manualActuatorInput1(): Base_Types.Boolean = {
-    return fetchContainer().api_ports_manualActuatorInput1
+  def get_api_manualActuatorInput1(): Base_Types.Boolean = {
+    return fetchContainer().api_manualActuatorInput1
   }
 
-  def get_api_ports_manualActuatorInput2(): Base_Types.Boolean = {
-    return fetchContainer().api_ports_manualActuatorInput2
+  def get_api_manualActuatorInput2(): Base_Types.Boolean = {
+    return fetchContainer().api_manualActuatorInput2
   }
 }
