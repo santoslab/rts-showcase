@@ -2,18 +2,28 @@
 //@ HAMR: --platform Linux --package-name RTS --run-transpiler --max-string-size 250 --output-dir ../hamr
 //@ HAMR: --platform seL4 --package-name RTS --run-transpiler --max-string-size 250 --output-dir ../hamr
 package RTS {
-	
+
 	private import Actuation::*;
 	private import Actuators::*;
 	private import EventControl::*;
 	private import Instrumentation::*;
-	private import AADL::*;
+	private import HAMR::*;
 
-	part def RTS :> System {
-		part actuationSubsystem: Actuation::RTSActuation;
-		part instrumentationMock: Instrumentation::InstrumentationMockProcess;
-		part eventControlMock: EventControl::EventControlMockProcess;
-		part actuatorsMock: Actuators::ActuatorsMockProcess;
+	part def RTS_i :> System {
+		part instrumentationMock: Instrumentation::InstrumentationMockProcess_i;
+		part eventControlMock: EventControl::EventControlMockProcess_i;
+		part actuatorsMock: Actuators::ActuatorsMockProcess_i;
+		part actuationSubsystem: Actuation::RTSActuation_i;
+		part rts_processor: RTSProcessor_i;
+
+		allocation pb0 : Deployment_Properties::Actual_Processor_Binding
+			allocate instrumentationMock to rts_processor;
+		allocation pb1 : Deployment_Properties::Actual_Processor_Binding
+			allocate eventControlMock to rts_processor;
+		allocation pb2 : Deployment_Properties::Actual_Processor_Binding
+			allocate actuatorsMock to rts_processor;
+		allocation pb3 : Deployment_Properties::Actual_Processor_Binding
+			allocate actuationSubsystem to rts_processor;
 		
 		// actuation unit 1 
 		connection u1TLc1 : PortConnection connect instrumentationMock.unit1_temperatureLogic_channel1 to actuationSubsystem.unit1_temperatureLogic_channel1;
@@ -89,5 +99,17 @@ package RTS {
 		connection c36 : PortConnection connect actuationSubsystem.tempPressureActuatorUnit.tempPressureActuator.actuator.output to actuatorsMock.actuatorsMockThread.tempPressureActuate;
 		connection c37 : PortConnection connect actuationSubsystem.saturationActuatorUnit.saturationActuator.actuator.output to actuatorsMock.actuatorsMockThread.saturationActuate;
 		*/
+	}
+
+	part def RTSProcessor_i :> Processor {
+		attribute :>> Frame_Period = 1000 [ms];
+		attribute :>> Clock_Period = 2 [ms];
+		attribute :>> Max_Domain = 16;
+	}
+
+	part def Periodic_Thread :> Thread {
+		attribute :>> Compute_Execution_Time = 10[ms] .. 10[ms];
+		attribute :>> Dispatch_Protocol = Periodic;
+		attribute :>> Period = 1000[ms];
 	}
 }

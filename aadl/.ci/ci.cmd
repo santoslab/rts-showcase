@@ -101,16 +101,12 @@ if (result == 0) {
   clean(homeDir / "hamr" / "slang" / "out")
   clean(Os.path("/root") / "Downloads" / "sireum")
 
-  result = run("Size after cleaning", T, proc"df -h")
-
   result = run("Running customized sel4 transpiler script", F, proc"${homeDir / "hamr" / "slang" / "bin" / "transpile-sel4-cust.cmd"}")
 }
 
 if (result == 0) {
   Os.env("GITHUB_WORKFLOW") match {
     case Some(n) if (ops.StringOps(ops.StringOps(n).toLower).contains("camkes")) =>
-      
-      result = run("Size before running camkes build", T, proc"df -f")
 
       result = run("Running camkes build", T, proc"${homeDir / "hamr" / "camkes" / "bin" / "run-camkes.sh"}")
     case _ =>

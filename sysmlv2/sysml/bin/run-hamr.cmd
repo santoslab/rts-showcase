@@ -42,7 +42,7 @@ var codegenArgs: ISZ[String] = ISZ(
   "--no-proyek-ive",
   "--workspace-root-dir", sysmlDir.string,
   "--sourcepath", sourcePath,
-  "--system-name", "RTS::RTS",
+  "--system-name", "RTS::RTS_i",
 )
 
 codegenArgs = codegenArgs ++ Os.cliArgs

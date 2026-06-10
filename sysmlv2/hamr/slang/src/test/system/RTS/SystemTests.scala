@@ -37,21 +37,21 @@ class SystemTests extends SystemTestSuite {
 
   // Suggestion: add the following import renamings of the components' SystemTestAPIs,
   //             replacing nickname with shortened versions that are easier to reference
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{CoincidenceLogic_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{OrLogic_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{Actuator_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_SystemTestAPI => nickname}
-  // import RTS.Actuation.{OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_SystemTestAPI => nickname}
-  // import RTS.Actuation.{Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_SystemTestAPI => nickname}
-  // import RTS.Instrumentation.{InstrumentationMockThread_instrumentationMock_instrumentationMockThread_SystemTestAPI => nickname}
-  // import RTS.EventControl.{EventControlMockThread_eventControlMock_eventControlMockThread_SystemTestAPI => nickname}
-  // import RTS.Actuators.{ActuatorsMockThread_actuatorsMock_actuatorsMockThread_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit1_temperatureLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit1_pressureLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit1_saturationLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{OrLogic_i_actuationSubsystem_actuationUnit1_tempPressureTripOut_orLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit2_temperatureLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit2_pressureLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{CoincidenceLogic_i_actuationSubsystem_actuationUnit2_saturationLogic_coincidenceLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{OrLogic_i_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuator_actuator_SystemTestAPI => nickname}
+  // import RTS.Actuation.{OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_SystemTestAPI => nickname}
+  // import RTS.Actuation.{Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_SystemTestAPI => nickname}
+  // import RTS.Instrumentation.{InstrumentationMockThread_i_instrumentationMock_instrumentationMockThread_SystemTestAPI => nickname}
+  // import RTS.EventControl.{EventControlMockThread_i_eventControlMock_eventControlMockThread_SystemTestAPI => nickname}
+  // import RTS.Actuators.{ActuatorsMockThread_i_actuatorsMock_actuatorsMockThread_SystemTestAPI => nickname}
 
   test("Example system test") {
     // run the initialization phase

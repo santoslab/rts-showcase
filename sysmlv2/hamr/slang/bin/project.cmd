@@ -58,7 +58,7 @@ import org.sireum.project.{Module, Project, Target}
 val home: Os.Path = Os.slashDir.up.canon
 
 val slangModule: Module = Module(
-  id = "RTS_Instance",
+  id = "RTS_i_Instance",
   basePath = (home / "src").string,
   subPathOpt = None(),
   deps = ISZ(),
