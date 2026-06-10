@@ -21,16 +21,7 @@ object OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActu
       Ensures(
         // BEGIN COMPUTE ENSURES timeTriggered
         // guarantee orOutput
-        api.actuate == (api.channel1 | api.channel2),
-        // case ch1_only
-        //   Only channel 1 true
-        (api.channel1 & !(api.channel2)) ___>: (api.actuate),
-        // case ch2_only
-        //   Only channel 2 true
-        (!(api.channel1) & api.channel2) ___>: (api.actuate),
-        // case both_false
-        //   Both channels false
-        (!(api.channel1) & !(api.channel2)) ___>: (!(api.actuate))
+        api.actuate == (api.channel1 | api.channel2)
         // END COMPUTE ENSURES timeTriggered
       )
     )

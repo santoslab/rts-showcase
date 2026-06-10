@@ -12,7 +12,7 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSa
 Unit RTS_Actuation_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic_timeTriggered(STACK_FRAME RTS_Actuation_OrLogic_i_Operational_Api api) {
   DeclNewStackFrame(caller, "OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic.scala", "RTS.Actuation.OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLogic", "timeTriggered", 0);
 
-  sfUpdateLoc(56);
+  sfUpdateLoc(47);
   B channel1;
   {
     DeclNewOption_8F4D4C(t_0);
@@ -21,7 +21,7 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSa
     channel1 = t_1;
   }
 
-  sfUpdateLoc(57);
+  sfUpdateLoc(48);
   B channel2;
   {
     DeclNewOption_8F4D4C(t_2);
@@ -30,13 +30,13 @@ Unit RTS_Actuation_OrLogic_i_actuationSubsystem_saturationActuatorUnit_actuateSa
     channel2 = t_3;
   }
 
-  sfUpdateLoc(68);
+  sfUpdateLoc(59);
   B result;
   {
     result = B__or(channel1, channel2);
   }
 
-  sfUpdateLoc(71);
+  sfUpdateLoc(62);
   {
     RTS_Actuation_OrLogic_i_Operational_Api_put_actuate_(SF api, result);
   }

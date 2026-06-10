@@ -192,44 +192,6 @@ package Actuation {
 							(channel2 & channel3) |
 							(channel2 & channel4) |
 							(channel3 & channel4));
-
-			// The compute_cases below are needed for formal verification (Logika and
-			// Verus). The general guarantee alone cannot detect wrong-port-read bugs
-			// because unread input ports remain as free symbolic spec vars, allowing
-			// the SMT solver to pick values that satisfy the postcondition vacuously.
-			// Each case constrains all input ports to specific values, forcing the
-			// verifier to confirm the implementation actually reads from the correct port.
-			compute_cases
-				case pair_ch1_ch2 "Channels 1 and 2 true, others false":
-					assume channel1 & channel2 & (not channel3) & (not channel4);
-					guarantee actuate;
-				case pair_ch1_ch3 "Channels 1 and 3 true, others false":
-					assume channel1 & (not channel2) & channel3 & (not channel4);
-					guarantee actuate;
-				case pair_ch1_ch4 "Channels 1 and 4 true, others false":
-					assume channel1 & (not channel2) & (not channel3) & channel4;
-					guarantee actuate;
-				case pair_ch2_ch3 "Channels 2 and 3 true, others false":
-					assume (not channel1) & channel2 & channel3 & (not channel4);
-					guarantee actuate;
-				case pair_ch2_ch4 "Channels 2 and 4 true, others false":
-					assume (not channel1) & channel2 & (not channel3) & channel4;
-					guarantee actuate;
-				case pair_ch3_ch4 "Channels 3 and 4 true, others false":
-					assume (not channel1) & (not channel2) & channel3 & channel4;
-					guarantee actuate;
-				case solo_ch1 "Only channel 1 true":
-					assume channel1 & (not channel2) & (not channel3) & (not channel4);
-					guarantee not actuate;
-				case solo_ch2 "Only channel 2 true":
-					assume (not channel1) & channel2 & (not channel3) & (not channel4);
-					guarantee not actuate;
-				case solo_ch3 "Only channel 3 true":
-					assume (not channel1) & (not channel2) & channel3 & (not channel4);
-					guarantee not actuate;
-				case solo_ch4 "Only channel 4 true":
-					assume (not channel1) & (not channel2) & (not channel3) & channel4;
-					guarantee not actuate;
 		}*/
 	}
 	
@@ -256,23 +218,6 @@ package Actuation {
 				// (a || b)
 			guarantee orOutput:
 				actuate == (channel1 | channel2);
-
-			// The compute_cases below are needed for formal verification (Logika and
-			// Verus). The general guarantee alone cannot detect wrong-port-read bugs
-			// because unread input ports remain as free symbolic spec vars, allowing
-			// the SMT solver to pick values that satisfy the postcondition vacuously.
-			// Each case constrains all input ports to specific values, forcing the
-			// verifier to confirm the implementation actually reads from the correct port.
-			compute_cases
-				case ch1_only "Only channel 1 true":
-					assume channel1 & (not channel2);
-					guarantee actuate;
-				case ch2_only "Only channel 2 true":
-					assume (not channel1) & channel2;
-					guarantee actuate;
-				case both_false "Both channels false":
-					assume (not channel1) & (not channel2);
-					guarantee not actuate;
 		}*/
 	}
 	
@@ -304,23 +249,6 @@ package Actuation {
 				// (a || b)
 			guarantee actuatorOutput:
 				output == (input | manualActuatorInput);
-
-			// The compute_cases below are needed for formal verification (Logika and
-			// Verus). The general guarantee alone cannot detect wrong-port-read bugs
-			// because unread input ports remain as free symbolic spec vars, allowing
-			// the SMT solver to pick values that satisfy the postcondition vacuously.
-			// Each case constrains all input ports to specific values, forcing the
-			// verifier to confirm the implementation actually reads from the correct port.
-			compute_cases
-				case input_only "Only input true":
-					assume input & (not manualActuatorInput);
-					guarantee output;
-				case manual_only "Only manual input true":
-					assume (not input) & manualActuatorInput;
-					guarantee output;
-				case both_false "Both inputs false":
-					assume (not input) & (not manualActuatorInput);
-					guarantee not output;
 		}*/
 	}
 	

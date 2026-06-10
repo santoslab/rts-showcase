@@ -12,7 +12,7 @@ Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturati
 Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_timeTriggered(STACK_FRAME RTS_Actuation_Actuator_i_Operational_Api api) {
   DeclNewStackFrame(caller, "Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator.scala", "RTS.Actuation.Actuator_i_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator", "timeTriggered", 0);
 
-  sfUpdateLoc(63);
+  sfUpdateLoc(54);
   B input;
   {
     DeclNewOption_8F4D4C(t_0);
@@ -21,7 +21,7 @@ Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturati
     input = t_1;
   }
 
-  sfUpdateLoc(64);
+  sfUpdateLoc(55);
   B manualInput;
   {
     DeclNewOption_8F4D4C(t_2);
@@ -30,13 +30,13 @@ Unit RTS_Actuation_Actuator_i_actuationSubsystem_saturationActuatorUnit_saturati
     manualInput = t_3;
   }
 
-  sfUpdateLoc(67);
+  sfUpdateLoc(58);
   B output;
   {
     output = B__or(input, manualInput);
   }
 
-  sfUpdateLoc(70);
+  sfUpdateLoc(61);
   {
     RTS_Actuation_Actuator_i_Operational_Api_put_output_(SF api, output);
   }

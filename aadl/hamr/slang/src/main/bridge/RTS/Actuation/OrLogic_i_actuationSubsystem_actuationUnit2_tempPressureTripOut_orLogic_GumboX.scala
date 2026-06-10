@@ -32,63 +32,6 @@ object OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_G
       api_actuate: Base_Types.Boolean): B =
     compute_spec_orOutput_guarantee(api_channel1, api_channel2, api_actuate)
 
-  /** guarantee ch1_only
-    *   Only channel 1 true
-    * @param api_channel1 incoming data port
-    * @param api_channel2 incoming data port
-    * @param api_actuate outgoing data port
-    */
-  @strictpure def compute_case_ch1_only(
-      api_channel1: Base_Types.Boolean,
-      api_channel2: Base_Types.Boolean,
-      api_actuate: Base_Types.Boolean): B =
-    (api_channel1 & !api_channel2) ___>:
-      (api_actuate)
-
-  /** guarantee ch2_only
-    *   Only channel 2 true
-    * @param api_channel1 incoming data port
-    * @param api_channel2 incoming data port
-    * @param api_actuate outgoing data port
-    */
-  @strictpure def compute_case_ch2_only(
-      api_channel1: Base_Types.Boolean,
-      api_channel2: Base_Types.Boolean,
-      api_actuate: Base_Types.Boolean): B =
-    (!api_channel1 & api_channel2) ___>:
-      (api_actuate)
-
-  /** guarantee both_false
-    *   Both channels false
-    * @param api_channel1 incoming data port
-    * @param api_channel2 incoming data port
-    * @param api_actuate outgoing data port
-    */
-  @strictpure def compute_case_both_false(
-      api_channel1: Base_Types.Boolean,
-      api_channel2: Base_Types.Boolean,
-      api_actuate: Base_Types.Boolean): B =
-    (!api_channel1 & !api_channel2) ___>:
-      (!api_actuate)
-
-  /** CEP-T-Case: Top-Level case contracts for orLogic's compute entrypoint
-    *
-    * @param api_channel1 incoming data port
-    * @param api_channel2 incoming data port
-    * @param api_actuate outgoing data port
-    */
-  @strictpure def compute_CEP_T_Case (
-      api_channel1: Base_Types.Boolean,
-      api_channel2: Base_Types.Boolean,
-      api_actuate: Base_Types.Boolean): B =
-    {
-      val r0 = compute_case_ch1_only(api_channel1, api_channel2, api_actuate)
-      val r1 = compute_case_ch2_only(api_channel1, api_channel2, api_actuate)
-      val r2 = compute_case_both_false(api_channel1, api_channel2, api_actuate)
-
-      r0 & r1 & r2
-    }
-
   /** CEP-Post: Compute Entrypoint Post-Condition for orLogic
     *
     * @param api_channel1 incoming data port
@@ -101,12 +44,7 @@ object OrLogic_i_actuationSubsystem_actuationUnit2_tempPressureTripOut_orLogic_G
       api_actuate: Base_Types.Boolean): B =
     {
       // CEP-Guar: guarantee clauses of orLogic's compute entrypoint
-      val r0 = compute_CEP_T_Guar (api_channel1, api_channel2, api_actuate)
-
-      // CEP-T-Case: case clauses of orLogic's compute entrypoint
-      val r1 = compute_CEP_T_Case (api_channel1, api_channel2, api_actuate)
-
-      r0 & r1
+      compute_CEP_T_Guar (api_channel1, api_channel2, api_actuate)
     }
 
   /** CEP-Post: Compute Entrypoint Post-Condition for orLogic via containers

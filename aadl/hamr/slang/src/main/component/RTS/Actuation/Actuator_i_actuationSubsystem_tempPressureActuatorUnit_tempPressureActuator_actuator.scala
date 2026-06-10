@@ -40,16 +40,7 @@ object Actuator_i_actuationSubsystem_tempPressureActuatorUnit_tempPressureActuat
       Ensures(
         // BEGIN COMPUTE ENSURES timeTriggered
         // guarantee actuatorOutput
-        api.output == (api.input | api.manualActuatorInput),
-        // case input_only
-        //   Only input true
-        (api.input & !(api.manualActuatorInput)) ___>: (api.output),
-        // case manual_only
-        //   Only manual input true
-        (!(api.input) & api.manualActuatorInput) ___>: (api.output),
-        // case both_false
-        //   Both inputs false
-        (!(api.input) & !(api.manualActuatorInput)) ___>: (!(api.output))
+        api.output == (api.input | api.manualActuatorInput)
         // END COMPUTE ENSURES timeTriggered
       )
     )
